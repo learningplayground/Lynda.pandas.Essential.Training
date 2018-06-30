@@ -1,0 +1,315 @@
+1
+00:00:00.06 --> 00:00:03.00
+- [Instructor] Creating your own colormap.
+
+2
+00:00:03.00 --> 00:00:07.09
+Which of these two figures
+provides a more effective plot?
+
+3
+00:00:07.09 --> 00:00:12.06
+This one versus this one.
+
+4
+00:00:12.06 --> 00:00:14.09
+You might recognize the plot on the left
+
+5
+00:00:14.09 --> 00:00:18.04
+as being the solution from chapter eight.
+
+6
+00:00:18.04 --> 00:00:22.02
+With colormaps we can
+create our own colors.
+
+7
+00:00:22.02 --> 00:00:26.01
+Let's see how we this
+in our Jupyter notebook.
+
+8
+00:00:26.01 --> 00:00:33.07
+I'm going to copy the
+solution from chapter eight
+
+9
+00:00:33.07 --> 00:00:39.08
+and let's see if we can
+visualize this more effectively.
+
+10
+00:00:39.08 --> 00:00:42.05
+I'm going to talk you through
+the solution very quickly
+
+11
+00:00:42.05 --> 00:00:44.05
+to remind you what we did.
+
+12
+00:00:44.05 --> 00:00:46.02
+And then we look to see how we can
+
+13
+00:00:46.02 --> 00:00:48.05
+plot this more effectively.
+
+14
+00:00:48.05 --> 00:00:51.09
+I'm going to use comments
+or this hash symbol
+
+15
+00:00:51.09 --> 00:00:59.02
+to break this solution
+into multiple steps.
+
+16
+00:00:59.02 --> 00:01:01.04
+So the question was,
+"Plot the five athletes
+
+17
+00:01:01.04 --> 00:01:03.04
+"who have won the most gold medals
+
+18
+00:01:03.04 --> 00:01:05.03
+"over the history of the Olympics.
+
+19
+00:01:05.03 --> 00:01:08.03
+"When there is a tie, consider
+the number of silver medals
+
+20
+00:01:08.03 --> 00:01:11.06
+and then bronze medals."
+
+21
+00:01:11.06 --> 00:01:16.06
+So firstly we're going to
+group by the athlete medals.
+
+22
+00:01:16.06 --> 00:01:21.05
+And we can see that we've
+grouped by the athlete
+
+23
+00:01:21.05 --> 00:01:23.06
+and the type of medal that they've won.
+
+24
+00:01:23.06 --> 00:01:28.09
+We then unstack that to get a table
+
+25
+00:01:28.09 --> 00:01:32.02
+with different columns of
+gold, silver, and bronze.
+
+26
+00:01:32.02 --> 00:01:36.03
+We can then use sort
+values to order the medals
+
+27
+00:01:36.03 --> 00:01:41.07
+in descending order, sorting
+by gold, silver, and bronze.
+
+28
+00:01:41.07 --> 00:01:50.00
+And then head allows us
+to see the top five values
+
+29
+00:01:50.00 --> 00:01:55.02
+and we can then plot that.
+
+30
+00:01:55.02 --> 00:01:58.05
+We will need to use
+Matplotlib's listed colormap
+
+31
+00:01:58.05 --> 00:02:00.08
+to create our own colormap.
+
+32
+00:02:00.08 --> 00:02:03.08
+This allows us to make a
+colormap from a list of colors.
+
+33
+00:02:03.08 --> 00:02:07.01
+So I'm going to import the
+listed colormap function.
+
+34
+00:02:07.01 --> 00:02:16.03
+So from matplotlib dot
+colors import ListedColormap.
+
+35
+00:02:16.03 --> 00:02:19.08
+Let's run that.
+
+36
+00:02:19.08 --> 00:02:21.02
+Seaborn's color palette
+
+37
+00:02:21.02 --> 00:02:22.09
+is one of the most important functions
+
+38
+00:02:22.09 --> 00:02:25.09
+for working with the
+discrete color palettes.
+
+39
+00:02:25.09 --> 00:02:28.03
+Color palette provides an interface
+
+40
+00:02:28.03 --> 00:02:31.06
+to most of the colors you
+can generate in Seaborn.
+
+41
+00:02:31.06 --> 00:02:35.04
+Let's say you wanted to see the
+current default color cycle.
+
+42
+00:02:35.04 --> 00:02:40.03
+We could type sns for
+Seaborn and color_palette.
+
+43
+00:02:40.03 --> 00:02:42.03
+Now this isn't particularly helpful.
+
+44
+00:02:42.03 --> 00:02:46.09
+So if we plot the values in
+a color palette using palplot
+
+45
+00:02:46.09 --> 00:02:53.04
+we get sns dot palplot.
+
+46
+00:02:53.04 --> 00:02:57.03
+I copy that code from above and we can see
+
+47
+00:02:57.03 --> 00:03:00.04
+that these are the current
+default color cycles.
+
+48
+00:03:00.04 --> 00:03:02.05
+Now what I've done is I've gone online
+
+49
+00:03:02.05 --> 00:03:06.02
+to find the hexadecimal codes
+for gold, silver, and bronze
+
+50
+00:03:06.02 --> 00:03:08.06
+and created a list with these values.
+
+51
+00:03:08.06 --> 00:03:12.00
+So I'm going to create the
+list for my color palette
+
+52
+00:03:12.00 --> 00:03:17.05
+using the variable gsb
+for gold, silver, bronze.
+
+53
+00:03:17.05 --> 00:03:22.04
+And then I'm going to
+use Seaborn's palplot
+
+54
+00:03:22.04 --> 00:03:28.03
+to view this palette.
+
+55
+00:03:28.03 --> 00:03:33.02
+And I provide as an argument gsb.
+
+56
+00:03:33.02 --> 00:03:35.00
+So what I need to do is to grab the code
+
+57
+00:03:35.00 --> 00:03:39.00
+that I generated earlier
+
+58
+00:03:39.00 --> 00:03:46.02
+and apply my new colormap to this code.
+
+59
+00:03:46.02 --> 00:03:48.09
+Just to make this a
+little bit more readable,
+
+60
+00:03:48.09 --> 00:03:53.03
+I'm going to assign g to the head
+
+61
+00:03:53.03 --> 00:04:04.04
+and I'm going to add
+that to the next line.
+
+62
+00:04:04.04 --> 00:04:05.08
+The only change I need to make
+
+63
+00:04:05.08 --> 00:04:09.04
+is to add my newly created colormap.
+
+64
+00:04:09.04 --> 00:04:15.06
+Colormap equals my underscore gsb.
+
+65
+00:04:15.06 --> 00:04:19.07
+And you can see that we have a
+far more effective plot here.
+
+66
+00:04:19.07 --> 00:04:22.02
+So as you can see,
+customizing your colormaps
+
+67
+00:04:22.02 --> 00:04:25.02
+can be very effective and
+useful for your projects.
+
+68
+00:04:25.02 --> 00:04:27.08
+I highly recommend you try them out.
+
+69
+00:04:27.08 --> 00:04:29.06
+In the next video we will look at our
+
+70
+00:04:29.06 --> 00:04:31.06
+final challenge problem.
+

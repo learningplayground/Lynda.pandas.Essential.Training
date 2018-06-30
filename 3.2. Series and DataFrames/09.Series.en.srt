@@ -1,0 +1,382 @@
+1
+00:00:00.07 --> 00:00:02.09
+- [Instructor] A Series
+is a one-dimensional
+
+2
+00:00:02.09 --> 00:00:06.00
+array of indexed data.
+
+3
+00:00:06.00 --> 00:00:07.06
+One of the huge benefits of Pandas
+
+4
+00:00:07.06 --> 00:00:09.07
+is that it supports both integer
+
+5
+00:00:09.07 --> 00:00:11.08
+and label-based indexing,
+
+6
+00:00:11.08 --> 00:00:13.04
+and provides a host of methods
+
+7
+00:00:13.04 --> 00:00:17.05
+for performing operations
+involving the index.
+
+8
+00:00:17.05 --> 00:00:19.09
+The first column is known as an index.
+
+9
+00:00:19.09 --> 00:00:23.06
+And, each of the other columns
+corresponds to a Series.
+
+10
+00:00:23.06 --> 00:00:25.06
+The first Series is called City,
+
+11
+00:00:25.06 --> 00:00:27.02
+where the Olympics were held.
+
+12
+00:00:27.02 --> 00:00:29.01
+The second Series is called the Edition,
+
+13
+00:00:29.01 --> 00:00:33.07
+and this is the year the
+Olympics were held, and so on.
+
+14
+00:00:33.07 --> 00:00:37.00
+Now, remember that each of
+the rows is also a Series,
+
+15
+00:00:37.00 --> 00:00:41.03
+and this can be identified
+by this index number.
+
+16
+00:00:41.03 --> 00:00:43.07
+So, how do you access the Series?
+
+17
+00:00:43.07 --> 00:00:45.04
+Well, there are two ways
+of going about this.
+
+18
+00:00:45.04 --> 00:00:48.07
+You can access them
+using a square bracket,
+
+19
+00:00:48.07 --> 00:00:52.09
+using either a single quote
+or a double quote, notation.
+
+20
+00:00:52.09 --> 00:00:55.04
+So, for example, you
+provide the dataframe name,
+
+21
+00:00:55.04 --> 00:00:57.04
+and then the series name,
+
+22
+00:00:57.04 --> 00:01:00.07
+in either single quotes, or double quotes,
+
+23
+00:01:00.07 --> 00:01:03.08
+or you can use the dot notation.
+
+24
+00:01:03.08 --> 00:01:05.02
+The square bracket notation
+
+25
+00:01:05.02 --> 00:01:09.02
+for accessing a Series, will always work.
+
+26
+00:01:09.02 --> 00:01:11.09
+The dot notation can be a shortcut,
+
+27
+00:01:11.09 --> 00:01:15.05
+but it will not work if there's
+a space in the Series name.
+
+28
+00:01:15.05 --> 00:01:17.02
+So, if you want to use the dot notation,
+
+29
+00:01:17.02 --> 00:01:19.05
+you need to make certain that
+
+30
+00:01:19.05 --> 00:01:23.01
+each of the column names
+does not have a space.
+
+31
+00:01:23.01 --> 00:01:26.03
+You can also access multiple series,
+
+32
+00:01:26.03 --> 00:01:31.04
+and you can do that by including
+the series name in a list.
+
+33
+00:01:31.04 --> 00:01:33.06
+We will look at other
+ways to access portions
+
+34
+00:01:33.06 --> 00:01:37.06
+of the dataset in later videos.
+
+35
+00:01:37.06 --> 00:01:41.07
+Now, Series and dataframes are
+an essential part of Pandas,
+
+36
+00:01:41.07 --> 00:01:44.07
+and you want to get comfortable
+with working with them.
+
+37
+00:01:44.07 --> 00:01:46.05
+There are sometimes
+different methods available
+
+38
+00:01:46.05 --> 00:01:49.00
+to dataframes and Series,
+and if you're not sure
+
+39
+00:01:49.00 --> 00:01:51.00
+if you're working with a Series object,
+
+40
+00:01:51.00 --> 00:01:52.06
+or a dataframe object,
+
+41
+00:01:52.06 --> 00:01:56.00
+the type function can be a great help.
+
+42
+00:01:56.00 --> 00:01:57.09
+In this instance, we can
+see that the dataframe
+
+43
+00:01:57.09 --> 00:02:00.09
+is of type pandas, core, dataframe.
+
+44
+00:02:00.09 --> 00:02:04.06
+In the same way, if we include
+a dataframe in a Series name,
+
+45
+00:02:04.06 --> 00:02:06.08
+then the type is of type Series.
+
+46
+00:02:06.08 --> 00:02:08.09
+Notice that if we use a couple of Series,
+
+47
+00:02:08.09 --> 00:02:13.02
+then the type of that
+object is a dataframe.
+
+48
+00:02:13.02 --> 00:02:15.05
+Let's head over to the Jupiter Notebook,
+
+49
+00:02:15.05 --> 00:02:18.02
+for a couple of examples.
+
+50
+00:02:18.02 --> 00:02:21.05
+So, remember that oo is my dataframe,
+
+51
+00:02:21.05 --> 00:02:24.03
+and if I scroll up here,
+
+52
+00:02:24.03 --> 00:02:27.05
+I can see that these were
+the names of my Series.
+
+53
+00:02:27.05 --> 00:02:29.03
+If I want to access the Series,
+
+54
+00:02:29.03 --> 00:02:32.07
+the first way we mentioned was
+the square bracket notation,
+
+55
+00:02:32.07 --> 00:02:35.01
+so I can specify the dataframe,
+
+56
+00:02:35.01 --> 00:02:36.08
+and the name of the Series.
+
+57
+00:02:36.08 --> 00:02:38.00
+So, for example City,
+
+58
+00:02:38.00 --> 00:02:40.08
+which is the City that
+the Olympics was held in.
+
+59
+00:02:40.08 --> 00:02:43.01
+And, here I get a Series,
+
+60
+00:02:43.01 --> 00:02:49.00
+which is just the City
+column for that dataframe.
+
+61
+00:02:49.00 --> 00:02:51.00
+If I want to get a list of the Athletes,
+
+62
+00:02:51.00 --> 00:02:56.09
+I can type Athlete, and here
+I will only get the column
+
+63
+00:02:56.09 --> 00:03:01.00
+with all of the Athlete names.
+
+64
+00:03:01.00 --> 00:03:03.04
+The other way of accessing
+the Athlete information
+
+65
+00:03:03.04 --> 00:03:05.09
+is to use the dot notation,
+
+66
+00:03:05.09 --> 00:03:11.04
+which is oo.Athlete, and shift
+and enter to run that cell.
+
+67
+00:03:11.04 --> 00:03:15.08
+And you can see, I get exactly
+the same output, as earlier.
+
+68
+00:03:15.08 --> 00:03:17.06
+Now, remember that I can
+only use the dot notation
+
+69
+00:03:17.06 --> 00:03:24.01
+when there are no spaces
+in the column name.
+
+70
+00:03:24.01 --> 00:03:27.01
+If I want to access a couple of columns,
+
+71
+00:03:27.01 --> 00:03:30.00
+or a couple of Series, I can do oo,
+
+72
+00:03:30.00 --> 00:03:33.07
+and include the Series names in a list.
+
+73
+00:03:33.07 --> 00:03:40.03
+So, I can enter the City, the Edition,
+
+74
+00:03:40.03 --> 00:03:46.04
+and the Athlete name, and run that cell.
+
+75
+00:03:46.04 --> 00:03:48.04
+Now, it's very important
+that you understand
+
+76
+00:03:48.04 --> 00:03:50.06
+which object you're working with.
+
+77
+00:03:50.06 --> 00:03:54.05
+So, we know that oo is the dataframe, but
+
+78
+00:03:54.05 --> 00:03:58.06
+let's confirm that by
+looking at the type command.
+
+79
+00:03:58.06 --> 00:04:02.09
+We know that the oo.City is a Series,
+
+80
+00:04:02.09 --> 00:04:08.02
+and we can confirm that using type.
+
+81
+00:04:08.02 --> 00:04:09.07
+What might have not
+been so obvious is that
+
+82
+00:04:09.07 --> 00:04:11.08
+if we use a couple of Series,
+
+83
+00:04:11.08 --> 00:04:16.03
+such as City, Edition, and Athlete,
+
+84
+00:04:16.03 --> 00:04:24.02
+so if I just copy that cell,
+
+85
+00:04:24.02 --> 00:04:28.02
+this type is also a dataframe.
+
+86
+00:04:28.02 --> 00:04:29.09
+In the next video, we will look at
+
+87
+00:04:29.09 --> 00:04:32.00
+a couple of challenge exercises.
+

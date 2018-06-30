@@ -1,0 +1,223 @@
+1
+00:00:00.06 --> 00:00:02.04
+- Boolean indexing.
+
+2
+00:00:02.04 --> 00:00:06.03
+Boolean vectors or conditions
+can be used to filter data.
+
+3
+00:00:06.03 --> 00:00:10.01
+Based on a condition, pass
+series of true and false values
+
+4
+00:00:10.01 --> 00:00:13.05
+to a series or data frame to
+select and display the rules
+
+5
+00:00:13.05 --> 00:00:17.03
+where the series has true values.
+
+6
+00:00:17.03 --> 00:00:21.00
+Instead of using and, or, or not,
+
+7
+00:00:21.00 --> 00:00:23.04
+as with most programming languages,
+
+8
+00:00:23.04 --> 00:00:26.05
+you can use the following symbols instead.
+
+9
+00:00:26.05 --> 00:00:28.08
+Remember that if you have
+more than one condition,
+
+10
+00:00:28.08 --> 00:00:31.04
+or Boolean vector, this must be grouped
+
+11
+00:00:31.04 --> 00:00:34.00
+in brackets or parentheses.
+
+12
+00:00:34.00 --> 00:00:36.06
+This is to ensure that
+the order of operations
+
+13
+00:00:36.06 --> 00:00:38.07
+is carried out correctly.
+
+14
+00:00:38.07 --> 00:00:40.05
+Let's head over to the Jupyter notebook
+
+15
+00:00:40.05 --> 00:00:44.01
+to look at a couple of examples.
+
+16
+00:00:44.01 --> 00:00:50.07
+Let's just have an overview
+of our table first.
+
+17
+00:00:50.07 --> 00:00:52.01
+Now let's say we wanted to select
+
+18
+00:00:52.01 --> 00:00:55.06
+all of the athletes who
+have won a gold medal.
+
+19
+00:00:55.06 --> 00:01:00.07
+The condition we'd enter is oo dot Medal
+
+20
+00:01:00.07 --> 00:01:02.07
+and these are going to be gold medals.
+
+21
+00:01:02.07 --> 00:01:04.04
+So if I hit enter, I'm going to get
+
+22
+00:01:04.04 --> 00:01:08.03
+a whole series of trues or falses.
+
+23
+00:01:08.03 --> 00:01:09.07
+You can see that the first true
+
+24
+00:01:09.07 --> 00:01:13.04
+corresponds to this first
+record, or this first true,
+
+25
+00:01:13.04 --> 00:01:15.08
+where this athlete has won a gold medal.
+
+26
+00:01:15.08 --> 00:01:18.02
+The second one, the athlete
+has won a silver medal
+
+27
+00:01:18.02 --> 00:01:20.04
+and that's why you can
+see that this is a false.
+
+28
+00:01:20.04 --> 00:01:22.07
+The third, the athlete
+has won a bronze medal
+
+29
+00:01:22.07 --> 00:01:25.02
+and that's why it's a false, and so on.
+
+30
+00:01:25.02 --> 00:01:27.05
+Now, if we wanted to
+actually evaluate this
+
+31
+00:01:27.05 --> 00:01:30.02
+and determine which athletes
+have won gold medals,
+
+32
+00:01:30.02 --> 00:01:34.04
+we enter this within
+square brackets as so.
+
+33
+00:01:34.04 --> 00:01:38.06
+And we can see that we've
+now got a data frame
+
+34
+00:01:38.06 --> 00:01:41.05
+where all the athletes
+have won a gold medal.
+
+35
+00:01:41.05 --> 00:01:45.04
+And we can check this by looking
+at that final column here,
+
+36
+00:01:45.04 --> 00:01:49.01
+where all the athletes
+have won a gold medal.
+
+37
+00:01:49.01 --> 00:01:50.09
+Let's look at another example of how
+
+38
+00:01:50.09 --> 00:01:53.09
+we can use Boolean Indexing.
+
+39
+00:01:53.09 --> 00:01:55.09
+Let's use multiple conditions.
+
+40
+00:01:55.09 --> 00:01:58.05
+Let's say we want to
+know all women athletes
+
+41
+00:01:58.05 --> 00:02:00.07
+who have won a gold medal.
+
+42
+00:02:00.07 --> 00:02:03.09
+Remember that we need to
+include the conditions
+
+43
+00:02:03.09 --> 00:02:06.04
+in parentheses or brackets.
+
+44
+00:02:06.04 --> 00:02:08.01
+And we want all women athletes.
+
+45
+00:02:08.01 --> 00:02:10.02
+So oo, which is the
+name of our data frame,
+
+46
+00:02:10.02 --> 00:02:16.04
+gender, equals, equals, and then women.
+
+47
+00:02:16.04 --> 00:02:19.04
+And when we run this cell,
+we see that we've got
+
+48
+00:02:19.04 --> 00:02:22.00
+a data frame with all women,
+
+49
+00:02:22.00 --> 00:02:27.01
+and the final column here is gold.
+
+50
+00:02:27.01 --> 00:02:30.03
+In the next video, we will
+look at string handling.
+

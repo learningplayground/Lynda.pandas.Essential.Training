@@ -1,0 +1,170 @@
+1
+00:00:00.05 --> 00:00:02.06
+- [Teacher] Basic plotting, in this video
+
+2
+00:00:02.06 --> 00:00:05.07
+we will look at basic plotting.
+
+3
+00:00:05.07 --> 00:00:08.04
+Matplotlib tries to make
+easy things easy and
+
+4
+00:00:08.04 --> 00:00:10.01
+hard things possible,
+
+5
+00:00:10.01 --> 00:00:11.09
+that's what it says on the website.
+
+6
+00:00:11.09 --> 00:00:15.00
+You can generate plots,
+histograms, bar charts,
+
+7
+00:00:15.00 --> 00:00:18.01
+error charts with just
+a few lines of code.
+
+8
+00:00:18.01 --> 00:00:20.07
+For simple plotting, the pyplot module
+
+9
+00:00:20.07 --> 00:00:23.06
+provides a MATLAB-like interface.
+
+10
+00:00:23.06 --> 00:00:27.04
+The line "import matplotlib.pyplot"
+
+11
+00:00:27.04 --> 00:00:30.04
+allows you to use the
+matplotlib.pyplot module
+
+12
+00:00:30.04 --> 00:00:33.04
+using the abbreviation plt.
+
+13
+00:00:33.04 --> 00:00:35.07
+One of the features of the IPython kernel
+
+14
+00:00:35.07 --> 00:00:37.05
+is the ability to display plots
+
+15
+00:00:37.05 --> 00:00:40.05
+that are the output of running code cells.
+
+16
+00:00:40.05 --> 00:00:42.06
+The IPython kernel works seamlessly
+
+17
+00:00:42.06 --> 00:00:44.08
+with the Matplotlib Plotting Library
+
+18
+00:00:44.08 --> 00:00:47.02
+to provide this functionality.
+
+19
+00:00:47.02 --> 00:00:48.00
+To set this up,
+
+20
+00:00:48.00 --> 00:00:50.04
+you must execute that second line,
+
+21
+00:00:50.04 --> 00:00:51.09
+matplotlib inline
+
+22
+00:00:51.09 --> 00:00:54.05
+and that's what's known
+as a merger command.
+
+23
+00:00:54.05 --> 00:00:56.03
+With the Matplotlib inline backend,
+
+24
+00:00:56.03 --> 00:00:58.07
+the output of the plotting
+commands is displayed inline,
+
+25
+00:00:58.07 --> 00:01:00.04
+within the Jupiter Notebook,
+
+26
+00:01:00.04 --> 00:01:03.00
+directly below the code
+cell that produced it.
+
+27
+00:01:03.00 --> 00:01:06.01
+The resulting plots
+will then also be stored
+
+28
+00:01:06.01 --> 00:01:09.00
+in the notebook document.
+
+29
+00:01:09.00 --> 00:01:10.09
+Now, any basic Matplotlib tutorial
+
+30
+00:01:10.09 --> 00:01:15.09
+will reference instantiating
+axes or figure objects.
+
+31
+00:01:15.09 --> 00:01:18.06
+When dealing with more complicated plots,
+
+32
+00:01:18.06 --> 00:01:21.03
+where you require more
+control over the plots,
+
+33
+00:01:21.03 --> 00:01:24.07
+you will want to
+explicitly define the axes
+
+34
+00:01:24.07 --> 00:01:27.06
+and or the figure objects
+that you will be using.
+
+35
+00:01:27.06 --> 00:01:29.08
+In this course, we are primarily dealing
+
+36
+00:01:29.08 --> 00:01:31.05
+with the shorter scripts.
+
+37
+00:01:31.05 --> 00:01:34.07
+And the pyplot method
+of Matplotlib is ideal.
+
+38
+00:01:34.07 --> 00:01:36.00
+In the next video,
+
+39
+00:01:36.00 --> 00:01:39.05
+we will look at the
+different kinds of plots.
+

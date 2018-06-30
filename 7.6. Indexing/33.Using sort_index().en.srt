@@ -1,0 +1,194 @@
+1
+00:00:00.07 --> 00:00:02.03
+- [Instructor] Now I want to sort index.
+
+2
+00:00:02.03 --> 00:00:05.04
+Sort index allows for all
+the items to be sorted
+
+3
+00:00:05.04 --> 00:00:07.01
+by that index.
+
+4
+00:00:07.01 --> 00:00:09.09
+The advantage of this is that
+when you have a particularly
+
+5
+00:00:09.09 --> 00:00:13.05
+large data set, sorting
+the index reduces the time
+
+6
+00:00:13.05 --> 00:00:17.04
+to access any subset of that data.
+
+7
+00:00:17.04 --> 00:00:21.03
+You can sort objects by
+a label along the axis.
+
+8
+00:00:21.03 --> 00:00:23.00
+Let's head over to the Jupyter Notebook
+
+9
+00:00:23.00 --> 00:00:26.02
+to look at a couple of examples.
+
+10
+00:00:26.02 --> 00:00:28.06
+Let's reuse the ATH data frame
+
+11
+00:00:28.06 --> 00:00:31.06
+that we created in the previous video.
+
+12
+00:00:31.06 --> 00:00:35.01
+So ath.head gives us the
+first couple of rows.
+
+13
+00:00:35.01 --> 00:00:37.08
+Now let's set the index
+to the athlete name,
+
+14
+00:00:37.08 --> 00:00:45.03
+so ath.set index to athlete.
+
+15
+00:00:45.03 --> 00:00:48.00
+And we'll do that in place.
+
+16
+00:00:48.00 --> 00:00:52.08
+So if we're now doing ath.head,
+
+17
+00:00:52.08 --> 00:00:56.08
+and now we can see that the
+index is by the athlete's name.
+
+18
+00:00:56.08 --> 00:00:58.09
+So let's now sort that index.
+
+19
+00:00:58.09 --> 00:01:04.04
+So ath.sort index,
+
+20
+00:01:04.04 --> 00:01:09.07
+and we specify that that's
+looking at in place equals true.
+
+21
+00:01:09.07 --> 00:01:11.05
+So we want to change that
+in place equals false
+
+22
+00:01:11.05 --> 00:01:15.01
+to in place equals true.
+
+23
+00:01:15.01 --> 00:01:22.00
+And let's see what changes
+we see to the ATH data frame.
+
+24
+00:01:22.00 --> 00:01:25.09
+And we can see that the
+athlete is now the index
+
+25
+00:01:25.09 --> 00:01:27.02
+for the data frame.
+
+26
+00:01:27.02 --> 00:01:29.08
+And this has now been
+sorted by athlete name.
+
+27
+00:01:29.08 --> 00:01:31.06
+And so the first five
+rows have now changed
+
+28
+00:01:31.06 --> 00:01:36.09
+from Alfred and Otto to Aabye and Aaltonen
+
+29
+00:01:36.09 --> 00:01:40.01
+because these are sorted alphabetically.
+
+30
+00:01:40.01 --> 00:01:42.05
+Now, let's say we wanted
+to sort the index,
+
+31
+00:01:42.05 --> 00:01:46.01
+so that it was in descending
+alphabetical order.
+
+32
+00:01:46.01 --> 00:01:54.00
+We can change the flag ascending to false.
+
+33
+00:01:54.00 --> 00:01:55.05
+And we can see that there's been a change
+
+34
+00:01:55.05 --> 00:01:57.07
+in the index for the athletes' names
+
+35
+00:01:57.07 --> 00:02:02.02
+as they are now sorted in reverse order.
+
+36
+00:02:02.02 --> 00:02:03.05
+You might have been surprised to see
+
+37
+00:02:03.05 --> 00:02:05.08
+that the O with the umlauts are at the end
+
+38
+00:02:05.08 --> 00:02:09.00
+rather than a name starting with zed or Z.
+
+39
+00:02:09.00 --> 00:02:10.09
+This is because with this encoding,
+
+40
+00:02:10.09 --> 00:02:13.03
+the standard alphabet
+will have a lower value
+
+41
+00:02:13.03 --> 00:02:16.03
+than the special characters
+used in other languages.
+
+42
+00:02:16.03 --> 00:02:18.06
+So if your data has special characters,
+
+43
+00:02:18.06 --> 00:02:21.07
+you need to take this into account.
+
+44
+00:02:21.07 --> 00:02:25.01
+In the next videos, we
+will look at loc and iloc.
+

@@ -1,0 +1,446 @@
+1
+00:00:00.02 --> 00:00:03.06
+(swooshing cymbals)
+
+2
+00:00:03.06 --> 00:00:04.09
+- [Instructor] So this is
+an interesting question
+
+3
+00:00:04.09 --> 00:00:07.05
+that has a lot of moving parts.
+
+4
+00:00:07.05 --> 00:00:11.04
+I'm going to show you one
+of the ways to solve it.
+
+5
+00:00:11.04 --> 00:00:13.09
+In every Olympics,
+which US athlete has won
+
+6
+00:00:13.09 --> 00:00:16.05
+the most total number of medals?
+
+7
+00:00:16.05 --> 00:00:19.03
+Include the athlete's discipline.
+
+8
+00:00:19.03 --> 00:00:20.03
+So, again, we're interested in
+
+9
+00:00:20.03 --> 00:00:22.03
+only the athletes from the USA
+
+10
+00:00:22.03 --> 00:00:29.08
+so we use our dataframe and
+we say, oo.NOC equals USA,
+
+11
+00:00:29.08 --> 00:00:32.03
+and let's store that in the variable,
+
+12
+00:00:32.03 --> 00:00:37.02
+which is our dataframe, gy.
+
+13
+00:00:37.02 --> 00:00:39.09
+Now, given that we want
+to determine the values
+
+14
+00:00:39.09 --> 00:00:42.09
+for every Olympics, we
+will need to group by
+
+15
+00:00:42.09 --> 00:00:46.08
+the Edition, the Athlete, the Medal.
+
+16
+00:00:46.08 --> 00:00:51.01
+So, if I do a groupby on the gy dataframe
+
+17
+00:00:51.01 --> 00:01:02.07
+on the Edition, the
+Athlete, and the Medal,
+
+18
+00:01:02.07 --> 00:01:07.00
+and I do a sizeof there,
+I can see that I've got
+
+19
+00:01:07.00 --> 00:01:09.02
+the Edition, the Athlete, and the Medals.
+
+20
+00:01:09.02 --> 00:01:10.05
+So, I want to do an unstack,
+
+21
+00:01:10.05 --> 00:01:12.03
+and the reason I want to
+do an unstack is because,
+
+22
+00:01:12.03 --> 00:01:15.05
+then, I'm in a position to
+have three different columns,
+
+23
+00:01:15.05 --> 00:01:17.01
+Silver, Gold, and Bronze,
+
+24
+00:01:17.01 --> 00:01:18.05
+and then I can add those three columns
+
+25
+00:01:18.05 --> 00:01:20.08
+to get the total number of medals.
+
+26
+00:01:20.08 --> 00:01:25.07
+So, I do an unstack of the Medal.
+
+27
+00:01:25.07 --> 00:01:33.00
+I'll do a fill_value
+equal zero, and run that.
+
+28
+00:01:33.00 --> 00:01:35.02
+Now, what I'm going to do is to create
+
+29
+00:01:35.02 --> 00:01:38.06
+a new column called
+Total, so I'm going to say
+
+30
+00:01:38.06 --> 00:01:48.03
+the total number of medals here
+is the total number of Gold,
+
+31
+00:01:48.03 --> 00:01:54.00
+add the total number of Silver medals,
+
+32
+00:01:54.00 --> 00:01:56.07
+and add the total number of Bronze medals.
+
+33
+00:01:56.07 --> 00:02:00.04
+And, let's just confirm
+our new data frame.
+
+34
+00:02:00.04 --> 00:02:05.01
+It looks like we've run into an error.
+
+35
+00:02:05.01 --> 00:02:07.09
+And, there seems to be a problem
+with the KeyError: 'Gold'.
+
+36
+00:02:07.09 --> 00:02:12.04
+If we go back to this, we
+need to assign the groupby
+
+37
+00:02:12.04 --> 00:02:17.04
+to the dataframe gy, and
+then we should be good to go.
+
+38
+00:02:17.04 --> 00:02:19.09
+And so, we can see here
+that we've got a new series
+
+39
+00:02:19.09 --> 00:02:22.06
+called Total in our dataframe,
+
+40
+00:02:22.06 --> 00:02:28.02
+which is the sum of the Bronze,
+the Gold, and the Silver.
+
+41
+00:02:28.02 --> 00:02:30.03
+Now, what we want to be able to do here
+
+42
+00:02:30.03 --> 00:02:33.05
+is to go through each
+Edition and determine
+
+43
+00:02:33.05 --> 00:02:37.06
+who is the US athlete who's
+won the most number of medals.
+
+44
+00:02:37.06 --> 00:02:41.04
+And, we do that by sorting
+each of these groups.
+
+45
+00:02:41.04 --> 00:02:48.08
+So, what I'm going to do is is
+I'm going to reset my index.
+
+46
+00:02:48.08 --> 00:02:51.03
+So, we're now going to
+just work our way through
+
+47
+00:02:51.03 --> 00:02:55.00
+each of those groups created
+by the groupby object.
+
+48
+00:02:55.00 --> 00:03:08.04
+So, for year and group
+in gy, groupby Edition,
+
+49
+00:03:08.04 --> 00:03:14.00
+I'm just going to print out what
+I'm going to get for each group.
+
+50
+00:03:14.00 --> 00:03:17.07
+And, you see that for each Edition,
+
+51
+00:03:17.07 --> 00:03:21.04
+I'm getting the total number
+of medals for that group.
+
+52
+00:03:21.04 --> 00:03:23.06
+Now, I want to be able to sort this group.
+
+53
+00:03:23.06 --> 00:03:26.00
+So, when I refer to a
+group, I'm referring to
+
+54
+00:03:26.00 --> 00:03:28.03
+all of the medals won for that Edition,
+
+55
+00:03:28.03 --> 00:03:30.07
+and I want to be able to sort those values
+
+56
+00:03:30.07 --> 00:03:34.02
+by the total number of
+medals won for that Edition.
+
+57
+00:03:34.02 --> 00:03:37.00
+And, more specifically, I'm
+interested in the athlete
+
+58
+00:03:37.00 --> 00:03:39.09
+who has won the most number of medals.
+
+59
+00:03:39.09 --> 00:03:46.09
+So, I do a group, sort values,
+and I want to sort values
+
+60
+00:03:46.09 --> 00:03:51.06
+by the total number of medals won.
+
+61
+00:03:51.06 --> 00:03:53.06
+And, remember, because I'm
+looking for the athlete
+
+62
+00:03:53.06 --> 00:03:55.02
+who has won the most medals,
+
+63
+00:03:55.02 --> 00:03:59.08
+I want the ascending flag to be false.
+
+64
+00:03:59.08 --> 00:04:02.04
+Now, because I'm looking
+for the athlete who has won
+
+65
+00:04:02.04 --> 00:04:05.01
+the most medals for each Edition,
+
+66
+00:04:05.01 --> 00:04:08.01
+I just want the top-most entry here.
+
+67
+00:04:08.01 --> 00:04:11.07
+So, I enter a colon and a
+one, and that will give me
+
+68
+00:04:11.07 --> 00:04:16.00
+just the top-most entry for each Edition.
+
+69
+00:04:16.00 --> 00:04:18.05
+And, I've got the information that I want.
+
+70
+00:04:18.05 --> 00:04:20.06
+Now, the easiest way to deal with this
+
+71
+00:04:20.06 --> 00:04:23.00
+is to store all of this in a list.
+
+72
+00:04:23.00 --> 00:04:24.08
+So, let me just take all of this,
+
+73
+00:04:24.08 --> 00:04:28.03
+and store it in a list
+using Python's list command.
+
+74
+00:04:28.03 --> 00:04:35.02
+So, for year, groupby Edition,
+
+75
+00:04:35.02 --> 00:04:39.01
+and let's store all of the
+information that we get
+
+76
+00:04:39.01 --> 00:04:41.05
+as a result of this in the list,
+
+77
+00:04:41.05 --> 00:04:47.04
+and let's call that top
+USA, so tu for top USA.
+
+78
+00:04:47.04 --> 00:04:50.05
+And, let's view that list, tu.
+
+79
+00:04:50.05 --> 00:04:51.05
+The reason that we are storing
+
+80
+00:04:51.05 --> 00:04:54.02
+all of the information in a
+list is so that we can then
+
+81
+00:04:54.02 --> 00:04:59.03
+populate the dataframe from
+the elements in the list.
+
+82
+00:04:59.03 --> 00:05:02.08
+So, I'm going to create a
+new dataframe called top.
+
+83
+00:05:02.08 --> 00:05:07.04
+I'll say pd.DataFrame,
+
+84
+00:05:07.04 --> 00:05:09.07
+and now I'm going to work
+my way through the list,
+
+85
+00:05:09.07 --> 00:05:15.03
+so for every element, i, in the list, tu,
+
+86
+00:05:15.03 --> 00:05:19.06
+top, which is my dataframe, is
+going to append that element
+
+87
+00:05:19.06 --> 00:05:21.09
+to the dataframe.
+
+88
+00:05:21.09 --> 00:05:25.07
+If I then enter top,
+which is the new dataframe
+
+89
+00:05:25.07 --> 00:05:29.09
+I've created, I'm going to
+append each element of the list,
+
+90
+00:05:29.09 --> 00:05:33.04
+and each element is the element i.
+
+91
+00:05:33.04 --> 00:05:35.01
+And so, if I then run this command,
+
+92
+00:05:35.01 --> 00:05:37.00
+I should then get the dataframe.
+
+93
+00:05:37.00 --> 00:05:41.03
+And, in that dataframe is the
+top element for that group.
+
+94
+00:05:41.03 --> 00:05:43.08
+And so, we can see that for 1896
+
+95
+00:05:43.08 --> 00:05:45.05
+the US athlete who has won
+
+96
+00:05:45.05 --> 00:05:48.09
+the most total number of
+medals is Robert Garrett.
+
+97
+00:05:48.09 --> 00:05:51.06
+And, if we work our way
+down, there you have it.
+
+98
+00:05:51.06 --> 00:05:56.06
+Michael Phelps was the most
+successful athlete in 2008,
+
+99
+00:05:56.06 --> 00:06:00.03
+and you've used Python's
+Pandas to prove it.
+

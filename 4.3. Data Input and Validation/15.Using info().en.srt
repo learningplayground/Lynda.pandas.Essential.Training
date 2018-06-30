@@ -1,0 +1,109 @@
+1
+00:00:00.07 --> 00:00:03.02
+- [Instructor] Info provides
+a summary of the data frame
+
+2
+00:00:03.02 --> 00:00:06.05
+including the number of
+entries, the data type,
+
+3
+00:00:06.05 --> 00:00:08.05
+and the number of non-null entries
+
+4
+00:00:08.05 --> 00:00:10.09
+for each series in the data frame.
+
+5
+00:00:10.09 --> 00:00:12.08
+This is important because
+often when working
+
+6
+00:00:12.08 --> 00:00:16.03
+with a real data set,
+there will be missing data.
+
+7
+00:00:16.03 --> 00:00:18.03
+You want a view of this to determine
+
+8
+00:00:18.03 --> 00:00:20.05
+how you will handle this missing data.
+
+9
+00:00:20.05 --> 00:00:24.03
+Let's head back to the Jupyter notebook.
+
+10
+00:00:24.03 --> 00:00:28.03
+So I enter the name of the data frame.
+
+11
+00:00:28.03 --> 00:00:29.05
+We can see that we do not have
+
+12
+00:00:29.05 --> 00:00:31.03
+any missing data in this data set.
+
+13
+00:00:31.03 --> 00:00:34.01
+There are 29,216 entries,
+
+14
+00:00:34.01 --> 00:00:36.05
+and none of them are non-null.
+
+15
+00:00:36.05 --> 00:00:39.02
+What is also useful about the info method
+
+16
+00:00:39.02 --> 00:00:41.00
+is that it also gives you the data types
+
+17
+00:00:41.00 --> 00:00:43.02
+for the different series of columns.
+
+18
+00:00:43.02 --> 00:00:44.08
+This is useful when you have to do
+
+19
+00:00:44.08 --> 00:00:46.08
+any comparisons or queries.
+
+20
+00:00:46.08 --> 00:00:48.09
+So for example, if you are
+querying what is a string,
+
+21
+00:00:48.09 --> 00:00:50.06
+then you will know that
+you have to use quotes,
+
+22
+00:00:50.06 --> 00:00:53.00
+and if you are using a
+comparison for an integer
+
+23
+00:00:53.00 --> 00:00:56.09
+or a float value, then you
+won't need to use those quotes.
+
+24
+00:00:56.09 --> 00:00:59.08
+In the next video, we will
+learn how to use Pandas
+
+25
+00:00:59.08 --> 00:01:02.04
+to do some basic data analysis.
+

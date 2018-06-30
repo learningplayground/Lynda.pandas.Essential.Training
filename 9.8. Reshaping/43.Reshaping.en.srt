@@ -1,0 +1,248 @@
+1
+00:00:00.06 --> 00:00:02.08
+- [Instructor] We're going
+to look at two new functions
+
+2
+00:00:02.08 --> 00:00:04.00
+that are very helpful,
+
+3
+00:00:04.00 --> 00:00:07.07
+especially when used in
+conjunction with group by.
+
+4
+00:00:07.07 --> 00:00:11.03
+The stack function allows
+you to move the inner columns
+
+5
+00:00:11.03 --> 00:00:13.02
+to the rows for the dataframe
+
+6
+00:00:13.02 --> 00:00:16.09
+and the unstack function does the reverse.
+
+7
+00:00:16.09 --> 00:00:20.00
+The next slide has a helpful visualization
+
+8
+00:00:20.00 --> 00:00:21.03
+that will help you understand
+
+9
+00:00:21.03 --> 00:00:25.06
+what both the stack and
+the unstack functions do.
+
+10
+00:00:25.06 --> 00:00:30.02
+The stack function helps you
+to reshape the dataframe.
+
+11
+00:00:30.02 --> 00:00:33.08
+The table on the top left
+is the original dataframe.
+
+12
+00:00:33.08 --> 00:00:36.02
+What I have captured here are the athletes
+
+13
+00:00:36.02 --> 00:00:37.09
+that's both the male and female athletes
+
+14
+00:00:37.09 --> 00:00:41.05
+that won medals at the
+Beijing 2008 Olympics
+
+15
+00:00:41.05 --> 00:00:45.07
+in both the 100 meters and
+the 200 meters athletic events
+
+16
+00:00:45.07 --> 00:00:48.00
+and which countries they represented.
+
+17
+00:00:48.00 --> 00:00:50.00
+Let's head over to the Jupyter Notebook
+
+18
+00:00:50.00 --> 00:00:52.07
+and create this table,
+
+19
+00:00:52.07 --> 00:00:56.03
+so let's import pandas as pd,
+
+20
+00:00:56.03 --> 00:00:59.09
+import our dataset into the dataframe.
+
+21
+00:00:59.09 --> 00:01:01.07
+Let's take a look at the athletes
+
+22
+00:01:01.07 --> 00:01:04.01
+that took part in the 100 meters
+
+23
+00:01:04.01 --> 00:01:06.07
+or the 200 meters track event,
+
+24
+00:01:06.07 --> 00:01:09.02
+so we want to use our dataframe
+
+25
+00:01:09.02 --> 00:01:11.02
+and remember that there are going to be
+
+26
+00:01:11.02 --> 00:01:12.05
+a couple of conditions
+
+27
+00:01:12.05 --> 00:01:15.07
+so we want to include all
+of them in parenthesis,
+
+28
+00:01:15.07 --> 00:01:20.04
+so the athletes take
+part in the 2008 Olympics
+
+29
+00:01:20.04 --> 00:01:23.08
+so oo.edition equals 2008
+
+30
+00:01:23.08 --> 00:01:29.09
+and we want to know which ones
+took part in the 100 meters
+
+31
+00:01:29.09 --> 00:01:35.05
+or the 200 meters.
+
+32
+00:01:35.05 --> 00:01:38.09
+Right, so let's enter the
+conditions for the 100 meters,
+
+33
+00:01:38.09 --> 00:01:48.01
+so oo.event equals 100 meters
+
+34
+00:01:48.01 --> 00:01:59.05
+and oo.event equals 200 meters
+
+35
+00:01:59.05 --> 00:02:01.04
+and let's show that in a dataframe
+
+36
+00:02:01.04 --> 00:02:04.09
+for men and women so mw equals that
+
+37
+00:02:04.09 --> 00:02:10.09
+and let's just check the
+results of our dataframe.
+
+38
+00:02:10.09 --> 00:02:15.07
+So, we can confirm that
+this is the 2008 Olympics.
+
+39
+00:02:15.07 --> 00:02:19.09
+Men and women taking part in
+the 100 and 200 meters event
+
+40
+00:02:19.09 --> 00:02:23.09
+and these are the medals
+that they have won.
+
+41
+00:02:23.09 --> 00:02:26.08
+The next thing we want to do
+
+42
+00:02:26.08 --> 00:02:36.09
+is to group by the country
+they represent, the gender,
+
+43
+00:02:36.09 --> 00:02:44.05
+the discipline they are
+taking part in and the event.
+
+44
+00:02:44.05 --> 00:02:51.04
+Let's assign this to the
+letter g, the group by object,
+
+45
+00:02:51.04 --> 00:02:53.01
+and let's run that.
+
+46
+00:02:53.01 --> 00:02:55.01
+And now, in order to get the same view
+
+47
+00:02:55.01 --> 00:02:57.01
+as the original dataframe,
+
+48
+00:02:57.01 --> 00:03:07.04
+we need to unstack this so
+g unstack the discipline
+
+49
+00:03:07.04 --> 00:03:11.06
+and the event.
+
+50
+00:03:11.06 --> 00:03:16.02
+Let's store this in a dataframe
+
+51
+00:03:16.02 --> 00:03:20.03
+and we can see that we've got
+the dataframe that we want.
+
+52
+00:03:20.03 --> 00:03:23.00
+Don't worry too much about
+the unstacking function.
+
+53
+00:03:23.00 --> 00:03:26.01
+We will look at it in more detail shortly.
+
+54
+00:03:26.01 --> 00:03:28.09
+Great, so now we have the
+dataframe that's required
+
+55
+00:03:28.09 --> 00:03:31.08
+for us to do the stacking
+and unstacking function.
+
+56
+00:03:31.08 --> 00:03:33.09
+Let's look at stacking first.
+

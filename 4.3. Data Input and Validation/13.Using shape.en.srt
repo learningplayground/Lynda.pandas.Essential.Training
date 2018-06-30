@@ -1,0 +1,143 @@
+1
+00:00:00.05 --> 00:00:02.00
+- [Instructor] Shape.
+
+2
+00:00:02.00 --> 00:00:04.05
+The shape attribute returns a tuple,
+
+3
+00:00:04.05 --> 00:00:06.07
+that's rows and columns representing
+
+4
+00:00:06.07 --> 00:00:09.06
+the dimensionality of the DataFrame.
+
+5
+00:00:09.06 --> 00:00:12.07
+It's a good idea to check this
+against the original CSV file
+
+6
+00:00:12.07 --> 00:00:14.05
+to ensure that all the expected data
+
+7
+00:00:14.05 --> 00:00:17.00
+has been read into the DataFrame.
+
+8
+00:00:17.00 --> 00:00:19.00
+The shape attribute is useful
+
+9
+00:00:19.00 --> 00:00:20.04
+for confirming the dimensions
+
+10
+00:00:20.04 --> 00:00:23.00
+of your dataset.
+
+11
+00:00:23.00 --> 00:00:26.09
+We'll head over to our Jupyter Notebook.
+
+12
+00:00:26.09 --> 00:00:29.09
+What we need to enter
+here is our DataFrame
+
+13
+00:00:29.09 --> 00:00:34.09
+which is 00 and shape,
+the shape attribute.
+
+14
+00:00:34.09 --> 00:00:39.01
+So, the 29,216 corresponds
+to the number of rows
+
+15
+00:00:39.01 --> 00:00:41.00
+in the CSV file
+
+16
+00:00:41.00 --> 00:00:43.05
+and the 10 corresponds
+to the number of columns.
+
+17
+00:00:43.05 --> 00:00:44.06
+We can confirm that
+
+18
+00:00:44.06 --> 00:00:46.01
+and we can see for example here
+
+19
+00:00:46.01 --> 00:00:48.00
+that the city, edition, sport and so on,
+
+20
+00:00:48.00 --> 00:00:49.09
+these are the 10 columns that we have
+
+21
+00:00:49.09 --> 00:00:55.04
+and we actually have 29,216
+rows of data in our table.
+
+22
+00:00:55.04 --> 00:00:58.00
+One helpful tip is that sometimes
+
+23
+00:00:58.00 --> 00:00:59.07
+you might only want the number of rows
+
+24
+00:00:59.07 --> 00:01:01.08
+or columns as part of your code
+
+25
+00:01:01.08 --> 00:01:03.03
+and you can extract this information
+
+26
+00:01:03.03 --> 00:01:10.04
+from this tuple by just typing shape
+
+27
+00:01:10.04 --> 00:01:12.01
+and zero for the number of rows
+
+28
+00:01:12.01 --> 00:01:13.07
+and if you just want the column,
+
+29
+00:01:13.07 --> 00:01:15.02
+you can enter the one there
+
+30
+00:01:15.02 --> 00:01:18.02
+providing you that second
+component of your tuple
+
+31
+00:01:18.02 --> 00:01:19.04
+which are the 10 columns
+
+32
+00:01:19.04 --> 00:01:21.08
+that you have in the data.
+
+33
+00:01:21.08 --> 00:01:22.09
+In the next video
+
+34
+00:01:22.09 --> 00:01:25.04
+we will look at head and tail.
+

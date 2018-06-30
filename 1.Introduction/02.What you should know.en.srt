@@ -1,0 +1,51 @@
+1
+00:00:00.02 --> 00:00:03.00
+- [Instructor] What you
+should know about this course.
+
+2
+00:00:03.00 --> 00:00:06.01
+So you can use Linux, Mac, or a PC.
+
+3
+00:00:06.01 --> 00:00:08.05
+I'm going to work on Windows,
+but everything I demonstrate
+
+4
+00:00:08.05 --> 00:00:11.04
+will work the same on
+other operating systems.
+
+5
+00:00:11.04 --> 00:00:15.09
+We will be using Python 3.6
+and the Anaconda distribution.
+
+6
+00:00:15.09 --> 00:00:17.09
+If you already have
+another version of pandas
+
+7
+00:00:17.09 --> 00:00:22.02
+and another Python 3 version,
+you're welcome to use that.
+
+8
+00:00:22.02 --> 00:00:25.00
+I've designed this course as
+an intermediate level course,
+
+9
+00:00:25.00 --> 00:00:26.06
+but don't worry if you're a beginner.
+
+10
+00:00:26.06 --> 00:00:28.07
+I provide plenty of practice exercises
+
+11
+00:00:28.07 --> 00:00:31.03
+and work through all the examples.
+

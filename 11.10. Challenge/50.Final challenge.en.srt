@@ -1,0 +1,53 @@
+1
+00:00:00.01 --> 00:00:03.06
+(contemplative synth music)
+
+2
+00:00:03.06 --> 00:00:05.01
+- [Instructor] So on to our final
+
+3
+00:00:05.01 --> 00:00:07.09
+challenge video for this course.
+
+4
+00:00:07.09 --> 00:00:10.01
+It uses most of the concepts
+that we have learned
+
+5
+00:00:10.01 --> 00:00:13.07
+in this course, and this
+is a really fun question,
+
+6
+00:00:13.07 --> 00:00:16.06
+and there are a couple of
+ways to go about solving it.
+
+7
+00:00:16.06 --> 00:00:19.04
+This should take you
+between five to 10 minutes,
+
+8
+00:00:19.04 --> 00:00:21.03
+and as usual, we will work through
+
+9
+00:00:21.03 --> 00:00:24.02
+the solution together in the next video.
+
+10
+00:00:24.02 --> 00:00:27.02
+In every Olympics, which US athlete
+
+11
+00:00:27.02 --> 00:00:29.09
+has won the most total number of medals?
+
+12
+00:00:29.09 --> 00:00:34.00
+Include the athlete's
+discipline in your solution
+

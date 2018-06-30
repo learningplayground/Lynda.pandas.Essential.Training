@@ -1,0 +1,493 @@
+1
+00:00:01.02 --> 00:00:02.02
+- [Instructor] There are several functions
+
+2
+00:00:02.02 --> 00:00:05.02
+you can perform on a groupby object.
+
+3
+00:00:05.02 --> 00:00:08.02
+The size function was gives
+you a count of each group
+
+4
+00:00:08.02 --> 00:00:09.07
+is particularly helpful.
+
+5
+00:00:09.07 --> 00:00:12.06
+But there are several others.
+
+6
+00:00:12.06 --> 00:00:14.07
+Here's a helpful real world tip.
+
+7
+00:00:14.07 --> 00:00:18.09
+Many times you might want to
+use the aggregation function.
+
+8
+00:00:18.09 --> 00:00:21.08
+The aggregation function, AGG,
+
+9
+00:00:21.08 --> 00:00:25.02
+allows multiple statistics
+to be calculated per group
+
+10
+00:00:25.02 --> 00:00:27.02
+in one calculation.
+
+11
+00:00:27.02 --> 00:00:29.04
+Instructions for aggregation are provided
+
+12
+00:00:29.04 --> 00:00:33.06
+in the form of a python
+dictionary or a list.
+
+13
+00:00:33.06 --> 00:00:34.07
+And the dictionary keys
+
+14
+00:00:34.07 --> 00:00:37.00
+are where you specify
+which series or columns
+
+15
+00:00:37.00 --> 00:00:39.07
+in your data frame you want
+to perform the operations
+
+16
+00:00:39.07 --> 00:00:41.06
+and the actual dictionary values
+
+17
+00:00:41.06 --> 00:00:44.03
+specify the function to run.
+
+18
+00:00:44.03 --> 00:00:46.01
+You can also pass custom functions
+
+19
+00:00:46.01 --> 00:00:48.09
+to the list of aggregated calculations
+
+20
+00:00:48.09 --> 00:00:50.03
+and each will be passed the values
+
+21
+00:00:50.03 --> 00:00:53.08
+from the column in your grouped data.
+
+22
+00:00:53.08 --> 00:00:56.01
+Groupby is a very useful Pandas function
+
+23
+00:00:56.01 --> 00:00:57.03
+and it's worth your time
+
+24
+00:00:57.03 --> 00:01:00.05
+making sure you understand how to use it.
+
+25
+00:01:00.05 --> 00:01:02.05
+Let's head over to the Jupyter Notebook
+
+26
+00:01:02.05 --> 00:01:06.01
+to look at a couple of examples.
+
+27
+00:01:06.01 --> 00:01:08.03
+As we mentioned earlier,
+one of the useful functions
+
+28
+00:01:08.03 --> 00:01:11.04
+to use with group by is the size function.
+
+29
+00:01:11.04 --> 00:01:16.06
+So oo.groupby, and if
+we group by the edition,
+
+30
+00:01:16.06 --> 00:01:18.05
+we can pass this to the size function
+
+31
+00:01:18.05 --> 00:01:21.08
+which gives us the count of that group.
+
+32
+00:01:21.08 --> 00:01:22.08
+And so here we can see
+
+33
+00:01:22.08 --> 00:01:29.03
+that there were 151 medals
+distributed in 1896.
+
+34
+00:01:29.03 --> 00:01:30.09
+And there were 2,042 medals
+
+35
+00:01:30.09 --> 00:01:35.07
+distributed in the 2008 Olympics.
+
+36
+00:01:35.07 --> 00:01:38.09
+The aggregate function allows
+for multiple statistics
+
+37
+00:01:38.09 --> 00:01:42.09
+to be calculated per
+group in one calculation.
+
+38
+00:01:42.09 --> 00:01:45.00
+Now because most of the
+series that we are working on
+
+39
+00:01:45.00 --> 00:01:48.04
+in our Olympics data
+set are string objects
+
+40
+00:01:48.04 --> 00:01:51.02
+we won't get many useful insights.
+
+41
+00:01:51.02 --> 00:01:53.03
+Let's group by the edition,
+
+42
+00:01:53.03 --> 00:01:57.04
+the country represented, and the medals.
+
+43
+00:01:57.04 --> 00:02:04.00
+Oo.groupby, and we're
+grouping by the edition,
+
+44
+00:02:04.00 --> 00:02:09.04
+the country, and the medals.
+
+45
+00:02:09.04 --> 00:02:11.09
+And using the aggregate function,
+
+46
+00:02:11.09 --> 00:02:14.08
+we can perform several
+statistical functions
+
+47
+00:02:14.08 --> 00:02:26.07
+so let's use min, max,
+and count as an example.
+
+48
+00:02:26.07 --> 00:02:28.06
+And as we discussed earlier,
+
+49
+00:02:28.06 --> 00:02:31.05
+since most of the columns are strings,
+
+50
+00:02:31.05 --> 00:02:33.08
+we do not get any useful output
+
+51
+00:02:33.08 --> 00:02:36.07
+as a result of the min, max, and count.
+
+52
+00:02:36.07 --> 00:02:38.03
+All min and max are doing
+
+53
+00:02:38.03 --> 00:02:44.09
+are sorting the values in that
+series in alphabetical order.
+
+54
+00:02:44.09 --> 00:02:48.02
+We could try and simplify this.
+
+55
+00:02:48.02 --> 00:02:52.05
+By just using the count function instead.
+
+56
+00:02:52.05 --> 00:02:58.02
+And so we remove min and max.
+
+57
+00:02:58.02 --> 00:03:01.02
+And because this is just a single function
+
+58
+00:03:01.02 --> 00:03:02.07
+we don't have to use a list
+
+59
+00:03:02.07 --> 00:03:06.00
+so we can just use that element
+here and remove the list.
+
+60
+00:03:06.00 --> 00:03:08.01
+And we will get the same result.
+
+61
+00:03:08.01 --> 00:03:09.04
+In this instance, again,
+
+62
+00:03:09.04 --> 00:03:12.02
+the aggregate function
+isn't particularly helpful
+
+63
+00:03:12.02 --> 00:03:14.04
+as we just get a count
+for the number of medals
+
+64
+00:03:14.04 --> 00:03:18.00
+across each of the different series.
+
+65
+00:03:18.00 --> 00:03:20.08
+What we can do instead is to
+just use the size function
+
+66
+00:03:20.08 --> 00:03:24.00
+and we will get a cleaner output.
+
+67
+00:03:24.00 --> 00:03:28.05
+Let's head over to the other
+use of the aggregate function,
+
+68
+00:03:28.05 --> 00:03:31.01
+which is the dict like structure.
+
+69
+00:03:31.01 --> 00:03:33.05
+Now reusing some of the code from earlier,
+
+70
+00:03:33.05 --> 00:03:36.08
+if we group by the edition,
+the country, and the medal,
+
+71
+00:03:36.08 --> 00:03:42.05
+we can use the dict
+structure on the edition
+
+72
+00:03:42.05 --> 00:03:45.08
+and we see that we get a cleaner output.
+
+73
+00:03:45.08 --> 00:03:46.08
+This is a dict structure
+
+74
+00:03:46.08 --> 00:03:52.02
+so I need to end that with a bracket.
+
+75
+00:03:52.02 --> 00:03:54.09
+And again, because we're
+grouping by the edition,
+
+76
+00:03:54.09 --> 00:03:56.06
+the country, and the medal,
+
+77
+00:03:56.06 --> 00:03:59.02
+the min and max are the same values
+
+78
+00:03:59.02 --> 00:04:02.02
+because they correspond
+to the same edition.
+
+79
+00:04:02.02 --> 00:04:03.06
+So remember that this is only because
+
+80
+00:04:03.06 --> 00:04:07.05
+most of the series in our
+dataset is non numeric,
+
+81
+00:04:07.05 --> 00:04:10.02
+that we can't get any
+interesting insights.
+
+82
+00:04:10.02 --> 00:04:11.08
+If each one was numeric,
+
+83
+00:04:11.08 --> 00:04:14.00
+then we would get very
+rich statistical insights
+
+84
+00:04:14.00 --> 00:04:15.08
+for each column where we could specify
+
+85
+00:04:15.08 --> 00:04:20.01
+the min, the max, the
+average, the count, and so on.
+
+86
+00:04:20.01 --> 00:04:24.05
+In the real world, aggregate
+is a very helpful function.
+
+87
+00:04:24.05 --> 00:04:27.00
+Since the edition series in our dataset
+
+88
+00:04:27.00 --> 00:04:29.02
+is the only numeric column,
+
+89
+00:04:29.02 --> 00:04:31.01
+let's see if we can get
+any interesting insights
+
+90
+00:04:31.01 --> 00:04:33.07
+on an athlete such as Carl Lewis,
+
+91
+00:04:33.07 --> 00:04:37.00
+who took part in multiple Olympic games.
+
+92
+00:04:37.00 --> 00:04:41.00
+So let's look for Carl Lewis.
+
+93
+00:04:41.00 --> 00:04:48.05
+So Lewis, Carl.
+
+94
+00:04:48.05 --> 00:04:54.08
+And group by athlete.
+
+95
+00:04:54.08 --> 00:04:58.03
+This time we'll aggregate
+on the edition field
+
+96
+00:04:58.03 --> 00:05:00.04
+as this is the only
+numeric field that we have,
+
+97
+00:05:00.04 --> 00:05:14.08
+so edition, min, max, and count.
+
+98
+00:05:14.08 --> 00:05:17.00
+Any guesses for what this does?
+
+99
+00:05:17.00 --> 00:05:19.03
+Well this is going to
+provide the first Olympics
+
+100
+00:05:19.03 --> 00:05:22.06
+that he won a medal in, which was in 1984.
+
+101
+00:05:22.06 --> 00:05:23.07
+Remember that we don't know
+
+102
+00:05:23.07 --> 00:05:25.07
+if he took part in any earlier Olympics,
+
+103
+00:05:25.07 --> 00:05:28.09
+this dataset is only for
+Olympic medal winners.
+
+104
+00:05:28.09 --> 00:05:31.01
+We also have the last
+Olympics that he took part in
+
+105
+00:05:31.01 --> 00:05:32.06
+which is in 1996,
+
+106
+00:05:32.06 --> 00:05:36.07
+and we see that he's
+won 10 medals in total.
+
+107
+00:05:36.07 --> 00:05:40.01
+So I recommend that you
+use the aggregate function,
+
+108
+00:05:40.01 --> 00:05:41.06
+especially when you have a dataset
+
+109
+00:05:41.06 --> 00:05:45.09
+that has several series
+which are numerical values.
+
+110
+00:05:45.09 --> 00:05:47.09
+The group by is incredibly helpful
+
+111
+00:05:47.09 --> 00:05:49.04
+and I recommend that you take the time
+
+112
+00:05:49.04 --> 00:05:51.08
+to understand how it works.
+
+113
+00:05:51.08 --> 00:05:54.09
+In the next video, we will
+look at a group by challenge.
+

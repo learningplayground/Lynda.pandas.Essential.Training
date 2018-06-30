@@ -1,0 +1,165 @@
+1
+00:00:00.05 --> 00:00:03.02
+- [Instructor] The head and
+the tail return the first
+
+2
+00:00:03.02 --> 00:00:06.06
+and last N rows of a DataFrame.
+
+3
+00:00:06.06 --> 00:00:07.08
+This is one of the first steps
+
+4
+00:00:07.08 --> 00:00:10.09
+after reading a file
+into a Pandas DataFrame
+
+5
+00:00:10.09 --> 00:00:13.05
+just to get a feel of the
+rows and columns involved.
+
+6
+00:00:13.05 --> 00:00:16.01
+By default you will
+get the first five rows
+
+7
+00:00:16.01 --> 00:00:17.02
+and the last five rows
+
+8
+00:00:17.02 --> 00:00:20.01
+if you don't specify any value of N.
+
+9
+00:00:20.01 --> 00:00:23.07
+Let's head over to our Jupyter Notebook.
+
+10
+00:00:23.07 --> 00:00:29.07
+So, we enter our DataFrame
+which is 00 and head.
+
+11
+00:00:29.07 --> 00:00:32.03
+And that gives us the first five rows
+
+12
+00:00:32.03 --> 00:00:33.05
+of our DataFrame.
+
+13
+00:00:33.05 --> 00:00:36.09
+Alternatively, if we
+want the last five rows,
+
+14
+00:00:36.09 --> 00:00:40.03
+we enter 0.tail and that
+gives us the last five rows
+
+15
+00:00:40.03 --> 00:00:42.01
+and so, we can see that the first five,
+
+16
+00:00:42.01 --> 00:00:44.03
+the data seems to be
+sorted by the edition,
+
+17
+00:00:44.03 --> 00:00:45.08
+the first five are the ones
+
+18
+00:00:45.08 --> 00:00:47.04
+for the first Olympics
+
+19
+00:00:47.04 --> 00:00:49.07
+and the last five are from the information
+
+20
+00:00:49.07 --> 00:00:53.06
+that we have on the last
+Olympics from the 2008.
+
+21
+00:00:53.06 --> 00:00:55.00
+A helpful tip is that sometimes
+
+22
+00:00:55.00 --> 00:00:57.05
+if you sorted your DataFrame or series,
+
+23
+00:00:57.05 --> 00:01:00.01
+you might only want to
+display the top three results.
+
+24
+00:01:00.01 --> 00:01:03.05
+You can do that by typing 00.head
+
+25
+00:01:03.05 --> 00:01:05.01
+and three and that will give you
+
+26
+00:01:05.01 --> 00:01:07.09
+the top three rows.
+
+27
+00:01:07.09 --> 00:01:09.09
+Another example of where
+you might want to use
+
+28
+00:01:09.09 --> 00:01:11.09
+the head method is when you've just read
+
+29
+00:01:11.09 --> 00:01:14.03
+in a CSV file into your DataFrame
+
+30
+00:01:14.03 --> 00:01:16.04
+and then you want to view it.
+
+31
+00:01:16.04 --> 00:01:33.03
+So, an example of where the
+head is very helpful is here.
+
+32
+00:01:33.03 --> 00:01:35.00
+I would normally run head
+straight after reading
+
+33
+00:01:35.00 --> 00:01:37.04
+the CSV file into the DataFrame.
+
+34
+00:01:37.04 --> 00:01:38.09
+Here I can check very quickly
+
+35
+00:01:38.09 --> 00:01:40.04
+that the DataFrame is in the format
+
+36
+00:01:40.04 --> 00:01:43.03
+that I would expect.
+
+37
+00:01:43.03 --> 00:01:45.02
+In the next video we will look at info
+
+38
+00:01:45.02 --> 00:01:48.03
+which provides a summary of a DataFrame.
+

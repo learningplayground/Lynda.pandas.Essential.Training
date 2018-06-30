@@ -1,0 +1,300 @@
+1
+00:00:00.06 --> 00:00:03.01
+- [Presenter] Seaborn Basic Plotting.
+
+2
+00:00:03.01 --> 00:00:08.02
+Seaborn is a visualization
+library based on Matplotlib.
+
+3
+00:00:08.02 --> 00:00:10.02
+One of the reasons to use Seaborn
+
+4
+00:00:10.02 --> 00:00:13.08
+is that it produces
+beautiful statistical plots.
+
+5
+00:00:13.08 --> 00:00:15.05
+It is very important to realize
+
+6
+00:00:15.05 --> 00:00:17.05
+that Seaborn is a complement
+
+7
+00:00:17.05 --> 00:00:21.00
+and not a substitute to Matplotlib.
+
+8
+00:00:21.00 --> 00:00:23.01
+Now one of the advantages
+again with using Seaborn
+
+9
+00:00:23.01 --> 00:00:27.00
+is that it works very well with pandas.
+
+10
+00:00:27.00 --> 00:00:30.03
+Seaborn has an excellent examples gallery
+
+11
+00:00:30.03 --> 00:00:33.02
+that provides plots on the website,
+
+12
+00:00:33.02 --> 00:00:34.06
+and if you click on any of the plots,
+
+13
+00:00:34.06 --> 00:00:38.03
+it provides the code
+to generate that plot.
+
+14
+00:00:38.03 --> 00:00:40.05
+Seaborn, as with Matplotlib,
+
+15
+00:00:40.05 --> 00:00:44.07
+has methods for bar plots,
+histograms and pie charts.
+
+16
+00:00:44.07 --> 00:00:46.05
+Let's take a look at an example
+
+17
+00:00:46.05 --> 00:00:49.00
+of one of the methods, countplot.
+
+18
+00:00:49.00 --> 00:00:53.05
+Countplot has very similar
+parameters to Matplotlib.
+
+19
+00:00:53.05 --> 00:00:57.01
+The data parameter for
+countplot is where you provide
+
+20
+00:00:57.01 --> 00:01:00.03
+the DataFrame or the source for the data.
+
+21
+00:01:00.03 --> 00:01:03.03
+The hue is for the categorical variables.
+
+22
+00:01:03.03 --> 00:01:04.09
+A categorical variable
+
+23
+00:01:04.09 --> 00:01:08.06
+is one that can only take
+a fixed number of values.
+
+24
+00:01:08.06 --> 00:01:09.09
+In the Olympics dataset,
+
+25
+00:01:09.09 --> 00:01:13.03
+we have a couple of examples
+of categorical variables.
+
+26
+00:01:13.03 --> 00:01:15.06
+There are only a limited number of sports,
+
+27
+00:01:15.06 --> 00:01:17.07
+the gender is either male or female,
+
+28
+00:01:17.07 --> 00:01:21.03
+and medals are gold, silver or bronze.
+
+29
+00:01:21.03 --> 00:01:24.06
+The hue allows you to specify
+a categorical variable
+
+30
+00:01:24.06 --> 00:01:27.00
+in a different color.
+
+31
+00:01:27.00 --> 00:01:29.02
+The order parameter
+allows you to determine
+
+32
+00:01:29.02 --> 00:01:32.07
+the sequence of the categorical variables.
+
+33
+00:01:32.07 --> 00:01:35.03
+And finally, the palette parameter
+
+34
+00:01:35.03 --> 00:01:36.09
+allows you to specify colors
+
+35
+00:01:36.09 --> 00:01:40.02
+for the different levels
+of the hue variable.
+
+36
+00:01:40.02 --> 00:01:43.09
+So when would you use
+Seaborn versus Matplotlib?
+
+37
+00:01:43.09 --> 00:01:45.08
+If you're running a couple of scripts,
+
+38
+00:01:45.08 --> 00:01:48.05
+then Matplotlib with pyplot is easy to use
+
+39
+00:01:48.05 --> 00:01:52.02
+and great for bar charts,
+pie charts and so on.
+
+40
+00:01:52.02 --> 00:01:53.07
+If you're looking to write short scripts
+
+41
+00:01:53.07 --> 00:01:56.04
+to deal with things like categorical data,
+
+42
+00:01:56.04 --> 00:01:58.08
+or more advanced statistical plots,
+
+43
+00:01:58.08 --> 00:02:02.00
+or creating other kinds
+of plots such as heatmaps,
+
+44
+00:02:02.00 --> 00:02:05.00
+then Seaborn is going to be your choice.
+
+45
+00:02:05.00 --> 00:02:09.06
+Let's head over to the Jupyter
+Notebook for an example.
+
+46
+00:02:09.06 --> 00:02:13.07
+Now because we have
+already imported Matplotlib
+
+47
+00:02:13.07 --> 00:02:16.06
+and the pandas library
+and the dataset earlier,
+
+48
+00:02:16.06 --> 00:02:20.06
+we don't need to do that again.
+
+49
+00:02:20.06 --> 00:02:23.09
+What we do need to do is to
+import the Seaborn library.
+
+50
+00:02:23.09 --> 00:02:30.02
+So import Seaborn as sns and run that.
+
+51
+00:02:30.02 --> 00:02:31.08
+Now let's understand a little bit more
+
+52
+00:02:31.08 --> 00:02:34.07
+about the countplot method.
+
+53
+00:02:34.07 --> 00:02:37.07
+How many medals have
+been won by men and women
+
+54
+00:02:37.07 --> 00:02:40.00
+in the history of the Olympics?
+
+55
+00:02:40.00 --> 00:02:45.00
+Well, using the sns library,
+
+56
+00:02:45.00 --> 00:02:49.09
+we know that we're trying to
+determine the number of medals,
+
+57
+00:02:49.09 --> 00:02:55.05
+our data source is our DataFrame oo,
+
+58
+00:02:55.05 --> 00:02:57.05
+and we can see here that
+the number of medals won
+
+59
+00:02:57.05 --> 00:02:59.07
+by men and women in the
+history of the Olympics
+
+60
+00:02:59.07 --> 00:03:02.07
+is presented in this plot.
+
+61
+00:03:02.07 --> 00:03:04.04
+Now if we wanted to know the number of
+
+62
+00:03:04.04 --> 00:03:08.05
+gold, silver and bronze
+medals won for each gender,
+
+63
+00:03:08.05 --> 00:03:11.03
+this is where we can use
+the categorical variable.
+
+64
+00:03:11.03 --> 00:03:16.05
+And all we need to do here
+is to add hue equals gender
+
+65
+00:03:16.05 --> 00:03:19.02
+and that will allow us to present
+
+66
+00:03:19.02 --> 00:03:22.06
+the distribution of gold,
+silver and bronze medals
+
+67
+00:03:22.06 --> 00:03:26.00
+amongst the men and the women.
+
+68
+00:03:26.00 --> 00:03:29.02
+In the next video, we will
+look at a plotting challenge.
+

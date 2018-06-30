@@ -1,0 +1,63 @@
+1
+00:00:03.08 --> 00:00:05.01
+- [Instructor] So let's get started
+
+2
+00:00:05.01 --> 00:00:06.08
+with our first challenge questions.
+
+3
+00:00:06.08 --> 00:00:08.09
+This should be fairly easy,
+so it should take you less
+
+4
+00:00:08.09 --> 00:00:11.03
+than five minutes.
+
+5
+00:00:11.03 --> 00:00:14.03
+The first one is list
+our Olympics DataFrame,
+
+6
+00:00:14.03 --> 00:00:17.09
+list only the NOC column,
+that's the countries
+
+7
+00:00:17.09 --> 00:00:21.04
+the athletes represent using
+both the square bracket
+
+8
+00:00:21.04 --> 00:00:24.03
+notation and the dot notation.
+
+9
+00:00:24.03 --> 00:00:27.02
+What type is this object?
+
+10
+00:00:27.02 --> 00:00:30.07
+And finally, list the edition,
+the city, the athlete's name
+
+11
+00:00:30.07 --> 00:00:32.03
+and the medal columns.
+
+12
+00:00:32.03 --> 00:00:34.02
+What type is this object?
+
+13
+00:00:34.02 --> 00:00:37.09
+In this next video, I will
+work through these solutions
+
+14
+00:00:37.09 --> 00:00:41.04
+so that you can see how I
+would go about solving them.
+

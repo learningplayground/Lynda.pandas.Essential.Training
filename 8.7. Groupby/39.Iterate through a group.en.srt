@@ -1,0 +1,168 @@
+1
+00:00:00.07 --> 00:00:02.08
+- [Narrator] We can
+iterate through groups.
+
+2
+00:00:02.08 --> 00:00:04.02
+As we mentioned earlier,
+
+3
+00:00:04.02 --> 00:00:06.03
+each of these groups are data frames.
+
+4
+00:00:06.03 --> 00:00:09.03
+What we can do here,
+is to print out the key
+
+5
+00:00:09.03 --> 00:00:11.09
+and then print out the rows
+corresponding to that key.
+
+6
+00:00:11.09 --> 00:00:15.03
+As an example, on the olympics
+dataset we are working on,
+
+7
+00:00:15.03 --> 00:00:17.04
+if we group by each olympic here,
+
+8
+00:00:17.04 --> 00:00:20.02
+then the key would be the
+olympic edition or year,
+
+9
+00:00:20.02 --> 00:00:21.03
+and the group portion would be
+
+10
+00:00:21.03 --> 00:00:24.03
+all of the rows corresponding
+to that edition.
+
+11
+00:00:24.03 --> 00:00:26.06
+Then Groupby prints the
+next olympic edition,
+
+12
+00:00:26.06 --> 00:00:29.08
+followed by all of the rows
+corresponding to that edition.
+
+13
+00:00:29.08 --> 00:00:33.00
+Let's take a look in our Jupyter notebook.
+
+14
+00:00:33.00 --> 00:00:34.07
+So what we want to do here is to look
+
+15
+00:00:34.07 --> 00:00:36.09
+through the Groupby object,
+
+16
+00:00:36.09 --> 00:00:41.07
+for group key
+
+17
+00:00:41.07 --> 00:00:46.02
+group value in,
+
+18
+00:00:46.02 --> 00:00:49.08
+and then a Groupby object
+
+19
+00:00:49.08 --> 00:00:54.00
+which is Edition in this case,
+we are grouping by edition.
+
+20
+00:00:54.00 --> 00:00:56.05
+This is just a very simple Python script.
+
+21
+00:00:56.05 --> 00:01:00.08
+I want to print the group key
+
+22
+00:01:00.08 --> 00:01:05.07
+and I want to print the group value.
+
+23
+00:01:05.07 --> 00:01:10.03
+And I change that to value,
+
+24
+00:01:10.03 --> 00:01:12.07
+and the group value
+
+25
+00:01:12.07 --> 00:01:15.09
+and let's run this.
+
+26
+00:01:15.09 --> 00:01:17.00
+And basically what we see here
+
+27
+00:01:17.00 --> 00:01:19.07
+is what we saw in the
+list command earlier,
+
+28
+00:01:19.07 --> 00:01:22.09
+so this is the key, which is the edition,
+
+29
+00:01:22.09 --> 00:01:24.07
+or the year of that olympics, and then
+
+30
+00:01:24.07 --> 00:01:26.07
+all of the rows
+corresponding to that year,
+
+31
+00:01:26.07 --> 00:01:29.01
+the next one will be for the 1900,
+
+32
+00:01:29.01 --> 00:01:32.06
+and all of the rows
+corresponding to that year.
+
+33
+00:01:32.06 --> 00:01:37.00
+So let's confirm what type
+each of these groups are.
+
+34
+00:01:37.00 --> 00:01:39.09
+So the rows corresponding to each year.
+
+35
+00:01:39.09 --> 00:01:44.02
+So remember, that type has
+the variable group value
+
+36
+00:01:44.02 --> 00:01:48.06
+so I type group value
+
+37
+00:01:48.06 --> 00:01:53.01
+and not surprisingly,
+this is a data frame.
+
+38
+00:01:53.01 --> 00:01:56.07
+In the next video, we will
+look at Groupby computations.
+

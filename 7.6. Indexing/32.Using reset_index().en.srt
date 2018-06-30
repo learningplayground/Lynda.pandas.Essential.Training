@@ -1,0 +1,118 @@
+1
+00:00:00.02 --> 00:00:02.00
+- [Narrator] Now, not surprisingly,
+
+2
+00:00:02.00 --> 00:00:06.04
+the opposite of setting an
+index is to reset the index.
+
+3
+00:00:06.04 --> 00:00:09.01
+And what we're doing here is
+we're returning a DataFrame
+
+4
+00:00:09.01 --> 00:00:13.05
+to its default, integer-based index.
+
+5
+00:00:13.05 --> 00:00:17.02
+Let's head over to our Jupyter
+notebook for an example.
+
+6
+00:00:17.02 --> 00:00:20.02
+Now we know that ath is a data frame
+
+7
+00:00:20.02 --> 00:00:22.03
+that is indexed by athlete,
+
+8
+00:00:22.03 --> 00:00:24.07
+because we did this in the previous video.
+
+9
+00:00:24.07 --> 00:00:28.06
+So let's reset the ath data frame,
+
+10
+00:00:28.06 --> 00:00:32.00
+so that it is indexed by the integers.
+
+11
+00:00:32.00 --> 00:00:36.07
+So ath.reset_index,
+
+12
+00:00:36.07 --> 00:00:39.01
+and SHIFT and TAB to look
+at the options, and we see
+
+13
+00:00:39.01 --> 00:00:40.04
+that we run into the same problem
+
+14
+00:00:40.04 --> 00:00:44.01
+that we did with set_index
+where we need to specify
+
+15
+00:00:44.01 --> 00:00:46.03
+that the inplace is true, if we want
+
+16
+00:00:46.03 --> 00:00:48.05
+to do it to the ath data frame,
+
+17
+00:00:48.05 --> 00:00:51.08
+or we can specify that
+inplace equals false,
+
+18
+00:00:51.08 --> 00:00:53.05
+and then we need to set this data frame
+
+19
+00:00:53.05 --> 00:00:55.05
+to another data frame.
+
+20
+00:00:55.05 --> 00:00:59.08
+So let's say, inplace equals true.
+
+21
+00:00:59.08 --> 00:01:04.05
+And we do an ath.head and
+here we expect the index
+
+22
+00:01:04.05 --> 00:01:09.09
+to be back to the integer-based
+indices for our data frame.
+
+23
+00:01:09.09 --> 00:01:13.00
+In the real world, you can
+often use the reset index,
+
+24
+00:01:13.00 --> 00:01:14.05
+especially when you're trying to determine
+
+25
+00:01:14.05 --> 00:01:16.05
+which is the best series to use
+
+26
+00:01:16.05 --> 00:01:19.05
+as an index for your data frame.
+
+27
+00:01:19.05 --> 00:01:23.07
+In the next video, we will
+look at sorting an index.
+

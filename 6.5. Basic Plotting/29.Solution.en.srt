@@ -1,0 +1,427 @@
+1
+00:00:03.06 --> 00:00:06.02
+- [Instructor] Onto the
+basic plotting challenge.
+
+2
+00:00:06.02 --> 00:00:08.00
+So, we've imported Pandas.
+
+3
+00:00:08.00 --> 00:00:09.04
+The next thing we're going to have to do
+
+4
+00:00:09.04 --> 00:00:15.01
+is to import matplotlib.
+
+5
+00:00:15.01 --> 00:00:21.04
+So, pyplot as plt
+
+6
+00:00:21.04 --> 00:00:23.02
+and we want to be able to see the plots
+
+7
+00:00:23.02 --> 00:00:25.01
+in our Jupyter Notebook.
+
+8
+00:00:25.01 --> 00:00:31.02
+We'll also want to import seaborn as sns.
+
+9
+00:00:31.02 --> 00:00:37.07
+Let me just run all of these cells again.
+
+10
+00:00:37.07 --> 00:00:39.02
+Right, onto the first question.
+
+11
+00:00:39.02 --> 00:00:40.09
+Plot the number of medals achieved
+
+12
+00:00:40.09 --> 00:00:43.06
+by the Chinese team,
+that's the men and women,
+
+13
+00:00:43.06 --> 00:00:49.02
+in Beijing 2008 using
+matplotlib and seaborn.
+
+14
+00:00:49.02 --> 00:00:52.03
+So, in Pandas, we want
+to be able to identify
+
+15
+00:00:52.03 --> 00:00:54.04
+the men and women who have participated
+
+16
+00:00:54.04 --> 00:00:55.08
+from team China
+
+17
+00:00:55.08 --> 00:00:56.09
+in the Beijing Olympics
+
+18
+00:00:56.09 --> 00:00:59.00
+which is in 2008.
+
+19
+00:00:59.00 --> 00:01:05.02
+So, 00 for the DataFrame, 00.Edition
+
+20
+00:01:05.02 --> 00:01:07.08
+and we're looking for 2008
+
+21
+00:01:07.08 --> 00:01:09.07
+and remember that because we are going
+
+22
+00:01:09.07 --> 00:01:11.01
+to be having multiple conditions,
+
+23
+00:01:11.01 --> 00:01:15.01
+we need to enclose them in brackets
+
+24
+00:01:15.01 --> 00:01:17.02
+and we're looking for team China.
+
+25
+00:01:17.02 --> 00:01:19.07
+We get that information
+from the series NOC,
+
+26
+00:01:19.07 --> 00:01:24.00
+so 00.NOC equals CHN.
+
+27
+00:01:24.00 --> 00:01:27.06
+Now, I'm going to assign this
+to the DataFrame men and women,
+
+28
+00:01:27.06 --> 00:01:30.05
+so mw and let's just check
+
+29
+00:01:30.05 --> 00:01:32.01
+and make sure that we've got some entries
+
+30
+00:01:32.01 --> 00:01:35.08
+in that DataFrame.
+
+31
+00:01:35.08 --> 00:01:37.07
+Right, now if I want to plot this
+
+32
+00:01:37.07 --> 00:01:39.03
+using matplotlib,
+
+33
+00:01:39.03 --> 00:01:42.01
+I want the gender, so men and women,
+
+34
+00:01:42.01 --> 00:01:43.08
+the gender series,
+
+35
+00:01:43.08 --> 00:01:47.07
+value_counts and let's just view that
+
+36
+00:01:47.07 --> 00:01:57.00
+and then plot kind equals
+bar for the bar plot.
+
+37
+00:01:57.00 --> 00:02:00.00
+And I've got the men and women here.
+
+38
+00:02:00.00 --> 00:02:03.07
+Now, using seaborn I
+can use the countplot,
+
+39
+00:02:03.07 --> 00:02:08.06
+so sns countplot and
+remember I need to specify
+
+40
+00:02:08.06 --> 00:02:10.06
+the dataset that I received that from,
+
+41
+00:02:10.06 --> 00:02:14.03
+so data equals 00,
+
+42
+00:02:14.03 --> 00:02:16.05
+that's from the Olympics DataFrame,
+
+43
+00:02:16.05 --> 00:02:18.01
+and we're plotting the gender,
+
+44
+00:02:18.01 --> 00:02:22.02
+so that's in quotes.
+
+45
+00:02:22.02 --> 00:02:23.06
+And you can see that the seaborn plot
+
+46
+00:02:23.06 --> 00:02:27.08
+looks nicer than the matplotlib plot.
+
+47
+00:02:27.08 --> 00:02:29.03
+Onto the next question.
+
+48
+00:02:29.03 --> 00:02:30.08
+How can you use colormaps
+
+49
+00:02:30.08 --> 00:02:33.01
+to give the data more meaning?
+
+50
+00:02:33.01 --> 00:02:36.06
+Now, knowing that we're
+plotting men versus women,
+
+51
+00:02:36.06 --> 00:02:38.01
+let's see if we can determine
+
+52
+00:02:38.01 --> 00:02:40.00
+using the colormap classes
+
+53
+00:02:40.00 --> 00:02:42.05
+what would provide a more intuitive plot,
+
+54
+00:02:42.05 --> 00:02:44.09
+so for example, if we can
+get the men to be in blue
+
+55
+00:02:44.09 --> 00:02:47.01
+and the women to be in pink or red,
+
+56
+00:02:47.01 --> 00:02:50.03
+that would be a far
+better, more intuitive plot
+
+57
+00:02:50.03 --> 00:02:53.02
+than using any other random color.
+
+58
+00:02:53.02 --> 00:02:54.09
+Now, looking through these colormaps,
+
+59
+00:02:54.09 --> 00:02:58.01
+we can see for example
+that coolwarm and bwr
+
+60
+00:02:58.01 --> 00:02:59.08
+meet those conditions
+
+61
+00:02:59.08 --> 00:03:01.09
+and we have blue on one end
+
+62
+00:03:01.09 --> 00:03:04.00
+and we've got pink or
+red at the other end,
+
+63
+00:03:04.00 --> 00:03:08.05
+so let's use bwr as an example.
+
+64
+00:03:08.05 --> 00:03:14.02
+So, we can take the code
+from the previous line here
+
+65
+00:03:14.02 --> 00:03:15.04
+and what we need to do here
+
+66
+00:03:15.04 --> 00:03:18.07
+is to just use a palette
+
+67
+00:03:18.07 --> 00:03:24.04
+and we're going to use the palette bwr.
+
+68
+00:03:24.04 --> 00:03:26.00
+Now, doesn't that look so much better
+
+69
+00:03:26.00 --> 00:03:29.09
+and more intuitive than
+the plot that we had above
+
+70
+00:03:29.09 --> 00:03:32.03
+with the blue and the green?
+
+71
+00:03:32.03 --> 00:03:34.09
+Plot the number of gold, silver and bronze
+
+72
+00:03:34.09 --> 00:03:37.08
+for each gender.
+
+73
+00:03:37.08 --> 00:03:42.06
+So, if we use seaborn's countplot,
+
+74
+00:03:42.06 --> 00:03:45.08
+and we're looking for the
+X variable to be the medal,
+
+75
+00:03:45.08 --> 00:03:49.00
+our DataFrame is mw
+
+76
+00:03:49.00 --> 00:03:57.00
+and the hue which is the
+categorical variable is gender.
+
+77
+00:03:57.00 --> 00:03:58.08
+And we can see that we've
+got the distribution
+
+78
+00:03:58.08 --> 00:04:01.04
+of medals for team China
+
+79
+00:04:01.04 --> 00:04:04.03
+across the gold, silver and bronze.
+
+80
+00:04:04.03 --> 00:04:06.04
+So, how can we build on the previous plot
+
+81
+00:04:06.04 --> 00:04:09.02
+and make the data more intuitive?
+
+82
+00:04:09.02 --> 00:04:14.04
+Well, let's take the one
+line script from here
+
+83
+00:04:14.04 --> 00:04:16.09
+and remember from the
+earlier part of the solution
+
+84
+00:04:16.09 --> 00:04:20.04
+we determined that the colormaps bwr
+
+85
+00:04:20.04 --> 00:04:23.09
+helped to provide an intuitive color
+
+86
+00:04:23.09 --> 00:04:26.01
+for men and women.
+
+87
+00:04:26.01 --> 00:04:35.02
+So, if we use a palette of bwr,
+
+88
+00:04:35.02 --> 00:04:37.07
+we have got a far more
+meaningful plot here.
+
+89
+00:04:37.07 --> 00:04:39.01
+Now, there seems to be one problem
+
+90
+00:04:39.01 --> 00:04:41.02
+that we have because we've got the order
+
+91
+00:04:41.02 --> 00:04:46.07
+of the X axis as being
+silver, bronze and gold
+
+92
+00:04:46.07 --> 00:04:48.03
+and we can easily change that
+
+93
+00:04:48.03 --> 00:04:51.03
+by determining the order of
+the categorical variables,
+
+94
+00:04:51.03 --> 00:04:59.09
+so we specify order equals
+gold, silver and bronze.
+
+95
+00:04:59.09 --> 00:05:03.07
+And by changing the colors
+for the men and the women plot
+
+96
+00:05:03.07 --> 00:05:05.01
+and by changing the order
+
+97
+00:05:05.01 --> 00:05:07.08
+for the gold, silver and bronze medals,
+
+98
+00:05:07.08 --> 00:05:12.02
+we've made this a far more
+intuitive and usable plot.
+
+99
+00:05:12.02 --> 00:05:13.01
+In the next video,
+
+100
+00:05:13.01 --> 00:05:14.09
+we will look at indexes.
+

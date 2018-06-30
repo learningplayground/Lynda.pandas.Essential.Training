@@ -1,0 +1,72 @@
+1
+00:00:03.09 --> 00:00:04.09
+- [Instructor] I'm really looking forward
+
+2
+00:00:04.09 --> 00:00:06.06
+to the challenges in this video.
+
+3
+00:00:06.06 --> 00:00:08.02
+I've got a fun couple of questions,
+
+4
+00:00:08.02 --> 00:00:10.03
+and this is a good opportunity
+
+5
+00:00:10.03 --> 00:00:13.08
+to practice combining stack and unstack,
+
+6
+00:00:13.08 --> 00:00:16.06
+groupby, and plotting.
+
+7
+00:00:16.06 --> 00:00:18.08
+These should take you
+between five and 10 minutes,
+
+8
+00:00:18.08 --> 00:00:21.01
+so let's have a look at the questions.
+
+9
+00:00:21.01 --> 00:00:24.06
+Plot the number of gold
+medals won by the USA male
+
+10
+00:00:24.06 --> 00:00:28.01
+and female athletes throughout
+the history of the Olympics.
+
+11
+00:00:28.01 --> 00:00:30.04
+And finally, plot the five athletes
+
+12
+00:00:30.04 --> 00:00:32.02
+who have won the most gold medals
+
+13
+00:00:32.02 --> 00:00:33.06
+over the history of the Olympics.
+
+14
+00:00:33.06 --> 00:00:36.07
+When there is a tie, consider
+the number of silver medals
+
+15
+00:00:36.07 --> 00:00:38.08
+and then bronze medals.
+
+16
+00:00:38.08 --> 00:00:41.06
+In the next video, I will work through
+
+17
+00:00:41.06 --> 00:00:43.06
+these solutions with you.
+

@@ -1,0 +1,131 @@
+1
+00:00:03.06 --> 00:00:04.08
+- [Instructor] I've got
+a couple of fun problems
+
+2
+00:00:04.08 --> 00:00:06.06
+to work through.
+
+3
+00:00:06.06 --> 00:00:08.07
+We're going to practice
+using some of the tools
+
+4
+00:00:08.07 --> 00:00:10.00
+that we've been learning
+
+5
+00:00:10.00 --> 00:00:14.03
+such as head, value
+counts and sort values.
+
+6
+00:00:14.03 --> 00:00:16.07
+Why don't you have a go
+at the questions first.
+
+7
+00:00:16.07 --> 00:00:17.05
+Once you are done,
+
+8
+00:00:17.05 --> 00:00:19.01
+I'll show you in the next video
+
+9
+00:00:19.01 --> 00:00:21.02
+how I went about answering them
+
+10
+00:00:21.02 --> 00:00:23.02
+but remember there's
+often more than one way
+
+11
+00:00:23.02 --> 00:00:25.00
+to do this in Pandas.
+
+12
+00:00:25.00 --> 00:00:27.01
+These questions should
+take you between five
+
+13
+00:00:27.01 --> 00:00:28.04
+and 10 minutes,
+
+14
+00:00:28.04 --> 00:00:30.09
+so let's have a quick
+look at the questions.
+
+15
+00:00:30.09 --> 00:00:34.05
+In which events did
+Jesse Owens win a medal?
+
+16
+00:00:34.05 --> 00:00:37.06
+Which country has won the
+most men's gold medals
+
+17
+00:00:37.06 --> 00:00:40.02
+in singles badminton over the years?
+
+18
+00:00:40.02 --> 00:00:45.00
+Sort the results alphabetically
+by the players' names.
+
+19
+00:00:45.00 --> 00:00:48.01
+Which three countries
+have won the most medals
+
+20
+00:00:48.01 --> 00:00:49.08
+in recent years,
+
+21
+00:00:49.08 --> 00:00:53.07
+that's from 1984 to 2008?
+
+22
+00:00:53.07 --> 00:00:57.04
+And finally, display the
+male gold medal winners
+
+23
+00:00:57.04 --> 00:01:00.01
+of the 100-meters track
+and field sprint event
+
+24
+00:01:00.01 --> 00:01:01.03
+over the years.
+
+25
+00:01:01.03 --> 00:01:04.08
+List the results starting
+with the most recent first
+
+26
+00:01:04.08 --> 00:01:07.02
+and show the Olympic city, edition,
+
+27
+00:01:07.02 --> 00:01:11.00
+athlete and the country they represent.
+
+28
+00:01:11.00 --> 00:01:12.08
+In the next video I'll show you
+
+29
+00:01:12.08 --> 00:01:15.05
+how I went about
+answering these questions.
+

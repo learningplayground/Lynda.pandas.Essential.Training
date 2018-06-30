@@ -1,0 +1,533 @@
+1
+00:00:03.06 --> 00:00:04.07
+- [Instructor] Okay, so let's get started
+
+2
+00:00:04.07 --> 00:00:06.09
+on the stack and unstack
+challenge questions
+
+3
+00:00:06.09 --> 00:00:10.00
+and remember that this is just
+the way I'm going to solve them.
+
+4
+00:00:10.00 --> 00:00:13.02
+There are multiple ways
+of solving these problems.
+
+5
+00:00:13.02 --> 00:00:17.04
+So, let's import pandas as pd.
+
+6
+00:00:17.04 --> 00:00:20.01
+Root in the data into our data frame.
+
+7
+00:00:20.01 --> 00:00:22.04
+Now, we want to plot the
+number of gold medals
+
+8
+00:00:22.04 --> 00:00:24.09
+won by USA male and female athletes
+
+9
+00:00:24.09 --> 00:00:27.02
+throughout the history of the Olympics.
+
+10
+00:00:27.02 --> 00:00:28.08
+So, the first thing we want to do
+
+11
+00:00:28.08 --> 00:00:31.07
+is to determine which
+athletes are from the USA
+
+12
+00:00:31.07 --> 00:00:34.04
+so, oo.NOC
+
+13
+00:00:34.04 --> 00:00:38.01
+equals USA
+
+14
+00:00:38.01 --> 00:00:40.09
+and because we're going to
+have more than one condition
+
+15
+00:00:40.09 --> 00:00:44.04
+we include the conditions in parentheses
+
+16
+00:00:44.04 --> 00:00:46.03
+and we want the athletes
+that have won a gold medal
+
+17
+00:00:46.03 --> 00:00:52.03
+so, oo.Medal equals Gold.
+
+18
+00:00:52.03 --> 00:01:01.03
+And let's store that in
+the data frame gu for gold.
+
+19
+00:01:01.03 --> 00:01:03.07
+And let's confirm that this data frame
+
+20
+00:01:03.07 --> 00:01:05.06
+has the information we want.
+
+21
+00:01:05.06 --> 00:01:08.09
+So, the athletes are all from the USA,
+
+22
+00:01:08.09 --> 00:01:10.04
+we can see that in terms of gender
+
+23
+00:01:10.04 --> 00:01:12.06
+there's both male and female athletes.
+
+24
+00:01:12.06 --> 00:01:15.03
+All of them have won gold medals
+
+25
+00:01:15.03 --> 00:01:17.04
+and so we're good to go.
+
+26
+00:01:17.04 --> 00:01:18.03
+Now the next thing is
+
+27
+00:01:18.03 --> 00:01:19.09
+because we are looking for
+
+28
+00:01:19.09 --> 00:01:22.06
+athletes across the
+history of the Olympics
+
+29
+00:01:22.06 --> 00:01:27.00
+we will want to group by
+the edition and the gender.
+
+30
+00:01:27.00 --> 00:01:31.07
+So, let's group by edition
+
+31
+00:01:31.07 --> 00:01:37.06
+and gender.
+
+32
+00:01:37.06 --> 00:01:40.00
+And we can see here, that we've got male
+
+33
+00:01:40.00 --> 00:01:42.08
+and female athletes who have won medals
+
+34
+00:01:42.08 --> 00:01:43.09
+across the different editions.
+
+35
+00:01:43.09 --> 00:01:46.07
+So, we're getting closer
+to the solution we want.
+
+36
+00:01:46.07 --> 00:01:48.07
+Now, in order to be able to plot this,
+
+37
+00:01:48.07 --> 00:01:51.04
+let's use the unstack command
+so that we have the males
+
+38
+00:01:51.04 --> 00:01:54.08
+and female athlete medals in a data frame.
+
+39
+00:01:54.08 --> 00:01:56.05
+So, I'm going to do unstack.
+
+40
+00:01:56.05 --> 00:02:02.00
+And I'm going to specify that
+I want to unstack by gender.
+
+41
+00:02:02.00 --> 00:02:02.08
+Now, what I want to do is
+
+42
+00:02:02.08 --> 00:02:04.06
+I want to get rid of the rows
+
+43
+00:02:04.06 --> 00:02:06.03
+where we have NaN or data values
+
+44
+00:02:06.03 --> 00:02:09.07
+because sometimes that causes
+problems when using a plot.
+
+45
+00:02:09.07 --> 00:02:16.02
+So, I'm going to say,
+fill value equals zero.
+
+46
+00:02:16.02 --> 00:02:19.02
+Right now we're in a position to plot.
+
+47
+00:02:19.02 --> 00:02:20.05
+So, I'm going to say, plot
+
+48
+00:02:20.05 --> 00:02:21.09
+and before I say plot I remember
+
+49
+00:02:21.09 --> 00:02:25.05
+that I haven't actually
+imported the matplotlib library.
+
+50
+00:02:25.05 --> 00:02:28.08
+If I do a plot, I will end
+up with this statement,
+
+51
+00:02:28.08 --> 00:02:29.06
+but clearly I need to be able
+
+52
+00:02:29.06 --> 00:02:32.05
+to plot it in my Jupyter notebook.
+
+53
+00:02:32.05 --> 00:02:39.02
+So, let me add my matplotlib
+library here, so matplotlib.
+
+54
+00:02:39.02 --> 00:02:47.02
+As pot and I want to be
+able to plot in line.
+
+55
+00:02:47.02 --> 00:02:51.09
+So, I go back to the statement
+
+56
+00:02:51.09 --> 00:02:55.03
+and I have a plot to cross
+the different editions
+
+57
+00:02:55.03 --> 00:02:57.04
+for male and female US athletes
+
+58
+00:02:57.04 --> 00:03:00.08
+across the history of the Olympics.
+
+59
+00:03:00.08 --> 00:03:06.04
+Let's head over to the next question.
+
+60
+00:03:06.04 --> 00:03:08.02
+So, plot the five athletes
+
+61
+00:03:08.02 --> 00:03:10.05
+who have won the most gold medals
+
+62
+00:03:10.05 --> 00:03:12.04
+over the history of the Olympics.
+
+63
+00:03:12.04 --> 00:03:15.09
+When there is a tie, consider
+the number of silver medals,
+
+64
+00:03:15.09 --> 00:03:18.00
+and then bronze medals.
+
+65
+00:03:18.00 --> 00:03:19.02
+So, again we are going to want to group
+
+66
+00:03:19.02 --> 00:03:21.07
+by the athletes and the medals.
+
+67
+00:03:21.07 --> 00:03:25.04
+So, oo, which is the
+name of my data frame,
+
+68
+00:03:25.04 --> 00:03:29.08
+group by,
+
+69
+00:03:29.08 --> 00:03:33.00
+Athlete,
+
+70
+00:03:33.00 --> 00:03:37.09
+and Medals.
+
+71
+00:03:37.09 --> 00:03:39.05
+And I can see that I've
+got the different athletes
+
+72
+00:03:39.05 --> 00:03:42.04
+and the number of medals that they've won.
+
+73
+00:03:42.04 --> 00:03:44.03
+Now, I want to be able
+to do an unstack command
+
+74
+00:03:44.03 --> 00:03:45.07
+to separate out the number
+
+75
+00:03:45.07 --> 00:03:48.04
+of gold, silver and bronze medals.
+
+76
+00:03:48.04 --> 00:03:50.02
+So, I do an unstack
+
+77
+00:03:50.02 --> 00:03:54.03
+and I want to unstack my medal.
+
+78
+00:03:54.03 --> 00:04:01.08
+And our fill value equals zero.
+
+79
+00:04:01.08 --> 00:04:03.05
+Now, I've got the athletes
+
+80
+00:04:03.05 --> 00:04:05.06
+and the number of medals
+that they have won.
+
+81
+00:04:05.06 --> 00:04:07.03
+The challenge that I have here is that
+
+82
+00:04:07.03 --> 00:04:09.05
+this is not sorted in any way.
+
+83
+00:04:09.05 --> 00:04:11.03
+So, if I want to determine
+the five athletes
+
+84
+00:04:11.03 --> 00:04:13.02
+who've won the most number of gold medals,
+
+85
+00:04:13.02 --> 00:04:14.09
+I need to be able to sort this data frame.
+
+86
+00:04:14.09 --> 00:04:18.04
+So, let's store this data frame
+
+87
+00:04:18.04 --> 00:04:21.02
+and we'll call the data frame name g
+
+88
+00:04:21.02 --> 00:04:24.05
+and let's just make sure that
+there's no problems there
+
+89
+00:04:24.05 --> 00:04:26.04
+and now I'm going to sort by
+
+90
+00:04:26.04 --> 00:04:28.02
+gold, silver, and bronze medals.
+
+91
+00:04:28.02 --> 00:04:32.06
+So, data frame g, sort values
+
+92
+00:04:32.06 --> 00:04:35.00
+by athletes who've won gold,
+
+93
+00:04:35.00 --> 00:04:37.08
+and then silver,
+
+94
+00:04:37.08 --> 00:04:42.03
+and then bronze.
+
+95
+00:04:42.03 --> 00:04:44.00
+And I can see that this is done
+
+96
+00:04:44.00 --> 00:04:46.04
+exactly what I've requested,
+
+97
+00:04:46.04 --> 00:04:49.02
+but I actually want to
+sort the number of medals,
+
+98
+00:04:49.02 --> 00:04:51.00
+not in ascending order,
+but in descending order.
+
+99
+00:04:51.00 --> 00:04:55.08
+So, I'm going to change
+the ascending flag to false
+
+100
+00:04:55.08 --> 00:04:58.00
+and here I can see that this is sorting by
+
+101
+00:04:58.00 --> 00:04:59.09
+the number of gold medals first,
+
+102
+00:04:59.09 --> 00:05:02.04
+then silver, and then bronze.
+
+103
+00:05:02.04 --> 00:05:03.04
+Now, what would help is that
+
+104
+00:05:03.04 --> 00:05:06.04
+if I actually have this
+data frame in that order.
+
+105
+00:05:06.04 --> 00:05:08.00
+So, gold, silver, and bronze.
+
+106
+00:05:08.00 --> 00:05:09.08
+So, let me change that
+
+107
+00:05:09.08 --> 00:05:14.01
+by including those series in a list.
+
+108
+00:05:14.01 --> 00:05:19.02
+So, gold, silver,
+
+109
+00:05:19.02 --> 00:05:21.08
+and then bronze.
+
+110
+00:05:21.08 --> 00:05:24.06
+And this is exactly
+what I was looking for.
+
+111
+00:05:24.06 --> 00:05:27.01
+Now, what we want is
+the top five athletes.
+
+112
+00:05:27.01 --> 00:05:30.06
+So, I can very easily
+get the top five athletes
+
+113
+00:05:30.06 --> 00:05:32.01
+by just doing a head
+
+114
+00:05:32.01 --> 00:05:34.08
+and then if I want to plot that,
+
+115
+00:05:34.08 --> 00:05:43.06
+I plot that using a bar graph.
+
+116
+00:05:43.06 --> 00:05:45.05
+And so I see that the athlete
+
+117
+00:05:45.05 --> 00:05:49.02
+with the most number of
+golds was Michael Phelps
+
+118
+00:05:49.02 --> 00:05:50.03
+followed by the other athletes
+
+119
+00:05:50.03 --> 00:05:54.01
+and then ending with Mark
+Spitz and Carl Lewis.
+
+120
+00:05:54.01 --> 00:05:55.08
+So, you can see that when we use
+
+121
+00:05:55.08 --> 00:05:59.09
+stack, unstack, and group by in tandem,
+
+122
+00:05:59.09 --> 00:06:02.09
+we can do some pretty cool analysis.
+
+123
+00:06:02.09 --> 00:06:04.00
+In the next video,
+
+124
+00:06:04.00 --> 00:06:07.05
+we will look at some more
+advanced data visualizations.
+

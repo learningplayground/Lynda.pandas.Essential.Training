@@ -1,0 +1,139 @@
+1
+00:00:00.05 --> 00:00:02.07
+- [Teacher] When using the stack function,
+
+2
+00:00:02.07 --> 00:00:06.08
+the stack function returns
+a data frame or a series.
+
+3
+00:00:06.08 --> 00:00:08.06
+And notice that you will never have any
+
+4
+00:00:08.06 --> 00:00:13.00
+any values or missing
+data because by default
+
+5
+00:00:13.00 --> 00:00:16.05
+the drop any flag is equal to true.
+
+6
+00:00:16.05 --> 00:00:20.06
+The inner levels of a
+stack function are sorted.
+
+7
+00:00:20.06 --> 00:00:23.01
+So when we do a stack we are returning a
+
+8
+00:00:23.01 --> 00:00:28.06
+data frame or series with a
+new innermost level of rules.
+
+9
+00:00:28.06 --> 00:00:30.09
+So the hundred meters and
+the two hundred meters
+
+10
+00:00:30.09 --> 00:00:34.00
+which are the inner most
+columns are dragged down
+
+11
+00:00:34.00 --> 00:00:36.05
+and if there's 100 or 200
+meter that corresponds to
+
+12
+00:00:36.05 --> 00:00:40.08
+each male or female athlete
+then this is listed.
+
+13
+00:00:40.08 --> 00:00:42.08
+To help you remember the stack function,
+
+14
+00:00:42.08 --> 00:00:44.08
+I try and visualize whether I want to make
+
+15
+00:00:44.08 --> 00:00:47.06
+this data frame taller or wider.
+
+16
+00:00:47.06 --> 00:00:49.08
+If I want to make the data frames taller,
+
+17
+00:00:49.08 --> 00:00:51.04
+then I need to use the stack function
+
+18
+00:00:51.04 --> 00:00:55.02
+because stacking gives
+you a taller data frame.
+
+19
+00:00:55.02 --> 00:00:59.03
+Let's head over to the Jupiter
+notebook to look at stacking.
+
+20
+00:00:59.03 --> 00:01:04.03
+Now remember that our original
+data frame is called DF
+
+21
+00:01:04.03 --> 00:01:06.08
+and if we then us the stack function
+
+22
+00:01:06.08 --> 00:01:10.03
+we are going to end up with the
+taller or longer data frame.
+
+23
+00:01:10.03 --> 00:01:15.05
+So df.stack
+
+24
+00:01:15.05 --> 00:01:17.06
+and we can see that the
+corresponding data frame
+
+25
+00:01:17.06 --> 00:01:19.05
+that's been generated is taller.
+
+26
+00:01:19.05 --> 00:01:22.05
+Now in the real world, I
+prefer to actually specify
+
+27
+00:01:22.05 --> 00:01:26.08
+which column I'm going to be
+using in the stacking function.
+
+28
+00:01:26.08 --> 00:01:33.02
+So I would normally say df.stack
+
+29
+00:01:33.02 --> 00:01:35.01
+and specify the event
+
+30
+00:01:35.01 --> 00:01:38.00
+and I'll get exactly the same data frame.
+
+31
+00:01:38.00 --> 00:01:40.09
+In the next video, we'll cover unstack.
+

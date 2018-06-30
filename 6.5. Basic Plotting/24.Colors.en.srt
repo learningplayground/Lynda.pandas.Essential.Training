@@ -1,0 +1,84 @@
+1
+00:00:00.05 --> 00:00:02.05
+- [Instructor] Plot colors.
+
+2
+00:00:02.05 --> 00:00:05.01
+You have a couple of options
+with regards to plot colors,
+
+3
+00:00:05.01 --> 00:00:07.09
+and you need to just specify
+the name of the color
+
+4
+00:00:07.09 --> 00:00:10.00
+using the color parameter.
+
+5
+00:00:10.00 --> 00:00:11.05
+In addition to this, you can include
+
+6
+00:00:11.05 --> 00:00:15.02
+the type of plot that
+you want and the color.
+
+7
+00:00:15.02 --> 00:00:19.00
+Matplotlib has several inbuilt colors,
+
+8
+00:00:19.00 --> 00:00:22.06
+and they are available on
+the Matplotlib website.
+
+9
+00:00:22.06 --> 00:00:24.03
+Let's head over to the Jupyter Notebook
+
+10
+00:00:24.03 --> 00:00:26.06
+to look at an example.
+
+11
+00:00:26.06 --> 00:00:30.01
+So using the same code as earlier,
+
+12
+00:00:30.01 --> 00:00:35.09
+I'm going to specify that
+the color needs to be plum.
+
+13
+00:00:35.09 --> 00:00:39.01
+And you can see that you
+get the default line plot
+
+14
+00:00:39.01 --> 00:00:41.02
+in plum color.
+
+15
+00:00:41.02 --> 00:00:47.04
+Alternatively, I could
+specify that I want a
+
+16
+00:00:47.04 --> 00:00:50.00
+bar graph,
+
+17
+00:00:50.00 --> 00:00:55.07
+and I want it in maroon.
+
+18
+00:00:55.07 --> 00:00:59.01
+In the next video, we will
+look at how we can manipulate
+
+19
+00:00:59.01 --> 00:01:01.06
+the figure size in Matplotlib.
+

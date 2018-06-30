@@ -1,0 +1,638 @@
+1
+00:00:03.05 --> 00:00:04.07
+- [Instructor] So, let's get started
+
+2
+00:00:04.07 --> 00:00:08.02
+on the challenge for chapter
+six which is indexing.
+
+3
+00:00:08.02 --> 00:00:11.04
+So, let's import Pandas,
+
+4
+00:00:11.04 --> 00:00:14.06
+let's read the Olympic CSV
+file into our DataFrame
+
+5
+00:00:14.06 --> 00:00:17.08
+called 00, so plot the total number
+
+6
+00:00:17.08 --> 00:00:20.04
+of medals awarded at
+each of the Olympic Games
+
+7
+00:00:20.04 --> 00:00:23.04
+throughout history, so since we want
+
+8
+00:00:23.04 --> 00:00:25.08
+the number of medals throughout history,
+
+9
+00:00:25.08 --> 00:00:29.03
+let's use the edition, so 00.Edition
+
+10
+00:00:29.03 --> 00:00:32.04
+which is the series in the 00 DataFrame
+
+11
+00:00:32.04 --> 00:00:36.04
+and let's use value_counts.
+
+12
+00:00:36.04 --> 00:00:41.09
+And if we plot that,
+
+13
+00:00:41.09 --> 00:00:44.01
+we don't seem to have a
+plot that we expected,
+
+14
+00:00:44.01 --> 00:00:46.07
+so what seems to be wrong here?
+
+15
+00:00:46.07 --> 00:00:48.07
+Well, let's take a few steps back
+
+16
+00:00:48.07 --> 00:00:52.08
+and look at the value_counts object.
+
+17
+00:00:52.08 --> 00:00:55.04
+Now, if I do a type here,
+
+18
+00:00:55.04 --> 00:01:03.05
+we can see that 00.Edition.value_counts
+
+19
+00:01:03.05 --> 00:01:06.05
+is in fact a Pandas series,
+
+20
+00:01:06.05 --> 00:01:08.02
+so what that means then
+
+21
+00:01:08.02 --> 00:01:12.03
+is that when I do a value_counts,
+
+22
+00:01:12.03 --> 00:01:14.05
+the first column is the index
+
+23
+00:01:14.05 --> 00:01:17.08
+and the second column are
+the values for that index,
+
+24
+00:01:17.08 --> 00:01:20.01
+so part of the reason
+that we had a problem
+
+25
+00:01:20.01 --> 00:01:21.05
+when plotting that graph
+
+26
+00:01:21.05 --> 00:01:24.05
+was this index is not sorted,
+
+27
+00:01:24.05 --> 00:01:28.03
+so what we can do then
+is to sort the index
+
+28
+00:01:28.03 --> 00:01:29.07
+of these value_Counts because remember,
+
+29
+00:01:29.07 --> 00:01:32.01
+this is a series,
+
+30
+00:01:32.01 --> 00:01:36.03
+so, sort_index
+
+31
+00:01:36.03 --> 00:01:38.04
+and let's look at the resulting structure
+
+32
+00:01:38.04 --> 00:01:40.05
+and now we can see that
+we've got the series sorted
+
+33
+00:01:40.05 --> 00:01:44.03
+by year, and so, then,
+
+34
+00:01:44.03 --> 00:01:49.02
+if we go ahead and do a plot,
+
+35
+00:01:49.02 --> 00:01:51.08
+we get the total number
+of medals presented
+
+36
+00:01:51.08 --> 00:01:58.00
+at each of the Olympic
+Games throughout history.
+
+37
+00:01:58.00 --> 00:02:00.06
+So, which countries did not win a medal
+
+38
+00:02:00.06 --> 00:02:03.06
+in the 2008 Beijing Olympics
+
+39
+00:02:03.06 --> 00:02:06.07
+and how many countries were there?
+
+40
+00:02:06.07 --> 00:02:07.06
+So, let's think a little bit
+
+41
+00:02:07.06 --> 00:02:10.08
+about how we will tackle this problem.
+
+42
+00:02:10.08 --> 00:02:13.07
+Our approach will be to get a common index
+
+43
+00:02:13.07 --> 00:02:16.07
+of NOC or the country,
+
+44
+00:02:16.07 --> 00:02:18.09
+and we'll get the list
+of all of the countries
+
+45
+00:02:18.09 --> 00:02:22.02
+and index them using the NOC code.
+
+46
+00:02:22.02 --> 00:02:24.04
+So, if you visualize a column
+
+47
+00:02:24.04 --> 00:02:27.04
+with all of the countries listed there,
+
+48
+00:02:27.04 --> 00:02:29.04
+and what we're going to then do
+is we're going to take a list
+
+49
+00:02:29.04 --> 00:02:32.08
+of all of the countries
+that won a medal in 2008
+
+50
+00:02:32.08 --> 00:02:35.09
+and overlay that on that column
+
+51
+00:02:35.09 --> 00:02:38.03
+with all of the countries.
+
+52
+00:02:38.03 --> 00:02:40.01
+Where we have missing data
+
+53
+00:02:40.01 --> 00:02:43.04
+is where a country has not won a medal.
+
+54
+00:02:43.04 --> 00:02:48.02
+So, let's identify the countries
+that won a medal in 2008.
+
+55
+00:02:48.02 --> 00:02:52.03
+So, 00, which is our DataFrame,
+
+56
+00:02:52.03 --> 00:02:55.06
+so 00.Edition
+
+57
+00:02:55.06 --> 00:02:58.02
+and 2008, equals 2008
+
+58
+00:02:58.02 --> 00:03:05.09
+and let's store this in the
+DataFrame last Olympics.
+
+59
+00:03:05.09 --> 00:03:07.04
+Now, this is another really good reason
+
+60
+00:03:07.04 --> 00:03:09.05
+to familiarize yourself
+
+61
+00:03:09.05 --> 00:03:11.06
+with your original dataset.
+
+62
+00:03:11.06 --> 00:03:14.01
+If you remember, the
+data from The Guardian
+
+63
+00:03:14.01 --> 00:03:17.07
+had a tab of all of the Olympic
+committees or countries,
+
+64
+00:03:17.07 --> 00:03:21.06
+so let's grab that from The Guardian site.
+
+65
+00:03:21.06 --> 00:03:23.08
+This file will also be in your data folder
+
+66
+00:03:23.08 --> 00:03:26.02
+in the exercise file.
+
+67
+00:03:26.02 --> 00:03:30.02
+So, I've done a search for
+Summer Olympics Medal Data,
+
+68
+00:03:30.02 --> 00:03:31.08
+get the data
+
+69
+00:03:31.08 --> 00:03:35.09
+and I'll download the full spreadsheet.
+
+70
+00:03:35.09 --> 00:03:37.05
+So, this is the tab
+that I was referring to,
+
+71
+00:03:37.05 --> 00:03:39.07
+the IOC country codes.
+
+72
+00:03:39.07 --> 00:03:40.08
+We're going to need this information,
+
+73
+00:03:40.08 --> 00:03:47.08
+so let's save this as a CSV file.
+
+74
+00:03:47.08 --> 00:03:50.04
+And I'm going to copy this across
+
+75
+00:03:50.04 --> 00:03:54.05
+to my data folder.
+
+76
+00:03:54.05 --> 00:03:58.04
+Now, let's read that CSV
+file into a DataFrame.
+
+77
+00:03:58.04 --> 00:04:02.05
+Let's call that DataFrame NOC
+for the Olympic countries,
+
+78
+00:04:02.05 --> 00:04:07.07
+so pd.read_csv.
+
+79
+00:04:07.07 --> 00:04:10.01
+That's in the data folder
+
+80
+00:04:10.01 --> 00:04:13.04
+and I'm going to just leave
+the original file name
+
+81
+00:04:13.04 --> 00:04:18.08
+and let's use the DataFrame name NOC here
+
+82
+00:04:18.08 --> 00:04:21.06
+and let's just make sure
+that we have inputted
+
+83
+00:04:21.06 --> 00:04:23.07
+the data that we expect,
+
+84
+00:04:23.07 --> 00:04:26.04
+so NOC.Head
+
+85
+00:04:26.04 --> 00:04:29.01
+and you can see that the
+first column is the country,
+
+86
+00:04:29.01 --> 00:04:31.06
+the second column is the
+Olympic Committee code
+
+87
+00:04:31.06 --> 00:04:33.04
+for that country, the ISO code
+
+88
+00:04:33.04 --> 00:04:35.09
+and finally, country.1.
+
+89
+00:04:35.09 --> 00:04:38.06
+Now, because I haven't
+seen this dataset before,
+
+90
+00:04:38.06 --> 00:04:39.06
+I probably would want to know
+
+91
+00:04:39.06 --> 00:04:42.07
+what's the difference between
+what's in the country column
+
+92
+00:04:42.07 --> 00:04:44.05
+and the country.1 column.
+
+93
+00:04:44.05 --> 00:04:46.06
+Is there anything that
+we need to understand
+
+94
+00:04:46.06 --> 00:04:49.01
+about the differences
+between these columns?
+
+95
+00:04:49.01 --> 00:04:51.00
+So, firstly I want to just check
+
+96
+00:04:51.00 --> 00:04:52.01
+if there is any difference,
+
+97
+00:04:52.01 --> 00:04:57.06
+so I'll do an NOC country
+
+98
+00:04:57.06 --> 00:04:59.08
+and I want to see if there are any rules
+
+99
+00:04:59.08 --> 00:05:01.07
+where the country and
+the country.1 differ,
+
+100
+00:05:01.07 --> 00:05:05.01
+so NOC and country.1
+
+101
+00:05:05.01 --> 00:05:08.07
+and so, I'm checking to see if
+NOC is not equal to country.1
+
+102
+00:05:08.07 --> 00:05:09.09
+at any of the rows
+
+103
+00:05:09.09 --> 00:05:16.09
+and I want to display those results.
+
+104
+00:05:16.09 --> 00:05:18.06
+And given that this is empty,
+
+105
+00:05:18.06 --> 00:05:20.00
+we can see that there is no difference
+
+106
+00:05:20.00 --> 00:05:21.07
+between country and country.1
+
+107
+00:05:21.07 --> 00:05:23.06
+and so, we don't need
+to be overly concerned
+
+108
+00:05:23.06 --> 00:05:25.09
+about the fact that there's
+this additional column
+
+109
+00:05:25.09 --> 00:05:27.09
+called country.1.
+
+110
+00:05:27.09 --> 00:05:31.03
+So, let's set the NOC
+DataFrame to have an index
+
+111
+00:05:31.03 --> 00:05:35.05
+of the Olympic Committee code.
+
+112
+00:05:35.05 --> 00:05:40.02
+So, I see NOC and let's set the index
+
+113
+00:05:40.02 --> 00:05:45.07
+to be the series name
+
+114
+00:05:45.07 --> 00:05:51.04
+and let me just copy that
+series name from here.
+
+115
+00:05:51.04 --> 00:05:53.00
+And I want to store this inplace,
+
+116
+00:05:53.00 --> 00:05:56.03
+so inplace equals true
+
+117
+00:05:56.03 --> 00:05:59.03
+and let's have a look at our DataFrame
+
+118
+00:05:59.03 --> 00:06:01.08
+with its new index.
+
+119
+00:06:01.08 --> 00:06:03.02
+So, in the next step,
+
+120
+00:06:03.02 --> 00:06:05.08
+you want to get a unique list
+
+121
+00:06:05.08 --> 00:06:07.01
+of all of the countries
+
+122
+00:06:07.01 --> 00:06:09.08
+and we can do that using value_counts,
+
+123
+00:06:09.08 --> 00:06:13.02
+so our original DataFrame from 2008
+
+124
+00:06:13.02 --> 00:06:19.08
+is LO, the NOC's there and value_counts
+
+125
+00:06:19.08 --> 00:06:22.01
+and remember that this
+is going to be a series,
+
+126
+00:06:22.01 --> 00:06:27.07
+so we'll just store this in
+the series name medals_2008
+
+127
+00:06:27.07 --> 00:06:31.05
+'cause this gives us the medals
+that have been won in 2008.
+
+128
+00:06:31.05 --> 00:06:35.01
+Let's just check that
+
+129
+00:06:35.01 --> 00:06:36.05
+and now what we're going to want to do
+
+130
+00:06:36.05 --> 00:06:39.02
+is to add a new series
+
+131
+00:06:39.02 --> 00:06:41.01
+to our DataFrame NOC
+
+132
+00:06:41.01 --> 00:06:46.04
+which has the results of all
+of the medals won in 2008.
+
+133
+00:06:46.04 --> 00:06:50.01
+So, we have NOC
+
+134
+00:06:50.01 --> 00:06:55.07
+medal 2008
+
+135
+00:06:55.07 --> 00:06:58.08
+and we're going to set the
+new series that we've created
+
+136
+00:06:58.08 --> 00:06:59.09
+to that DataFrame,
+
+137
+00:06:59.09 --> 00:07:04.07
+so let's have a look at our NOC DataFrame.
+
+138
+00:07:04.07 --> 00:07:08.08
+So, here wherever we have a
+nan value or a missing data
+
+139
+00:07:08.08 --> 00:07:10.03
+is where the country did not win
+
+140
+00:07:10.03 --> 00:07:13.05
+any medals in the 2008 Olympics.
+
+141
+00:07:13.05 --> 00:07:15.05
+So, if you want to get a list of that,
+
+142
+00:07:15.05 --> 00:07:20.08
+we say NOC medal 2008
+
+143
+00:07:20.08 --> 00:07:23.06
+is null
+
+144
+00:07:23.06 --> 00:07:28.01
+and let's return that DataFrame.
+
+145
+00:07:28.01 --> 00:07:29.03
+So, here we have it.
+
+146
+00:07:29.03 --> 00:07:31.04
+These are all of the countries
+
+147
+00:07:31.04 --> 00:07:33.00
+that did not win a medal
+
+148
+00:07:33.00 --> 00:07:36.01
+in the 2008 Olympics.
+
+149
+00:07:36.01 --> 00:07:38.09
+In the next video, we
+will look at Groupby.
+

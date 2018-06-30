@@ -1,0 +1,222 @@
+1
+00:00:03.06 --> 00:00:05.03
+- [Instructor] So, remember
+to run the first couple
+
+2
+00:00:05.03 --> 00:00:08.07
+of lines, so we want
+to import Pandas as PD,
+
+3
+00:00:08.07 --> 00:00:12.00
+so I run that by hitting shift and enter.
+
+4
+00:00:12.00 --> 00:00:13.09
+I want to load the CSV file
+
+5
+00:00:13.09 --> 00:00:17.07
+into my DataFrame called 00
+
+6
+00:00:17.07 --> 00:00:19.09
+and so, the first question is list
+
+7
+00:00:19.09 --> 00:00:21.08
+our Olympics DataFrame.
+
+8
+00:00:21.08 --> 00:00:24.09
+Now, since our DataFrame is called 00,
+
+9
+00:00:24.09 --> 00:00:27.09
+all we need to do type 00
+
+10
+00:00:27.09 --> 00:00:28.09
+and run that cell
+
+11
+00:00:28.09 --> 00:00:32.09
+and we can see that we've got
+the entire DataFrame here.
+
+12
+00:00:32.09 --> 00:00:36.07
+The next question is to
+list only the NOC column
+
+13
+00:00:36.07 --> 00:00:38.08
+using both the square bracket notation
+
+14
+00:00:38.08 --> 00:00:40.07
+and the dot notation.
+
+15
+00:00:40.07 --> 00:00:43.09
+So, 00 is my DataFrame
+
+16
+00:00:43.09 --> 00:00:49.06
+and the NOC column is NOC in all capitals
+
+17
+00:00:49.06 --> 00:00:50.06
+and I can run that and you can see
+
+18
+00:00:50.06 --> 00:00:54.03
+that this is displayed in
+the way that we expect.
+
+19
+00:00:54.03 --> 00:01:00.00
+So, the first country's Hungary and so on.
+
+20
+00:01:00.00 --> 00:01:01.01
+And if I want to do the same thing
+
+21
+00:01:01.01 --> 00:01:04.03
+but with the dot notation,
+
+22
+00:01:04.03 --> 00:01:06.06
+I type 00 which is my DataFrame
+
+23
+00:01:06.06 --> 00:01:11.05
+and then the series name which is NOC.
+
+24
+00:01:11.05 --> 00:01:17.01
+And I get exactly the same
+results as I did above.
+
+25
+00:01:17.01 --> 00:01:19.01
+Now, the final question is to determine
+
+26
+00:01:19.01 --> 00:01:22.02
+what type this object is,
+
+27
+00:01:22.02 --> 00:01:24.05
+so all we need to do is
+call the type function,
+
+28
+00:01:24.05 --> 00:01:29.06
+so type, parentheses 00.NOC
+
+29
+00:01:29.06 --> 00:01:31.00
+and close parentheses and run that
+
+30
+00:01:31.00 --> 00:01:35.03
+and we can see that this a series object.
+
+31
+00:01:35.03 --> 00:01:37.08
+And the final question
+is to list the edition,
+
+32
+00:01:37.08 --> 00:01:41.01
+the city, the athlete name
+and the medal columns.
+
+33
+00:01:41.01 --> 00:01:44.07
+So, if you're not sure what
+those column names look like,
+
+34
+00:01:44.07 --> 00:01:46.08
+you can always scroll up to the top
+
+35
+00:01:46.08 --> 00:01:51.05
+and you've got the information there.
+
+36
+00:01:51.05 --> 00:01:53.06
+So, I can do that by including them
+
+37
+00:01:53.06 --> 00:01:55.07
+in a Python list,
+
+38
+00:01:55.07 --> 00:01:59.04
+so I've got edition,
+
+39
+00:01:59.04 --> 00:02:01.05
+the city,
+
+40
+00:02:01.05 --> 00:02:05.05
+the athlete's name which
+is given by just the column
+
+41
+00:02:05.05 --> 00:02:09.03
+and the medal.
+
+42
+00:02:09.03 --> 00:02:11.04
+And if I run this,
+
+43
+00:02:11.04 --> 00:02:15.09
+I get those four columns listed.
+
+44
+00:02:15.09 --> 00:02:17.09
+Now, it's really important
+that you understand
+
+45
+00:02:17.09 --> 00:02:20.00
+that what Python has done here
+
+46
+00:02:20.00 --> 00:02:22.09
+is to generate a new DataFrame
+
+47
+00:02:22.09 --> 00:02:26.02
+and this new DataFrame has
+these different columns.
+
+48
+00:02:26.02 --> 00:02:29.06
+So, what kind of object is this?
+
+49
+00:02:29.06 --> 00:02:30.08
+Well, I've given the answer away
+
+50
+00:02:30.08 --> 00:02:32.06
+in my previous comment,
+
+51
+00:02:32.06 --> 00:02:36.06
+it's type and it's a DataFrame object.
+
+52
+00:02:36.06 --> 00:02:40.07
+In the next video we will look
+at data input and validation.
+

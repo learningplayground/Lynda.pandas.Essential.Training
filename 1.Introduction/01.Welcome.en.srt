@@ -1,0 +1,109 @@
+1
+00:00:00.06 --> 00:00:02.01
+- [Jonathan] Welcome.
+
+2
+00:00:02.01 --> 00:00:04.00
+I'm Jonathan Fernandes
+and I'm really excited
+
+3
+00:00:04.00 --> 00:00:07.07
+about this course as it
+includes two things I enjoy,
+
+4
+00:00:07.07 --> 00:00:10.08
+Python's Pandas and the Olympics.
+
+5
+00:00:10.08 --> 00:00:13.08
+So Pandas is an open source
+library that provides
+
+6
+00:00:13.08 --> 00:00:16.06
+easy to use data analysis
+tools for the Python
+
+7
+00:00:16.06 --> 00:00:18.00
+programming language.
+
+8
+00:00:18.00 --> 00:00:21.00
+So the purpose of this
+course is to be hands on
+
+9
+00:00:21.00 --> 00:00:22.09
+and very practical.
+
+10
+00:00:22.09 --> 00:00:24.08
+So each section builds the
+knowledge that you would
+
+11
+00:00:24.08 --> 00:00:26.09
+have picked up in earlier
+parts of the course.
+
+12
+00:00:26.09 --> 00:00:29.05
+So you learn how to
+manipulate and query data
+
+13
+00:00:29.05 --> 00:00:31.06
+more effectively and
+the tools that you learn
+
+14
+00:00:31.06 --> 00:00:35.03
+in this course will help you
+become a better data scientist.
+
+15
+00:00:35.03 --> 00:00:38.00
+So we'll cover topics such
+as Series and DataFrames,
+
+16
+00:00:38.00 --> 00:00:39.06
+plotting, indexing,
+
+17
+00:00:39.06 --> 00:00:42.01
+Groupby, stack and unstack,
+
+18
+00:00:42.01 --> 00:00:45.00
+and some data visualizations.
+
+19
+00:00:45.00 --> 00:00:47.04
+Remember, if you want to get
+the most out of this course,
+
+20
+00:00:47.04 --> 00:00:49.07
+work through the challenge exercises.
+
+21
+00:00:49.07 --> 00:00:52.06
+The data set we'll be
+using are the medal winners
+
+22
+00:00:52.06 --> 00:00:56.03
+for the Summer Olympics from 1896 to 2008,
+
+23
+00:00:56.03 --> 00:00:58.04
+and I can't wait to get started.
+
+24
+00:00:58.04 --> 00:01:00.04
+See you at the Olympics.
+

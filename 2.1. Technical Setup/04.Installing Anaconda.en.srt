@@ -1,0 +1,247 @@
+1
+00:00:00.07 --> 00:00:01.09
+- [Instructor] In this video
+
+2
+00:00:01.09 --> 00:00:04.09
+we will install Continuum's Anaconda.
+
+3
+00:00:04.09 --> 00:00:06.09
+So, why Anaconda?
+
+4
+00:00:06.09 --> 00:00:09.03
+Anaconda comes with a lot of packages
+
+5
+00:00:09.03 --> 00:00:11.04
+that you need for data science.
+
+6
+00:00:11.04 --> 00:00:14.09
+We will also use Conda, a package manager.
+
+7
+00:00:14.09 --> 00:00:17.07
+Anaconda simplifies many of the challenges
+
+8
+00:00:17.07 --> 00:00:19.03
+that a lot of people who are not
+
+9
+00:00:19.03 --> 00:00:22.05
+full-time software
+developers might run into.
+
+10
+00:00:22.05 --> 00:00:23.09
+These are things like installing
+
+11
+00:00:23.09 --> 00:00:27.05
+different versions of Python,
+not having correct privileges,
+
+12
+00:00:27.05 --> 00:00:30.00
+or not having the required packages.
+
+13
+00:00:30.00 --> 00:00:31.09
+If you currently already have a version of
+
+14
+00:00:31.09 --> 00:00:33.07
+pip or Conda installed,
+
+15
+00:00:33.07 --> 00:00:36.03
+then you don't need to
+reinstall everything.
+
+16
+00:00:36.03 --> 00:00:38.07
+Just check that you have the five packages
+
+17
+00:00:38.07 --> 00:00:41.04
+that we'll be using for
+the course installed.
+
+18
+00:00:41.04 --> 00:00:45.05
+These are NumPy, pandas, matplotlib,
+
+19
+00:00:45.05 --> 00:00:47.09
+Seaborn, and Jupyter.
+
+20
+00:00:47.09 --> 00:00:50.08
+If you have pip, type pip
+install and the package name,
+
+21
+00:00:50.08 --> 00:00:54.08
+so for example pip install
+pandas for the pandas package.
+
+22
+00:00:54.08 --> 00:00:58.06
+If you have Conda, type Conda
+install and the package name.
+
+23
+00:00:58.06 --> 00:01:02.09
+So, Conda install matplotlib
+for the matplotlib package.
+
+24
+00:01:02.09 --> 00:01:06.01
+We will use Python 3.6.
+
+25
+00:01:06.01 --> 00:01:08.04
+Let's say you already have
+another version of Python,
+
+26
+00:01:08.04 --> 00:01:11.07
+say 2.7, and you are already working
+
+27
+00:01:11.07 --> 00:01:13.04
+with some other packages there.
+
+28
+00:01:13.04 --> 00:01:15.01
+Then you might want to create a separate
+
+29
+00:01:15.01 --> 00:01:17.07
+virtual environment for this course.
+
+30
+00:01:17.07 --> 00:01:21.05
+To complete a brand new
+installation of Anaconda,
+
+31
+00:01:21.05 --> 00:01:28.04
+head over to www.cotinuum.io/downloads.
+
+32
+00:01:28.04 --> 00:01:31.06
+Click on the Windows icon
+
+33
+00:01:31.06 --> 00:01:35.08
+and select Python 3.6 version 64-bit.
+
+34
+00:01:35.08 --> 00:01:40.03
+We don't want to install anything else.
+
+35
+00:01:40.03 --> 00:01:47.00
+Right, once we've downloaded
+that, go to Show in Folder.
+
+36
+00:01:47.00 --> 00:01:50.02
+Select Run,
+
+37
+00:01:50.02 --> 00:01:54.02
+select Next,
+
+38
+00:01:54.02 --> 00:01:57.05
+review the license
+agreement, click I Agree,
+
+39
+00:01:57.05 --> 00:01:59.07
+select Just Me.
+
+40
+00:01:59.07 --> 00:02:01.07
+Make sure that this destination folder
+
+41
+00:02:01.07 --> 00:02:07.03
+has no spaces in the destination path,
+
+42
+00:02:07.03 --> 00:02:10.09
+and I'm going to add Anaconda
+to my path environment variable,
+
+43
+00:02:10.09 --> 00:02:14.00
+and select Install.
+
+44
+00:02:14.00 --> 00:02:17.04
+Once this has been completed, select Next,
+
+45
+00:02:17.04 --> 00:02:20.01
+and select Finish.
+
+46
+00:02:20.01 --> 00:02:23.07
+So, type Anaconda,
+
+47
+00:02:23.07 --> 00:02:29.00
+select the Anaconda Navigator here,
+
+48
+00:02:29.00 --> 00:02:32.01
+and don't show again, so
+select OK and don't show again,
+
+49
+00:02:32.01 --> 00:02:35.00
+and you are now ready to go.
+
+50
+00:02:35.00 --> 00:02:38.00
+If you've run into any
+problems during installation,
+
+51
+00:02:38.00 --> 00:02:40.08
+Continuum recommends temporarily disabling
+
+52
+00:02:40.08 --> 00:02:43.06
+your antivirus software
+during installation,
+
+53
+00:02:43.06 --> 00:02:47.04
+then re-enabling it after
+the installation concludes.
+
+54
+00:02:47.04 --> 00:02:49.08
+If you have installed for all users,
+
+55
+00:02:49.08 --> 00:02:54.00
+uninstall Anaconda and
+reinstall it for your user only,
+
+56
+00:02:54.00 --> 00:02:55.07
+and try again.
+
+57
+00:02:55.07 --> 00:02:59.04
+In the next video we will
+download our data set.
+

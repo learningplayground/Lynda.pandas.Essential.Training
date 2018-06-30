@@ -1,0 +1,222 @@
+1
+00:00:00.08 --> 00:00:02.01
+- [Narrator] The set index allows us
+
+2
+00:00:02.01 --> 00:00:07.02
+to determine which of the
+series is going to be the index.
+
+3
+00:00:07.02 --> 00:00:08.07
+We will use the set index
+
+4
+00:00:08.07 --> 00:00:11.07
+with one key parameter, which is the keys.
+
+5
+00:00:11.07 --> 00:00:14.01
+We will look at inplace in particular,
+
+6
+00:00:14.01 --> 00:00:16.07
+in the next Jupyter notebook.
+
+7
+00:00:16.07 --> 00:00:19.02
+Now remember that I said, one
+of the advantages of Pandas
+
+8
+00:00:19.02 --> 00:00:21.09
+is that you can use labels as an index.
+
+9
+00:00:21.09 --> 00:00:26.04
+So let's set the athlete
+series as our index.
+
+10
+00:00:26.04 --> 00:00:27.04
+Now, what I'm going to do is
+
+11
+00:00:27.04 --> 00:00:30.06
+I'm going to show you two
+ways of going about this.
+
+12
+00:00:30.06 --> 00:00:35.03
+So let's look at our original
+data frame, which is oo.head.
+
+13
+00:00:35.03 --> 00:00:36.08
+And we can see that currently,
+
+14
+00:00:36.08 --> 00:00:40.09
+the index is this first column.
+
+15
+00:00:40.09 --> 00:00:44.05
+And this data frame is
+indexed by these numbers.
+
+16
+00:00:44.05 --> 00:00:47.03
+Now, if I want to set
+the athlete as the index,
+
+17
+00:00:47.03 --> 00:00:52.05
+one way of doing this is
+to use the oo.set index
+
+18
+00:00:52.05 --> 00:00:56.03
+and I specify that I want this data frame
+
+19
+00:00:56.03 --> 00:00:59.00
+indexed by athlete.
+
+20
+00:00:59.00 --> 00:01:02.05
+And you can see, that the
+athlete is now in bold,
+
+21
+00:01:02.05 --> 00:01:05.07
+and this first column is your index.
+
+22
+00:01:05.07 --> 00:01:10.04
+Now, let's confirm that the
+athlete is in fact our index.
+
+23
+00:01:10.04 --> 00:01:13.03
+So I'm going to do another
+
+24
+00:01:13.03 --> 00:01:16.07
+head on my original data frame,
+
+25
+00:01:16.07 --> 00:01:19.08
+and surprisingly, we
+find that the data frame
+
+26
+00:01:19.08 --> 00:01:23.09
+has reverted to the original index.
+
+27
+00:01:23.09 --> 00:01:26.02
+There is a very simple reason for this.
+
+28
+00:01:26.02 --> 00:01:30.02
+And that is, that when we set index,
+
+29
+00:01:30.02 --> 00:01:33.00
+we need to set the index to athlete.
+
+30
+00:01:33.00 --> 00:01:34.05
+Now, what we need to do is we need
+
+31
+00:01:34.05 --> 00:01:37.05
+to specify that inplace is equal to true
+
+32
+00:01:37.05 --> 00:01:41.08
+so that those changes are made
+to the original data frame.
+
+33
+00:01:41.08 --> 00:01:46.00
+If we then go and do a
+head on this data frame,
+
+34
+00:01:46.00 --> 00:01:50.07
+we see that it has
+maintained the athlete index
+
+35
+00:01:50.07 --> 00:01:55.06
+and we can now proceed and
+search by the athlete name.
+
+36
+00:01:55.06 --> 00:01:56.09
+Now, I'm going to show you another way
+
+37
+00:01:56.09 --> 00:01:59.06
+of going about setting an index,
+
+38
+00:01:59.06 --> 00:02:07.05
+but before I do that, I'm
+going to just reset this index.
+
+39
+00:02:07.05 --> 00:02:09.03
+Don't worry about this line right yet,
+
+40
+00:02:09.03 --> 00:02:13.00
+I'll walk through it in the next video.
+
+41
+00:02:13.00 --> 00:02:19.09
+So, again, I use the data
+frame, I say set index
+
+42
+00:02:19.09 --> 00:02:21.09
+and my index is going to be athlete.
+
+43
+00:02:21.09 --> 00:02:23.03
+Now, I know that if I do this,
+
+44
+00:02:23.03 --> 00:02:26.08
+this is not going to work
+because in place equals false,
+
+45
+00:02:26.08 --> 00:02:30.05
+so what I can do is I can make
+a copy of this data frame,
+
+46
+00:02:30.05 --> 00:02:36.08
+and store it in the data
+frame ath for athlete.
+
+47
+00:02:36.08 --> 00:02:40.03
+And then, when I look at
+the first couple of rows
+
+48
+00:02:40.03 --> 00:02:43.01
+for the athlete data frame, I see
+
+49
+00:02:43.01 --> 00:02:47.08
+that this has been indexed by athlete.
+
+50
+00:02:47.08 --> 00:02:51.01
+In the next video, we
+will look at reset index.
+

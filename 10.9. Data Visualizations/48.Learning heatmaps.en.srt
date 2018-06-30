@@ -1,0 +1,427 @@
+1
+00:00:00.08 --> 00:00:03.05
+- [Instructor] Data Visualizations.
+
+2
+00:00:03.05 --> 00:00:04.07
+Using the Olympic data set
+
+3
+00:00:04.07 --> 00:00:06.08
+we have used so far in this course,
+
+4
+00:00:06.08 --> 00:00:09.01
+let's say you wanted to present a summary
+
+5
+00:00:09.01 --> 00:00:12.03
+of the total medals won
+by participating countries
+
+6
+00:00:12.03 --> 00:00:16.05
+in the 2008 Beijing Olympics.
+
+7
+00:00:16.05 --> 00:00:21.00
+Which of these two do you find
+more intuitive and readable?
+
+8
+00:00:21.00 --> 00:00:22.04
+I hope you'll agree with me
+
+9
+00:00:22.04 --> 00:00:26.06
+that the heatmap is far
+more intuitive and helpful.
+
+10
+00:00:26.06 --> 00:00:28.07
+Let's look to see how we can create these
+
+11
+00:00:28.07 --> 00:00:31.06
+in our Jupiter Notebook.
+
+12
+00:00:31.06 --> 00:00:33.09
+Because we're going to be using Seaborn,
+
+13
+00:00:33.09 --> 00:00:38.05
+let's import Seaborn
+
+14
+00:00:38.05 --> 00:00:48.05
+as sns.
+
+15
+00:00:48.05 --> 00:00:50.05
+What we want here are all the medals
+
+16
+00:00:50.05 --> 00:00:53.03
+won in the 2008 Olympics.
+
+17
+00:00:53.03 --> 00:00:56.00
+So, oo.Edition
+
+18
+00:00:56.00 --> 00:00:59.07
+equals 2008.
+
+19
+00:00:59.07 --> 00:01:10.08
+Let's store that in the
+data frame Last Olympics.
+
+20
+00:01:10.08 --> 00:01:14.00
+Now we have in our data frame LO,
+
+21
+00:01:14.00 --> 00:01:16.04
+all of the medals won by the athletes
+
+22
+00:01:16.04 --> 00:01:20.00
+in the 2008 Beijing Olympics.
+
+23
+00:01:20.00 --> 00:01:26.01
+I want to group by the
+countries, which is the NOC,
+
+24
+00:01:26.01 --> 00:01:28.08
+and the medals won.
+
+25
+00:01:28.08 --> 00:01:32.04
+I do a size off of that.
+
+26
+00:01:32.04 --> 00:01:35.05
+We can see that we've
+got a group by object
+
+27
+00:01:35.05 --> 00:01:37.05
+sorted alphabetically by
+the different countries
+
+28
+00:01:37.05 --> 00:01:39.05
+and the medals won.
+
+29
+00:01:39.05 --> 00:01:43.02
+Let's unstack this
+
+30
+00:01:43.02 --> 00:01:44.03
+with medal,
+
+31
+00:01:44.03 --> 00:01:48.03
+and we'll fill value
+
+32
+00:01:48.03 --> 00:01:49.04
+with zero.
+
+33
+00:01:49.04 --> 00:01:54.00
+Let's look at the result of that.
+
+34
+00:01:54.00 --> 00:01:57.02
+We've got a couple of
+challenges with our data frame.
+
+35
+00:01:57.02 --> 00:01:59.05
+Firstly, it doesn't seem to be sorted
+
+36
+00:01:59.05 --> 00:02:02.03
+in order of the number of medals.
+
+37
+00:02:02.03 --> 00:02:04.07
+Secondly, we've got the column headings
+
+38
+00:02:04.07 --> 00:02:06.03
+as bronze, gold, and silver.
+
+39
+00:02:06.03 --> 00:02:07.09
+So let's modify that.
+
+40
+00:02:07.09 --> 00:02:13.00
+I'm going to call this group by object g,
+
+41
+00:02:13.00 --> 00:02:18.01
+and I'm going to sort values by
+
+42
+00:02:18.01 --> 00:02:20.04
+gold,
+
+43
+00:02:20.04 --> 00:02:23.01
+silver,
+
+44
+00:02:23.01 --> 00:02:25.08
+and bronze;
+
+45
+00:02:25.08 --> 00:02:27.02
+which is a list.
+
+46
+00:02:27.02 --> 00:02:33.00
+Let's include that as a list
+of gold, silver, and bronze.
+
+47
+00:02:33.00 --> 00:02:39.03
+Remember that we want
+this in descending order.
+
+48
+00:02:39.03 --> 00:02:41.03
+I then view that.
+
+49
+00:02:41.03 --> 00:02:46.01
+I've got the medals in descending
+order for the countries.
+
+50
+00:02:46.01 --> 00:02:48.03
+The only challenge I still have
+is that the column headings
+
+51
+00:02:48.03 --> 00:02:50.04
+are still bronze, gold, and silver.
+
+52
+00:02:50.04 --> 00:02:56.00
+We can easily modify that
+by saying we want that
+
+53
+00:02:56.00 --> 00:03:03.05
+in the sequence gold, silver, bronze.
+
+54
+00:03:03.05 --> 00:03:11.07
+Let's store that in the data frame g.
+
+55
+00:03:11.07 --> 00:03:14.06
+So we have the table that
+we want with the countries
+
+56
+00:03:14.06 --> 00:03:18.06
+sorted by the number of gold,
+silver, and bronze medals
+
+57
+00:03:18.06 --> 00:03:23.01
+that they won in the 2008 Olympics.
+
+58
+00:03:23.01 --> 00:03:27.00
+Let's plot this using a heat map.
+
+59
+00:03:27.00 --> 00:03:29.08
+Sns for Seaborn,
+
+60
+00:03:29.08 --> 00:03:31.06
+heatmap,
+
+61
+00:03:31.06 --> 00:03:36.02
+and as input we provide the data frame.
+
+62
+00:03:36.02 --> 00:03:39.01
+We've got a couple of
+challenges with this figure.
+
+63
+00:03:39.01 --> 00:03:43.04
+Firstly, the gold, silver and
+bronze is across the x axes,
+
+64
+00:03:43.04 --> 00:03:47.00
+with the countries along the y axes.
+
+65
+00:03:47.00 --> 00:03:48.06
+If we swap those around,
+
+66
+00:03:48.06 --> 00:03:51.01
+then perhaps the country
+names will be more readable.
+
+67
+00:03:51.01 --> 00:03:54.04
+Secondly, we need to
+increase this figure size.
+
+68
+00:03:54.04 --> 00:04:03.01
+Let's do a transpose of the data frame.
+
+69
+00:04:03.01 --> 00:04:04.04
+Let's have a look at the data frame.
+
+70
+00:04:04.04 --> 00:04:07.02
+Now we have the different countries
+
+71
+00:04:07.02 --> 00:04:10.06
+as columns across the top,
+and we've got each row
+
+72
+00:04:10.06 --> 00:04:11.07
+corresponding to the number
+
+73
+00:04:11.07 --> 00:04:14.03
+of gold, silver, and bronze medals.
+
+74
+00:04:14.03 --> 00:04:16.00
+We seem to be in a better position now,
+
+75
+00:04:16.00 --> 00:04:18.08
+so let's change the figure size.
+
+76
+00:04:18.08 --> 00:04:24.05
+Plot figure,
+
+77
+00:04:24.05 --> 00:04:26.00
+figure size.
+
+78
+00:04:26.00 --> 00:04:33.00
+Let's make this 16 inches by five inches.
+
+79
+00:04:33.00 --> 00:04:39.00
+We've got the heatmap g.
+
+80
+00:04:39.00 --> 00:04:43.01
+Here you see we've got the
+gold, silver, and bronze medals
+
+81
+00:04:43.01 --> 00:04:44.09
+across the y axes,
+
+82
+00:04:44.09 --> 00:04:48.01
+and we've got the different
+countries across the x axes.
+
+83
+00:04:48.01 --> 00:04:50.09
+This makes for very intuitive reading.
+
+84
+00:04:50.09 --> 00:04:51.09
+There are a couple of insights
+
+85
+00:04:51.09 --> 00:04:54.04
+that we can gain from this straight away.
+
+86
+00:04:54.04 --> 00:04:57.01
+We can see that the
+USA has a higher number
+
+87
+00:04:57.01 --> 00:05:02.00
+of gold and silver versus bronze medals.
+
+88
+00:05:02.00 --> 00:05:03.02
+We can see that China
+
+89
+00:05:03.02 --> 00:05:06.01
+has a higher proportion of gold medals.
+
+90
+00:05:06.01 --> 00:05:07.03
+Australia has significantly
+
+91
+00:05:07.03 --> 00:05:11.01
+more bronze than gold or silver medals.
+
+92
+00:05:11.01 --> 00:05:15.07
+Similarly, we can see
+that both Spain and Cuba
+
+93
+00:05:15.07 --> 00:05:17.01
+have the highest proportion of medals
+
+94
+00:05:17.01 --> 00:05:19.07
+in the silver category.
+
+95
+00:05:19.07 --> 00:05:22.03
+There seems to have been a
+very closely fought battle
+
+96
+00:05:22.03 --> 00:05:27.05
+for the third position with
+Russia, Germany, South Korea,
+
+97
+00:05:27.05 --> 00:05:29.08
+and The Netherlands.
+
+98
+00:05:29.08 --> 00:05:31.09
+As you can see, the Seaborn heatmaps
+
+99
+00:05:31.09 --> 00:05:35.03
+provide some very intuitive plots.
+
+100
+00:05:35.03 --> 00:05:38.05
+Next, we will look at
+creating our own color maps.
+

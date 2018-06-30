@@ -1,0 +1,286 @@
+1
+00:00:00.05 --> 00:00:03.05
+- [Narrator] Data input and validation.
+
+2
+00:00:03.05 --> 00:00:06.02
+In this video, we will
+cover how to read data
+
+3
+00:00:06.02 --> 00:00:10.02
+into a Pandas DataFrame
+and validate the input.
+
+4
+00:00:10.02 --> 00:00:13.04
+You can read data stored in
+a wide variety of formats,
+
+5
+00:00:13.04 --> 00:00:18.04
+such as excel, json, or SQL
+database tables, amongst others.
+
+6
+00:00:18.04 --> 00:00:22.02
+Since our file is a CSV
+file, we will use read_csv
+
+7
+00:00:22.02 --> 00:00:24.04
+which will allow us to read a comma
+
+8
+00:00:24.04 --> 00:00:28.05
+separated file into a DataFrame.
+
+9
+00:00:28.05 --> 00:00:32.08
+Read_csv has numerous parameters
+and is very feature-rich.
+
+10
+00:00:32.08 --> 00:00:35.08
+You can specify a wide variety of options
+
+11
+00:00:35.08 --> 00:00:38.04
+including what column
+headings to use for series,
+
+12
+00:00:38.04 --> 00:00:40.08
+additional delimeters for files, and ways
+
+13
+00:00:40.08 --> 00:00:43.01
+to parse any data fields.
+
+14
+00:00:43.01 --> 00:00:45.09
+We could easily spend
+30 minutes just looking
+
+15
+00:00:45.09 --> 00:00:49.03
+at the different parameter
+options for read_csv.
+
+16
+00:00:49.03 --> 00:00:51.00
+For now, we will only focus on
+
+17
+00:00:51.00 --> 00:00:53.07
+just a couple of the parameters.
+
+18
+00:00:53.07 --> 00:00:56.00
+The required parameter to read_csv
+
+19
+00:00:56.00 --> 00:00:58.02
+is the path to the CSV file.
+
+20
+00:00:58.02 --> 00:01:02.02
+The skiprows parameter allows
+you to do exactly that.
+
+21
+00:01:02.02 --> 00:01:05.00
+If the first few lines do
+not hold any relevant data,
+
+22
+00:01:05.00 --> 00:01:06.07
+then skip them.
+
+23
+00:01:06.07 --> 00:01:09.01
+We will now head over
+to our Jupyter Notebook
+
+24
+00:01:09.01 --> 00:01:11.09
+to work through this.
+
+25
+00:01:11.09 --> 00:01:20.01
+The first thing we'll want
+to do is to import Pandas.
+
+26
+00:01:20.01 --> 00:01:23.08
+We now need to specify the
+name for our DataFrame.
+
+27
+00:01:23.08 --> 00:01:29.05
+I'm going to use oo = pd.read_csv
+
+28
+00:01:29.05 --> 00:01:32.02
+and I can hit Tab and this
+will give me the options
+
+29
+00:01:32.02 --> 00:01:35.03
+of all of the different types
+of formats that I can read in.
+
+30
+00:01:35.03 --> 00:01:38.07
+Since we're using a CSV
+file, I'll select read_csv.
+
+31
+00:01:38.07 --> 00:01:40.04
+And this is a very helpful tip.
+
+32
+00:01:40.04 --> 00:01:42.09
+If my cursor is in between those brackets,
+
+33
+00:01:42.09 --> 00:01:45.02
+I can just hit Shift and Tab, and this
+
+34
+00:01:45.02 --> 00:01:47.02
+will provide me documentation.
+
+35
+00:01:47.02 --> 00:01:49.04
+If I hit Shift and Tab
+again, I will get further
+
+36
+00:01:49.04 --> 00:01:52.03
+documentation, and then
+I can hit Shift and Tab
+
+37
+00:01:52.03 --> 00:01:54.04
+three times, and that
+will provide me all of the
+
+38
+00:01:54.04 --> 00:01:57.02
+options available within the read_csv file
+
+39
+00:01:57.02 --> 00:02:00.04
+or any method within Pandas.
+
+40
+00:02:00.04 --> 00:02:06.04
+I now need to specify the
+path to that CSV file.
+
+41
+00:02:06.04 --> 00:02:09.03
+Since I know that the name
+of my file is olympics,
+
+42
+00:02:09.03 --> 00:02:12.03
+I can just type O and hit Tab, and it
+
+43
+00:02:12.03 --> 00:02:14.08
+auto completes that for me.
+
+44
+00:02:14.08 --> 00:02:17.03
+I run the cell and now I want to look at
+
+45
+00:02:17.03 --> 00:02:24.00
+the results stored in that DataFrame.
+
+46
+00:02:24.00 --> 00:02:27.03
+We seem to have a problem here.
+
+47
+00:02:27.03 --> 00:02:30.01
+The first couple of rows
+don't seem to make sense.
+
+48
+00:02:30.01 --> 00:02:34.02
+This is not what we want, so
+let's head back to our CSV file
+
+49
+00:02:34.02 --> 00:02:37.07
+to try and understand why
+this might be the case.
+
+50
+00:02:37.07 --> 00:02:39.08
+If we head back to the
+CSV file, you can see that
+
+51
+00:02:39.08 --> 00:02:41.05
+we don't want to read the first couple
+
+52
+00:02:41.05 --> 00:02:44.04
+of rows into our DataFrame.
+
+53
+00:02:44.04 --> 00:02:46.01
+The table of information that we want
+
+54
+00:02:46.01 --> 00:02:48.09
+really starts from here, so we want to
+
+55
+00:02:48.09 --> 00:02:53.05
+skip those first four rows and
+read from row five onwards.
+
+56
+00:02:53.05 --> 00:02:55.02
+So we'll head back to our DataFrame.
+
+57
+00:02:55.02 --> 00:03:05.00
+We can provide the parameter, skiprows=4.
+
+58
+00:03:05.00 --> 00:03:06.05
+We now see that this is what we would
+
+59
+00:03:06.05 --> 00:03:08.02
+expect to see in our DataFrame.
+
+60
+00:03:08.02 --> 00:03:11.01
+This starts at the start of
+the table of the CSV file
+
+61
+00:03:11.01 --> 00:03:13.08
+so the first athlete is HAJOS, Alfred.
+
+62
+00:03:13.08 --> 00:03:19.00
+We go back to that, and we
+see row six, HAJOS, Alfred
+
+63
+00:03:19.00 --> 00:03:21.04
+and we know that we are good to go.
+
+64
+00:03:21.04 --> 00:03:24.06
+In the next video, we will
+look at the shape attribute.
+

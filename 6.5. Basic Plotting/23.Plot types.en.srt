@@ -1,0 +1,343 @@
+1
+00:00:00.05 --> 00:00:02.02
+- [Narrator] Types of plot.
+
+2
+00:00:02.02 --> 00:00:04.02
+The plot command displays the graph
+
+3
+00:00:04.02 --> 00:00:05.09
+and there are a couple of options.
+
+4
+00:00:05.09 --> 00:00:08.04
+By default, the graph is a line plot,
+
+5
+00:00:08.04 --> 00:00:09.08
+but you can also specify that you want
+
+6
+00:00:09.08 --> 00:00:11.03
+to use another type of graph such as
+
+7
+00:00:11.03 --> 00:00:14.05
+a barh graph or a pie chart.
+
+8
+00:00:14.05 --> 00:00:16.08
+You need to use the kind equals parameter
+
+9
+00:00:16.08 --> 00:00:19.05
+to specify what type of plot you require.
+
+10
+00:00:19.05 --> 00:00:21.08
+Half of the skill is
+in trying to determine
+
+11
+00:00:21.08 --> 00:00:25.04
+which graph would be the
+best to represent the data.
+
+12
+00:00:25.04 --> 00:00:27.08
+So, you'd normally use a line graph
+
+13
+00:00:27.08 --> 00:00:29.00
+when you're trying to track changes
+
+14
+00:00:29.00 --> 00:00:31.07
+of a short or a long period of time.
+
+15
+00:00:31.07 --> 00:00:33.06
+When smaller changers exist, line graphs
+
+16
+00:00:33.06 --> 00:00:35.07
+are better to use than, say, a bar graph
+
+17
+00:00:35.07 --> 00:00:38.04
+and line graphs can also
+be used to compare changes
+
+18
+00:00:38.04 --> 00:00:42.01
+of the same period of time
+for more than one group.
+
+19
+00:00:42.01 --> 00:00:45.02
+A bar graph or a horizontal bar graph
+
+20
+00:00:45.02 --> 00:00:47.00
+have the same use cases.
+
+21
+00:00:47.00 --> 00:00:48.05
+Bar graphs are used to compare things
+
+22
+00:00:48.05 --> 00:00:52.02
+between different groups or
+to track changes over time.
+
+23
+00:00:52.02 --> 00:00:54.03
+However, when trying to
+measure change over time,
+
+24
+00:00:54.03 --> 00:00:58.01
+bar graphs are best when
+the changes are large.
+
+25
+00:00:58.01 --> 00:01:00.01
+This is the horizontal bar graph
+
+26
+00:01:00.01 --> 00:01:02.05
+and it's almost identical to a bar graph,
+
+27
+00:01:02.05 --> 00:01:06.00
+but it has its axes flipped over.
+
+28
+00:01:06.00 --> 00:01:07.03
+Pie charts are best to use
+
+29
+00:01:07.03 --> 00:01:09.05
+when you're trying to
+compare parts of a whole.
+
+30
+00:01:09.05 --> 00:01:12.00
+They do not show changes over time.
+
+31
+00:01:12.00 --> 00:01:15.09
+Let's turn to the Jupiter
+notebook for some examples.
+
+32
+00:01:15.09 --> 00:01:20.04
+Alright, so let's import pandas as pd,
+
+33
+00:01:20.04 --> 00:01:23.08
+read-in our data set into the data frame
+
+34
+00:01:23.08 --> 00:01:27.05
+and now we need to import
+the matplotlib library.
+
+35
+00:01:27.05 --> 00:01:39.05
+import matplotlib.pyplot as plt
+
+36
+00:01:39.05 --> 00:01:41.01
+and this is the magic amount;
+
+37
+00:01:41.01 --> 00:01:45.00
+matplotlib inline and this will alow us
+
+38
+00:01:45.00 --> 00:01:49.02
+to view the graphs and
+the plots in our notebook.
+
+39
+00:01:49.02 --> 00:01:51.00
+So, the question is:
+What were the different
+
+40
+00:01:51.00 --> 00:01:53.00
+sports in the first Olympics?
+
+41
+00:01:53.00 --> 00:01:55.01
+Plot them using different graphs.
+
+42
+00:01:55.01 --> 00:01:56.03
+Now, from an earlier section, we know
+
+43
+00:01:56.03 --> 00:01:58.05
+that if we want to determine the sports
+
+44
+00:01:58.05 --> 00:02:00.07
+in the first Olympics, we need to first
+
+45
+00:02:00.07 --> 00:02:04.04
+search by the addition and so,
+
+46
+00:02:04.04 --> 00:02:06.05
+fo which is the first Olympics
+
+47
+00:02:06.05 --> 00:02:10.06
+is the data frame that stores that data.
+
+48
+00:02:10.06 --> 00:02:13.04
+I can then plot this using the data frame
+
+49
+00:02:13.04 --> 00:02:19.08
+fo.sport.value_counts and
+this gives us the different
+
+50
+00:02:19.08 --> 00:02:23.01
+sports that were available
+in the first Olympics.
+
+51
+00:02:23.01 --> 00:02:27.00
+I can then chain the plot command to this
+
+52
+00:02:27.00 --> 00:02:31.04
+and remember, by default,
+we will get a line plot.
+
+53
+00:02:31.04 --> 00:02:33.04
+To confirm that, I'm going to do
+
+54
+00:02:33.04 --> 00:02:40.04
+kind equals line and we get the same plot.
+
+55
+00:02:40.04 --> 00:02:45.01
+If I want to suppress
+this matplotlib.axes here,
+
+56
+00:02:45.01 --> 00:02:48.01
+I can add a semicolon to the end
+
+57
+00:02:48.01 --> 00:02:51.08
+of that line and run the cell again.
+
+58
+00:02:51.08 --> 00:02:54.06
+Moving onto a bar plot, given
+that we are going to be using
+
+59
+00:02:54.06 --> 00:02:58.05
+the same line, I'm just going
+to copy this line of code
+
+60
+00:02:58.05 --> 00:03:00.05
+and the only change we need to make
+
+61
+00:03:00.05 --> 00:03:07.09
+is that we need to specify
+that the plot is a bar plot
+
+62
+00:03:07.09 --> 00:03:11.05
+and I can suppress that extra line there
+
+63
+00:03:11.05 --> 00:03:12.05
+and you can see that the bar plot
+
+64
+00:03:12.05 --> 00:03:16.03
+is a far more useful plot in
+this instance than a line plot,
+
+65
+00:03:16.03 --> 00:03:21.03
+because it had overlapping
+labels in the axes.
+
+66
+00:03:21.03 --> 00:03:26.01
+Similarly, we can use the horizontal plot
+
+67
+00:03:26.01 --> 00:03:30.01
+and all we need to do is kind equals barh
+
+68
+00:03:30.01 --> 00:03:34.02
+for the horizontal plot and we get
+
+69
+00:03:34.02 --> 00:03:35.04
+the same information as you would
+
+70
+00:03:35.04 --> 00:03:40.02
+for a bar plot except
+the axes are swapped over
+
+71
+00:03:40.02 --> 00:03:44.05
+and finally, we can
+plot using a pie chart.
+
+72
+00:03:44.05 --> 00:03:52.05
+So, using exactly the same
+line of code; plot(kind=pie);
+
+73
+00:03:52.05 --> 00:03:53.06
+remember that you wouldn't use
+
+74
+00:03:53.06 --> 00:03:56.03
+all of the different plots for you data.
+
+75
+00:03:56.03 --> 00:03:59.01
+In this instance, the
+bar, the horizontal bar
+
+76
+00:03:59.01 --> 00:04:00.08
+and the pie charts were the most
+
+77
+00:04:00.08 --> 00:04:03.02
+effective in representing this data.
+
+78
+00:04:03.02 --> 00:04:07.01
+In this instance, I wouldn't
+use the line graphs.
+
+79
+00:04:07.01 --> 00:04:10.07
+In the next video, we
+will look at color plots.
+

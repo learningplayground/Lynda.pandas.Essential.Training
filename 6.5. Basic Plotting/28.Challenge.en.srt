@@ -1,0 +1,84 @@
+1
+00:00:03.05 --> 00:00:04.04
+- [Instructor] So I'm really excited
+
+2
+00:00:04.04 --> 00:00:06.05
+about chapter five's challenge.
+
+3
+00:00:06.05 --> 00:00:09.07
+These problems should only
+take five to 10 minutes,
+
+4
+00:00:09.07 --> 00:00:12.06
+and I've provided a
+work solution for them.
+
+5
+00:00:12.06 --> 00:00:14.05
+Now remember that they're
+going to be multiple ways
+
+6
+00:00:14.05 --> 00:00:16.04
+to solve these problems,
+
+7
+00:00:16.04 --> 00:00:18.07
+and I've just provided my solution here.
+
+8
+00:00:18.07 --> 00:00:21.06
+So let's get on to the
+challenge questions.
+
+9
+00:00:21.06 --> 00:00:25.01
+Plot the number of medals
+achieved by the Chinese team,
+
+10
+00:00:25.01 --> 00:00:26.07
+so that's both the men and women,
+
+11
+00:00:26.07 --> 00:00:32.01
+in Beijing 2008 using
+Matplotlib and Seaborn.
+
+12
+00:00:32.01 --> 00:00:36.05
+How can you use colormaps to
+give the data more meaning?
+
+13
+00:00:36.05 --> 00:00:38.03
+Plot the number of gold, silver,
+
+14
+00:00:38.03 --> 00:00:41.04
+and bronze medals for each gender.
+
+15
+00:00:41.04 --> 00:00:44.03
+And finally, how can you
+give the data more meaning?
+
+16
+00:00:44.03 --> 00:00:46.01
+Is there anything else you can change
+
+17
+00:00:46.01 --> 00:00:48.07
+to make it more intuitive?
+
+18
+00:00:48.07 --> 00:00:50.01
+I'll see you in the next video
+
+19
+00:00:50.01 --> 00:00:52.03
+where I work through these examples.
+

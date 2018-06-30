@@ -1,0 +1,59 @@
+1
+00:00:00.06 --> 00:00:02.02
+- [Instructor] So I've
+provided exercise files
+
+2
+00:00:02.02 --> 00:00:03.03
+for this course.
+
+3
+00:00:03.03 --> 00:00:06.00
+I've currently stored this on my desktop,
+
+4
+00:00:06.00 --> 00:00:09.01
+but you can store this wherever
+you like on your computer.
+
+5
+00:00:09.01 --> 00:00:09.09
+All you need to do
+
+6
+00:00:09.09 --> 00:00:12.06
+is to be able to access
+the relevant files.
+
+7
+00:00:12.06 --> 00:00:16.06
+We'll have one Jupyter
+Notebook per chapter.
+
+8
+00:00:16.06 --> 00:00:20.03
+So for example this is
+the one for Chapter One.
+
+9
+00:00:20.03 --> 00:00:23.00
+And I've also provided a
+folder with our data set.
+
+10
+00:00:23.00 --> 00:00:25.06
+And that's in the data folder.
+
+11
+00:00:25.06 --> 00:00:27.00
+So feel free to download this
+
+12
+00:00:27.00 --> 00:00:29.03
+so that you can follow along with me.
+
+13
+00:00:29.03 --> 00:00:32.03
+In the next video we will
+look at our technical set up.
+

@@ -1,0 +1,57 @@
+1
+00:00:03.05 --> 00:00:04.09
+- [Instructor] So, another
+fun challenge video
+
+2
+00:00:04.09 --> 00:00:06.05
+for indexing.
+
+3
+00:00:06.05 --> 00:00:09.02
+As usual, this should take
+between five and 10 minutes,
+
+4
+00:00:09.02 --> 00:00:11.03
+and I'll go through the solution with you,
+
+5
+00:00:11.03 --> 00:00:13.01
+and this is just one of
+the solutions available,
+
+6
+00:00:13.01 --> 00:00:15.03
+in the next video.
+
+7
+00:00:15.03 --> 00:00:16.04
+So, the first question.
+
+8
+00:00:16.04 --> 00:00:18.08
+Plot the total number of
+medals awarded at each
+
+9
+00:00:18.08 --> 00:00:22.01
+of the Olympic games throughout history.
+
+10
+00:00:22.01 --> 00:00:25.01
+And secondly, which
+countries did not win a medal
+
+11
+00:00:25.01 --> 00:00:27.02
+in the 2008 Olympics?
+
+12
+00:00:27.02 --> 00:00:30.00
+How many countries were there?
+
+13
+00:00:30.00 --> 00:00:32.08
+I'll see you next in the solution video.
+

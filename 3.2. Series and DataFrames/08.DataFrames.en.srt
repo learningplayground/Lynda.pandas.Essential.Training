@@ -1,0 +1,120 @@
+1
+00:00:00.05 --> 00:00:03.06
+- [Narrator] A dataframe is
+like a two dimensional area.
+
+2
+00:00:03.06 --> 00:00:06.05
+You can think of a dataframe
+as being like a table or a
+
+3
+00:00:06.05 --> 00:00:09.05
+spreadsheet with rows and columns.
+
+4
+00:00:09.05 --> 00:00:12.03
+You can see from our Olympics
+data set that the dataframe
+
+5
+00:00:12.03 --> 00:00:15.02
+is made up of several
+columns such as the city,
+
+6
+00:00:15.02 --> 00:00:17.02
+the addition, and sport.
+
+7
+00:00:17.02 --> 00:00:19.03
+And each entry, or row,
+
+8
+00:00:19.03 --> 00:00:22.04
+corresponds to a medal
+that an athlete has won.
+
+9
+00:00:22.04 --> 00:00:25.00
+This is all there is to a dataframe.
+
+10
+00:00:25.00 --> 00:00:27.04
+Let's head over to the Jupiter notebook
+
+11
+00:00:27.04 --> 00:00:31.08
+to understand a little
+bit more about dataframes.
+
+12
+00:00:31.08 --> 00:00:34.01
+The first thing we'll need
+to do in our notebook,
+
+13
+00:00:34.01 --> 00:00:37.04
+is to import pandas.
+
+14
+00:00:37.04 --> 00:00:40.00
+Inport pandas as pd.
+
+15
+00:00:40.00 --> 00:00:43.00
+Now we will make more sense
+of these next few lines in the
+
+16
+00:00:43.00 --> 00:00:45.08
+read csv video, so don't
+worry to much about them.
+
+17
+00:00:45.08 --> 00:00:48.03
+Basically what we are doing here is
+
+18
+00:00:48.03 --> 00:00:52.02
+we are reading the csv file
+into a dataframe called oo,
+
+19
+00:00:52.02 --> 00:00:54.04
+so let's run that.
+
+20
+00:00:54.04 --> 00:00:56.08
+In order to view the dataframe,
+
+21
+00:00:56.08 --> 00:00:59.04
+we enter the dataframes name which is oo
+
+22
+00:00:59.04 --> 00:01:01.05
+and run that cell.
+
+23
+00:01:01.05 --> 00:01:05.08
+The Jupiter notebook will
+display the first 30 rows
+
+24
+00:01:05.08 --> 00:01:09.01
+and the last 30 rows.
+
+25
+00:01:09.01 --> 00:01:11.04
+And we can see that in this dataframe,
+
+26
+00:01:11.04 --> 00:01:15.03
+we have 29,216 rows.
+
+27
+00:01:15.03 --> 00:01:19.03
+In the next video, we will
+look at panda's series.
+

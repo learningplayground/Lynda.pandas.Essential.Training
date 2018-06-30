@@ -1,0 +1,134 @@
+1
+00:00:00.06 --> 00:00:01.08
+- [Instructor] With unstack,
+
+2
+00:00:01.08 --> 00:00:05.01
+we return a series or a DataFrame.
+
+3
+00:00:05.01 --> 00:00:06.06
+Because the NAN values,
+
+4
+00:00:06.06 --> 00:00:09.01
+or the missing data values are displayed,
+
+5
+00:00:09.01 --> 00:00:12.00
+you have the option to fill
+them with another value.
+
+6
+00:00:12.00 --> 00:00:14.00
+So, in the example of the Olympic data set
+
+7
+00:00:14.00 --> 00:00:16.04
+that we are working on, it
+would make sense to have
+
+8
+00:00:16.04 --> 00:00:19.03
+every NAN value to be zero,
+because that means that
+
+9
+00:00:19.03 --> 00:00:22.03
+there were no medals won for that event.
+
+10
+00:00:22.03 --> 00:00:25.04
+With unstacking, you can pivot
+a level of the index labels,
+
+11
+00:00:25.04 --> 00:00:27.03
+and this returns a DataFrame
+
+12
+00:00:27.03 --> 00:00:29.09
+having a new level of column labels.
+
+13
+00:00:29.09 --> 00:00:32.08
+If the index isn't a MultiIndex,
+
+14
+00:00:32.08 --> 00:00:34.03
+the output will be a series,
+
+15
+00:00:34.03 --> 00:00:37.07
+and the level involved will
+automatically get sorted.
+
+16
+00:00:37.07 --> 00:00:39.06
+Let's head over to our Jupyter Notebook
+
+17
+00:00:39.06 --> 00:00:42.02
+to look at unstacking.
+
+18
+00:00:42.02 --> 00:00:45.04
+So, remember that our
+original DataFrame is df,
+
+19
+00:00:45.04 --> 00:00:48.02
+and, when we do an unstack,
+what we're looking at
+
+20
+00:00:48.02 --> 00:00:52.05
+is to try and get a wider DataFrame.
+
+21
+00:00:52.05 --> 00:00:55.00
+So, if i do a df.unstack,
+
+22
+00:00:55.00 --> 00:00:59.01
+I expect this original
+DataFrame, df, to widen out.
+
+23
+00:00:59.01 --> 00:01:03.04
+And, as with stacking, I
+prefer to explicitly state
+
+24
+00:01:03.04 --> 00:01:06.03
+which column I'm doing the unstacking on.
+
+25
+00:01:06.03 --> 00:01:11.02
+In this case, it's Gender.
+
+26
+00:01:11.02 --> 00:01:17.00
+So, I type df.unstack,
+and enter the column name,
+
+27
+00:01:17.00 --> 00:01:19.00
+or the series name, Gender.
+
+28
+00:01:19.00 --> 00:01:20.01
+And, you can see that we end up in
+
+29
+00:01:20.01 --> 00:01:23.00
+exactly the same result as earlier.
+
+30
+00:01:23.00 --> 00:01:24.07
+And, in the next video, we will look at
+
+31
+00:01:24.07 --> 00:01:27.01
+a couple of challenge questions together.
+

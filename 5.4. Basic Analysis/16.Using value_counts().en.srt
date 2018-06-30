@@ -1,0 +1,275 @@
+1
+00:00:00.05 --> 00:00:03.02
+- [Instructor] Basic Analysis.
+
+2
+00:00:03.02 --> 00:00:05.09
+Value_counts, value_counts is one of
+
+3
+00:00:05.09 --> 00:00:08.07
+the most useful methods in pandas.
+
+4
+00:00:08.07 --> 00:00:13.01
+It returns a series object,
+counting all the unique values.
+
+5
+00:00:13.01 --> 00:00:15.02
+There are two things in particular
+
+6
+00:00:15.02 --> 00:00:17.09
+to be aware of value_counts.
+
+7
+00:00:17.09 --> 00:00:21.00
+As this is returning a
+count of the unique values,
+
+8
+00:00:21.00 --> 00:00:24.04
+the first value is the most
+frequently occurring element.
+
+9
+00:00:24.04 --> 00:00:26.00
+The second, the second most
+
+10
+00:00:26.00 --> 00:00:28.05
+frequently occurring element and so on.
+
+11
+00:00:28.05 --> 00:00:30.07
+This order can be reversed by just setting
+
+12
+00:00:30.07 --> 00:00:33.03
+the ascending flag to True.
+
+13
+00:00:33.03 --> 00:00:36.05
+Dropna, one of the parameters
+within the value_counts
+
+14
+00:00:36.05 --> 00:00:39.01
+is True by default and you will not get
+
+15
+00:00:39.01 --> 00:00:41.04
+a count of the na values.
+
+16
+00:00:41.04 --> 00:00:44.03
+The na values remember are
+the missing data values.
+
+17
+00:00:44.03 --> 00:00:47.07
+If your data set has a
+significant number of na values,
+
+18
+00:00:47.07 --> 00:00:50.09
+this can be misleading and
+you can turn this feature off
+
+19
+00:00:50.09 --> 00:00:54.02
+by setting dropna to False.
+
+20
+00:00:54.02 --> 00:00:56.08
+Let's now head over now
+to our Jupyter notebook,
+
+21
+00:00:56.08 --> 00:00:59.06
+to look at value_counts.
+
+22
+00:00:59.06 --> 00:01:04.00
+As we've done previously,
+let's import pandas as pd
+
+23
+00:01:04.00 --> 00:01:07.05
+and read the CSV file into our data frame.
+
+24
+00:01:07.05 --> 00:01:09.00
+Everything seems to be in order
+
+25
+00:01:09.00 --> 00:01:13.00
+so let's head over to value_counts.
+
+26
+00:01:13.00 --> 00:01:15.01
+Now remember that value_counts gives you
+
+27
+00:01:15.01 --> 00:01:17.01
+the unique values for that series.
+
+28
+00:01:17.01 --> 00:01:19.05
+So if I wanted to know how
+many medals were presented
+
+29
+00:01:19.05 --> 00:01:23.05
+each time the Olympics
+were held, I can type,
+
+30
+00:01:23.05 --> 00:01:28.09
+oo for the data frame, Edition, value,
+
+31
+00:01:28.09 --> 00:01:35.02
+and I can tab to look at the
+options, select value_counts,
+
+32
+00:01:35.02 --> 00:01:38.01
+and value_counts sorts
+the values by the Olympics
+
+33
+00:01:38.01 --> 00:01:40.00
+where the most medals were presented
+
+34
+00:01:40.00 --> 00:01:42.02
+to the ones with the least
+medals were presented.
+
+35
+00:01:42.02 --> 00:01:46.01
+So here, the most medals were
+presented in the 2008 games
+
+36
+00:01:46.01 --> 00:01:49.04
+and for whatever reason, there
+were more medals presented
+
+37
+00:01:49.04 --> 00:01:53.06
+in the 2000 game versus the 2004 games.
+
+38
+00:01:53.06 --> 00:01:57.03
+It's something that we might
+want to look into a bit more.
+
+39
+00:01:57.03 --> 00:01:59.09
+Or let's say if I was
+interested to know over the
+
+40
+00:01:59.09 --> 00:02:04.01
+history of the Olympics, so
+that's from 1896 to 2008,
+
+41
+00:02:04.01 --> 00:02:06.01
+how many medals were presented to men,
+
+42
+00:02:06.01 --> 00:02:09.01
+and how many medals
+were presented to women,
+
+43
+00:02:09.01 --> 00:02:11.07
+I get that information
+from the Gender field,
+
+44
+00:02:11.07 --> 00:02:14.06
+so I would type, oo for the data frame,
+
+45
+00:02:14.06 --> 00:02:20.01
+the series is Gender, value_counts,
+
+46
+00:02:20.01 --> 00:02:26.00
+and I can see that there were
+21,721 medals presented to men
+
+47
+00:02:26.00 --> 00:02:30.03
+over the history of the
+Olympics and 7,495 to the women.
+
+48
+00:02:30.03 --> 00:02:33.03
+We might want to sort by
+ascending order instead.
+
+49
+00:02:33.03 --> 00:02:35.04
+So all I need to do is to change
+
+50
+00:02:35.04 --> 00:02:40.06
+the ascending flag here to True,
+
+51
+00:02:40.06 --> 00:02:44.06
+and we can see that this has
+swapped those values across.
+
+52
+00:02:44.06 --> 00:02:47.07
+By default, you will not get
+a count of the na values.
+
+53
+00:02:47.07 --> 00:02:50.01
+Remember those are the
+missing data values.
+
+54
+00:02:50.01 --> 00:02:52.08
+If your data set has a
+significant number of na values,
+
+55
+00:02:52.08 --> 00:02:54.07
+this can be misleading.
+
+56
+00:02:54.07 --> 00:02:56.09
+So we will not see any
+difference in our data set
+
+57
+00:02:56.09 --> 00:02:59.02
+as we don't have any missing data.
+
+58
+00:02:59.02 --> 00:03:01.07
+So if I hit shift and tab, dropna,
+
+59
+00:03:01.07 --> 00:03:06.01
+I need to just change dropna to False,
+
+60
+00:03:06.01 --> 00:03:09.08
+and there will be no
+difference in what we see.
+
+61
+00:03:09.08 --> 00:03:13.02
+In the next video, we
+will look at sort_values.
+

@@ -1,0 +1,331 @@
+1
+00:00:00.06 --> 00:00:01.05
+- [Instructor] In this video,
+
+2
+00:00:01.05 --> 00:00:03.03
+we will get a better understanding
+
+3
+00:00:03.03 --> 00:00:05.07
+of using Jupyter notebooks.
+
+4
+00:00:05.07 --> 00:00:07.06
+Jupyter notebooks allow you to create
+
+5
+00:00:07.06 --> 00:00:12.04
+and share documents that have
+live code, explanatory text,
+
+6
+00:00:12.04 --> 00:00:15.04
+equations, and visualizations.
+
+7
+00:00:15.04 --> 00:00:17.02
+There are two ways of doing this.
+
+8
+00:00:17.02 --> 00:00:19.05
+If you use Windows 10,
+you can just look for
+
+9
+00:00:19.05 --> 00:00:22.06
+the Anaconda Navigator,
+and launch Jupyter notebook
+
+10
+00:00:22.06 --> 00:00:24.09
+from there.
+
+11
+00:00:24.09 --> 00:00:27.08
+Alternatively, you can
+go to the command prompt
+
+12
+00:00:27.08 --> 00:00:32.07
+by typing cmd, and then once
+within the command prompt,
+
+13
+00:00:32.07 --> 00:00:39.00
+type jupyter notebook and hit Enter,
+
+14
+00:00:39.00 --> 00:00:41.07
+and this will retrieve
+exactly the same thing.
+
+15
+00:00:41.07 --> 00:00:43.05
+This will open the Jupyter
+notebook application
+
+16
+00:00:43.05 --> 00:00:46.01
+in the web browser on
+the following address,
+
+17
+00:00:46.01 --> 00:00:52.04
+http localhost, and you can
+see you've got 8890/tree.
+
+18
+00:00:52.04 --> 00:00:55.02
+The Files tab gives you
+a list of all the files
+
+19
+00:00:55.02 --> 00:00:58.00
+in your current folder or directory.
+
+20
+00:00:58.00 --> 00:01:01.06
+The Running tab let's you
+track your running processes
+
+21
+00:01:01.06 --> 00:01:04.04
+and any open Jupyter notebooks,
+
+22
+00:01:04.04 --> 00:01:08.07
+and the Clusters tab is now
+provided by iPython parallel,
+
+23
+00:01:08.07 --> 00:01:12.04
+which is a Python package
+and collection of CLI scripts
+
+24
+00:01:12.04 --> 00:01:15.09
+for controlling clusters for Jupyter.
+
+25
+00:01:15.09 --> 00:01:22.02
+To start a notebook, select
+New under the File tab.
+
+26
+00:01:22.02 --> 00:01:25.05
+Select Python 3.
+
+27
+00:01:25.05 --> 00:01:30.02
+You can see there the notebook
+name, a menu bar, a toolbar,
+
+28
+00:01:30.02 --> 00:01:32.05
+and an empty code cell.
+
+29
+00:01:32.05 --> 00:01:35.07
+There are two modes that
+we're interested in using.
+
+30
+00:01:35.07 --> 00:01:38.06
+The first is to enter any text.
+
+31
+00:01:38.06 --> 00:01:42.00
+We enter this in the Code cells.
+
+32
+00:01:42.00 --> 00:01:45.03
+This is some text.
+
+33
+00:01:45.03 --> 00:01:49.00
+This is done in Markdown
+in Jupyter notebooks.
+
+34
+00:01:49.00 --> 00:01:51.07
+The second mode allows
+us to input and run code
+
+35
+00:01:51.07 --> 00:01:53.05
+within our notebook.
+
+36
+00:01:53.05 --> 00:01:57.01
+You can always select Markdown
+or Code in the menu above
+
+37
+00:01:57.01 --> 00:01:59.08
+after selecting a code cell
+
+38
+00:01:59.08 --> 00:02:02.06
+by either using your
+mouse or the up down arrow
+
+39
+00:02:02.06 --> 00:02:04.07
+on your keyboard.
+
+40
+00:02:04.07 --> 00:02:08.07
+Alternatively, you can
+use keyboard shortcuts.
+
+41
+00:02:08.07 --> 00:02:12.05
+For example, if I hit Esc + M,
+
+42
+00:02:12.05 --> 00:02:15.02
+this means that the cell is now Markdown.
+
+43
+00:02:15.02 --> 00:02:19.08
+Now to evaluate or run this
+cell, I hit Shift + Enter,
+
+44
+00:02:19.08 --> 00:02:24.00
+and you can see that I received
+the text, this is some text.
+
+45
+00:02:24.00 --> 00:02:28.02
+Hitting Esc + Y means that
+the cell is now in Code mode.
+
+46
+00:02:28.02 --> 00:02:31.06
+So for example if I type
+32*32 and evaluate that
+
+47
+00:02:31.06 --> 00:02:37.03
+by hitting Shift + Enter,
+that evaluates that cell.
+
+48
+00:02:37.03 --> 00:02:40.00
+There are only two other
+commands that we need to learn.
+
+49
+00:02:40.00 --> 00:02:42.05
+If you want to learn
+anymore keyboard shortcuts,
+
+50
+00:02:42.05 --> 00:02:49.09
+select Help, and Keyboard
+shortcuts from the menu.
+
+51
+00:02:49.09 --> 00:02:54.07
+So Esc + V will insert empty code cells
+
+52
+00:02:54.07 --> 00:03:00.00
+below your current cell,
+and Esc + A will insert
+
+53
+00:03:00.00 --> 00:03:04.04
+empty code cells above your current cell.
+
+54
+00:03:04.04 --> 00:03:10.04
+You can save this notebook
+and give it a name.
+
+55
+00:03:10.04 --> 00:03:12.00
+In practice, what you might want to do is
+
+56
+00:03:12.00 --> 00:03:14.08
+share the notebook with other people.
+
+57
+00:03:14.08 --> 00:03:16.09
+Now that you know how
+to create a notebook,
+
+58
+00:03:16.09 --> 00:03:19.00
+for the rest of this course
+we will use the notebooks
+
+59
+00:03:19.00 --> 00:03:22.03
+that I have shared and
+made available to you.
+
+60
+00:03:22.03 --> 00:03:24.03
+A tip for the real world.
+
+61
+00:03:24.03 --> 00:03:27.06
+It is important that you
+maintain these notebooks.
+
+62
+00:03:27.06 --> 00:03:30.00
+These will be living
+documents that you will share
+
+63
+00:03:30.00 --> 00:03:32.05
+with your data science colleagues.
+
+64
+00:03:32.05 --> 00:03:34.03
+You can build up a
+portfolio that you can use
+
+65
+00:03:34.03 --> 00:03:37.08
+as a living resume to share
+with perspective employers.
+
+66
+00:03:37.08 --> 00:03:40.08
+In many instances, if
+you have used a notebook
+
+67
+00:03:40.08 --> 00:03:43.03
+and documented assumptions and steps,
+
+68
+00:03:43.03 --> 00:03:45.09
+if you come back to that
+dataset at a later date,
+
+69
+00:03:45.09 --> 00:03:48.07
+it can save you a lot of time.
+
+70
+00:03:48.07 --> 00:03:51.01
+How useful your Jupyter
+notebook will be to you
+
+71
+00:03:51.01 --> 00:03:56.00
+will be determined by how
+well you document your work.
+
+72
+00:03:56.00 --> 00:03:59.07
+In the next video, we
+will look at using Pandas.
+

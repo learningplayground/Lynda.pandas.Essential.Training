@@ -1,0 +1,135 @@
+1
+00:00:00.05 --> 00:00:02.09
+- [Instructor] String
+handling generally have names
+
+2
+00:00:02.09 --> 00:00:06.08
+matching the equivalent
+scaler built in string methods
+
+3
+00:00:06.08 --> 00:00:08.08
+that are available in Python.
+
+4
+00:00:08.08 --> 00:00:13.02
+These are available
+under the str attribute.
+
+5
+00:00:13.02 --> 00:00:14.07
+Using the str attribute,
+
+6
+00:00:14.07 --> 00:00:17.07
+you have access to several
+common string methods,
+
+7
+00:00:17.07 --> 00:00:22.09
+such as contains, startswith,
+isnumeric and so on.
+
+8
+00:00:22.09 --> 00:00:25.02
+Let's head over to the Jupyter notebook
+
+9
+00:00:25.02 --> 00:00:28.02
+to have a look at a couple of examples.
+
+10
+00:00:28.02 --> 00:00:30.06
+Let's say we want to look
+up the legendary Flo Jo,
+
+11
+00:00:30.06 --> 00:00:33.01
+who is the fastest woman ever.
+
+12
+00:00:33.01 --> 00:00:36.08
+Her time for the 100
+meter sprint from 1988
+
+13
+00:00:36.08 --> 00:00:39.05
+is still the fastest time recorded today.
+
+14
+00:00:39.05 --> 00:00:44.00
+Now if you're like me, you
+can't remember her full name.
+
+15
+00:00:44.00 --> 00:00:48.04
+We know her name is Flo Jo,
+so her first name is Florence.
+
+16
+00:00:48.04 --> 00:00:51.05
+So I go to my data frame, Athlete,
+
+17
+00:00:51.05 --> 00:00:57.09
+and I now use the new string
+attribute str.contains,
+
+18
+00:00:57.09 --> 00:01:01.04
+and I search for Florence.
+
+19
+00:01:01.04 --> 00:01:03.02
+If I want to see where this is true,
+
+20
+00:01:03.02 --> 00:01:05.04
+so I want to see the
+rows where this is true,
+
+21
+00:01:05.04 --> 00:01:09.01
+I enter this in square brackets,
+
+22
+00:01:09.01 --> 00:01:10.05
+and I can see a couple of Florences.
+
+23
+00:01:10.05 --> 00:01:12.09
+So, Florence Syers and so on.
+
+24
+00:01:12.09 --> 00:01:15.07
+Clearly the one that we're
+looking for is Flo Jo
+
+25
+00:01:15.07 --> 00:01:19.06
+from the USA who ran the 100
+meters and 200 meters in 1988.
+
+26
+00:01:19.06 --> 00:01:23.09
+So her full name is
+Florence Griffith Joyner.
+
+27
+00:01:23.09 --> 00:01:26.05
+That's the end of our basic analysis.
+
+28
+00:01:26.05 --> 00:01:27.04
+In the next section,
+
+29
+00:01:27.04 --> 00:01:29.07
+we will look at a Jupyter notebook
+
+30
+00:01:29.07 --> 00:01:33.07
+and look at some basic data
+analysis worked examples.
+

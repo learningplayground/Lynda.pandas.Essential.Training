@@ -1,0 +1,172 @@
+1
+00:00:00.06 --> 00:00:01.08
+- [Instructor] Here with Iloc,
+
+2
+00:00:01.08 --> 00:00:04.07
+we're doing selection by integer index.
+
+3
+00:00:04.07 --> 00:00:09.00
+Iloc is primarily integer position based.
+
+4
+00:00:09.00 --> 00:00:10.08
+One of the advantages of Iloc
+
+5
+00:00:10.08 --> 00:00:14.06
+is that it allows for the
+traditional Pythonic slicing.
+
+6
+00:00:14.06 --> 00:00:16.04
+Let's take a look at a couple of examples
+
+7
+00:00:16.04 --> 00:00:18.08
+in the jupyter notebook.
+
+8
+00:00:18.08 --> 00:00:24.01
+Let's review our data frame again.
+
+9
+00:00:24.01 --> 00:00:28.01
+If I want to see the 1,700th entry,
+
+10
+00:00:28.01 --> 00:00:29.07
+or the index entry,
+
+11
+00:00:29.07 --> 00:00:32.05
+I would type oo.iloc,
+
+12
+00:00:32.05 --> 00:00:35.09
+and remember it's square brackets, 1700.
+
+13
+00:00:35.09 --> 00:00:38.03
+I can see that this
+corresponds to the athlete,
+
+14
+00:00:38.03 --> 00:00:40.04
+Pierre Rabot.
+
+15
+00:00:40.04 --> 00:00:42.01
+What I can also do with Iloc,
+
+16
+00:00:42.01 --> 00:00:44.00
+is to use a list.
+
+17
+00:00:44.00 --> 00:00:47.01
+So, oo. for my data frame, iloc,
+
+18
+00:00:47.01 --> 00:00:49.01
+and then a list of integers.
+
+19
+00:00:49.01 --> 00:00:51.00
+For example, I might want the
+
+20
+00:00:51.00 --> 00:00:56.07
+integer index 1542, 2390,
+
+21
+00:00:56.07 --> 00:01:02.02
+6000, and 15000.
+
+22
+00:01:02.02 --> 00:01:08.05
+This will return the rows
+corresponding to these index.
+
+23
+00:01:08.05 --> 00:01:10.09
+I mentioned earlier that Iloc allows for
+
+24
+00:01:10.09 --> 00:01:12.04
+the traditional Pythonic slicing,
+
+25
+00:01:12.04 --> 00:01:16.00
+so, for example, if I do an oo.head,
+
+26
+00:01:16.00 --> 00:01:19.04
+and look at the first five
+entries in my data frame,
+
+27
+00:01:19.04 --> 00:01:23.05
+if I wanted to only see
+the entries one to three,
+
+28
+00:01:23.05 --> 00:01:31.06
+I could use Pythonic
+slicing and do a oo.iloc.1:4
+
+29
+00:01:31.06 --> 00:01:37.07
+and these will return the
+indexes with one, two, and three.
+
+30
+00:01:37.07 --> 00:01:41.03
+Loc and Iloc can be used
+for different things.
+
+31
+00:01:41.03 --> 00:01:44.02
+In the real world, I would often
+use one of the other series
+
+32
+00:01:44.02 --> 00:01:45.07
+as my index, and so,
+
+33
+00:01:45.07 --> 00:01:48.09
+I would typically use Loc for indexing.
+
+34
+00:01:48.09 --> 00:01:51.06
+However, if my data is
+sorted in a way that allows
+
+35
+00:01:51.06 --> 00:01:53.03
+me to use the default index,
+
+36
+00:01:53.03 --> 00:01:54.09
+then I might use Iloc,
+
+37
+00:01:54.09 --> 00:01:57.04
+especially when I want
+to access chunks of data
+
+38
+00:01:57.04 --> 00:01:59.09
+using Python slicing.
+
+39
+00:01:59.09 --> 00:02:01.00
+In the next video,
+
+40
+00:02:01.00 --> 00:02:03.05
+we will look at a couple
+of challenge questions.
+

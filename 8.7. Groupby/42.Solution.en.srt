@@ -1,0 +1,312 @@
+1
+00:00:03.06 --> 00:00:06.08
+- [Instructor] So, let's import Pandas
+
+2
+00:00:06.08 --> 00:00:11.00
+and read the CSV file
+into our DataFrame 00.
+
+3
+00:00:11.00 --> 00:00:12.06
+So, using Groupby,
+
+4
+00:00:12.06 --> 00:00:14.08
+plot the total number of medal awarded
+
+5
+00:00:14.08 --> 00:00:17.06
+at each of the Olympic
+Games throughout history.
+
+6
+00:00:17.06 --> 00:00:18.05
+So, this is the same question
+
+7
+00:00:18.05 --> 00:00:21.02
+that we looked at in
+the indexing challenge
+
+8
+00:00:21.02 --> 00:00:25.00
+and here's another way to get
+the same result using Groupby.
+
+9
+00:00:25.00 --> 00:00:26.05
+So, 00's my DataFrame.
+
+10
+00:00:26.05 --> 00:00:30.04
+I'm going to Groupby the edition
+
+11
+00:00:30.04 --> 00:00:32.00
+and I'm going to use the size object
+
+12
+00:00:32.00 --> 00:00:34.05
+to determine the count for each group
+
+13
+00:00:34.05 --> 00:00:38.08
+and let's see what we get here.
+
+14
+00:00:38.08 --> 00:00:40.09
+So, unlike in indexing,
+
+15
+00:00:40.09 --> 00:00:44.00
+we see that Groupby sorts
+the index by default
+
+16
+00:00:44.00 --> 00:00:46.06
+and so, we can see it's 1896 to 1900
+
+17
+00:00:46.06 --> 00:00:48.03
+and so on and all of the years here
+
+18
+00:00:48.03 --> 00:00:50.03
+are sorted by the Olympic year,
+
+19
+00:00:50.03 --> 00:00:53.00
+so we don't have to use these sort index
+
+20
+00:00:53.00 --> 00:00:56.00
+like we had to in the indexing example.
+
+21
+00:00:56.00 --> 00:00:57.00
+So, all I need to do now
+
+22
+00:00:57.00 --> 00:01:00.04
+is to just plot this line
+
+23
+00:01:00.04 --> 00:01:02.02
+and we end up with exactly the same result
+
+24
+00:01:02.02 --> 00:01:04.09
+as we did in the indexing challenge.
+
+25
+00:01:04.09 --> 00:01:06.09
+Onto the next question.
+
+26
+00:01:06.09 --> 00:01:10.05
+Create a list showing the
+total number of medals,
+
+27
+00:01:10.05 --> 00:01:12.03
+one for each country
+
+28
+00:01:12.03 --> 00:01:14.03
+over the history of the Olympics.
+
+29
+00:01:14.03 --> 00:01:16.05
+For each country, include the year
+
+30
+00:01:16.05 --> 00:01:21.00
+of the first and the most
+recent Olympic medal wins.
+
+31
+00:01:21.00 --> 00:01:24.03
+So, I suggest we start by
+just grouping by the country,
+
+32
+00:01:24.03 --> 00:01:29.01
+so Groupby NOC
+
+33
+00:01:29.01 --> 00:01:33.05
+and let's use the basic
+aggregate function first.
+
+34
+00:01:33.05 --> 00:01:36.02
+So, we need the count
+
+35
+00:01:36.02 --> 00:01:39.04
+and note that because
+it's asking for the first
+
+36
+00:01:39.04 --> 00:01:41.06
+and the most recent medal win,
+
+37
+00:01:41.06 --> 00:01:42.04
+what we want to use
+
+38
+00:01:42.04 --> 00:01:45.06
+is the min and the max information
+
+39
+00:01:45.06 --> 00:01:50.01
+that is available in the
+Olympics edition field.
+
+40
+00:01:50.01 --> 00:02:01.06
+So, count, min and max.
+
+41
+00:02:01.06 --> 00:02:05.02
+Now again we see that series such as city,
+
+42
+00:02:05.02 --> 00:02:07.02
+the sport and the discipline
+
+43
+00:02:07.02 --> 00:02:09.09
+do not provide us with
+much useful information.
+
+44
+00:02:09.09 --> 00:02:13.04
+However, when we look
+at the edition series,
+
+45
+00:02:13.04 --> 00:02:15.01
+we see that for each country
+
+46
+00:02:15.01 --> 00:02:18.00
+we have the number of medals won,
+
+47
+00:02:18.00 --> 00:02:19.05
+when the first medal was won
+
+48
+00:02:19.05 --> 00:02:22.01
+which was the min and when
+the last medal was won,
+
+49
+00:02:22.01 --> 00:02:25.04
+so for example, Afghanistan
+seems to have won
+
+50
+00:02:25.04 --> 00:02:30.07
+its first medal in the 2008 Olympics.
+
+51
+00:02:30.07 --> 00:02:34.07
+If we scroll down,
+
+52
+00:02:34.07 --> 00:02:37.06
+we can see that the USA
+
+53
+00:02:37.06 --> 00:02:40.09
+won its first medal in 1896,
+
+54
+00:02:40.09 --> 00:02:43.05
+it's most recent medal in 2008
+
+55
+00:02:43.05 --> 00:02:47.02
+and the USA has won 4,335 medals
+
+56
+00:02:47.02 --> 00:02:51.07
+over the history of the Olympics.
+
+57
+00:02:51.07 --> 00:02:53.04
+Given that the edition field
+
+58
+00:02:53.04 --> 00:02:56.02
+was the most useful to us,
+
+59
+00:02:56.02 --> 00:02:59.00
+let's use aggregate's dict structure
+
+60
+00:02:59.00 --> 00:03:02.04
+to only get information
+on the edition field,
+
+61
+00:03:02.04 --> 00:03:09.05
+so I use Python's dict structure here,
+
+62
+00:03:09.05 --> 00:03:13.03
+edition,
+
+63
+00:03:13.03 --> 00:03:16.05
+and so, that's the key,
+these are the values
+
+64
+00:03:16.05 --> 00:03:20.08
+and this is our Python dict structure
+
+65
+00:03:20.08 --> 00:03:22.07
+and we can see here that we've got a list
+
+66
+00:03:22.07 --> 00:03:24.07
+of all of the countries,
+
+67
+00:03:24.07 --> 00:03:27.00
+the total number of
+medals that the countries
+
+68
+00:03:27.00 --> 00:03:29.01
+have won over the history of the Olympics
+
+69
+00:03:29.01 --> 00:03:32.07
+and when the country won
+its first Olympic medal
+
+70
+00:03:32.07 --> 00:03:35.08
+and its most recent Olympic medal.
+
+71
+00:03:35.08 --> 00:03:37.04
+As you can see, the Groupby function
+
+72
+00:03:37.04 --> 00:03:40.01
+is incredibly useful in Pandas.
+
+73
+00:03:40.01 --> 00:03:43.07
+In the next video we will
+look at stack and unstack.
+

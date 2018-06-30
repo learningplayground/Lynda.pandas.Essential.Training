@@ -1,0 +1,121 @@
+1
+00:00:00.08 --> 00:00:02.05
+- [Instructor] Indexing.
+
+2
+00:00:02.05 --> 00:00:05.07
+The index object is an immutable array,
+
+3
+00:00:05.07 --> 00:00:08.01
+and indexing allows you to access
+
+4
+00:00:08.01 --> 00:00:11.06
+a row or a column using a label.
+
+5
+00:00:11.06 --> 00:00:13.06
+This is what makes Pandas special,
+
+6
+00:00:13.06 --> 00:00:16.01
+because typically in other
+programming languages,
+
+7
+00:00:16.01 --> 00:00:19.07
+you cannot access an array using labels.
+
+8
+00:00:19.07 --> 00:00:22.02
+Let's head over to the Jupyter notebook
+
+9
+00:00:22.02 --> 00:00:24.07
+to look at a couple of examples.
+
+10
+00:00:24.07 --> 00:00:28.03
+So let's import Pandas's
+PD and let's import
+
+11
+00:00:28.03 --> 00:00:34.08
+our CSV dataset into our dataframe oo.
+
+12
+00:00:34.08 --> 00:00:37.04
+To try and understand a
+little bit more about indexes,
+
+13
+00:00:37.04 --> 00:00:40.06
+let's look at their type, and you can see
+
+14
+00:00:40.06 --> 00:00:43.01
+that an index has its own type
+
+15
+00:00:43.01 --> 00:00:46.08
+and is not series or a dataframe.
+
+16
+00:00:46.08 --> 00:00:50.05
+Let's look at the hundredth
+element for this dataframe.
+
+17
+00:00:50.05 --> 00:00:56.02
+So oo, index, and 100,
+
+18
+00:00:56.02 --> 00:00:57.04
+and we can see that it's returned
+
+19
+00:00:57.04 --> 00:00:59.08
+the number 100 because
+that's the hundredth element
+
+20
+00:00:59.08 --> 00:01:03.07
+or the hundredth element
+in that dataframe.
+
+21
+00:01:03.07 --> 00:01:05.09
+Now indexes are immutable,
+
+22
+00:01:05.09 --> 00:01:08.03
+so that means we cannot change them.
+
+23
+00:01:08.03 --> 00:01:12.06
+So oo.index, and if I try and change 100
+
+24
+00:01:12.06 --> 00:01:17.05
+to become, say, five, I get an error.
+
+25
+00:01:17.05 --> 00:01:22.06
+I get an "Index does not support
+mutable operations" error.
+
+26
+00:01:22.06 --> 00:01:25.08
+In this video, we covered the
+basic properties of the index,
+
+27
+00:01:25.08 --> 00:01:28.00
+but there's a lot more to indexes.
+
+28
+00:01:28.00 --> 00:01:30.07
+We will cover these in
+the next couple of videos.
+

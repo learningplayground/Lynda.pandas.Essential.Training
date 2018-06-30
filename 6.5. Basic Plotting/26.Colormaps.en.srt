@@ -1,0 +1,136 @@
+1
+00:00:00.05 --> 00:00:03.03
+- [Instructor] Colormaps are
+included with Matplotlib.
+
+2
+00:00:03.03 --> 00:00:05.06
+The idea behind choosing a cool colormap,
+
+3
+00:00:05.06 --> 00:00:08.08
+is to find a good
+representation of your data.
+
+4
+00:00:08.08 --> 00:00:11.07
+It there an intuitive
+color scheme for the data?
+
+5
+00:00:11.07 --> 00:00:15.02
+For example gold, silver,
+and bronze for medal winners.
+
+6
+00:00:15.02 --> 00:00:17.05
+Blue for male, pink for female?
+
+7
+00:00:17.05 --> 00:00:19.08
+There are three classes of colormaps.
+
+8
+00:00:19.08 --> 00:00:26.00
+The sequential, the diverging,
+and the qualitative.
+
+9
+00:00:26.00 --> 00:00:28.06
+The sequential should be used
+for representing information
+
+10
+00:00:28.06 --> 00:00:30.01
+that has ordering.
+
+11
+00:00:30.01 --> 00:00:34.01
+There is a change in lightness,
+often over a single hue.
+
+12
+00:00:34.01 --> 00:00:37.08
+Diverging is to be used when
+the information being plotted
+
+13
+00:00:37.08 --> 00:00:39.05
+deviates around a middle value.
+
+14
+00:00:39.05 --> 00:00:43.06
+Here there are often two
+different colors being used.
+
+15
+00:00:43.06 --> 00:00:46.07
+And finally, the qualitative
+class is used to represent
+
+16
+00:00:46.07 --> 00:00:48.09
+information which does not have any
+
+17
+00:00:48.09 --> 00:00:50.04
+ordering or relationship,
+
+18
+00:00:50.04 --> 00:00:53.06
+and is often miscellaneous colors.
+
+19
+00:00:53.06 --> 00:00:55.02
+Let's head over to the Jupiter notebook
+
+20
+00:00:55.02 --> 00:00:58.05
+to look at a couple of examples.
+
+21
+00:00:58.05 --> 00:01:01.05
+Let's use the pie chart
+as our first example,
+
+22
+00:01:01.05 --> 00:01:04.07
+so we need to specify that
+the kind of plot that you want
+
+23
+00:01:04.07 --> 00:01:07.01
+is a pie chart,
+
+24
+00:01:07.01 --> 00:01:10.06
+and here we can specify that the colormap
+
+25
+00:01:10.06 --> 00:01:14.02
+is Pastel1 for example.
+
+26
+00:01:14.02 --> 00:01:17.02
+Notice that you would have
+run into problems if you
+
+27
+00:01:17.02 --> 00:01:20.05
+tried to plot a pie chart
+using the color parameter,
+
+28
+00:01:20.05 --> 00:01:22.03
+as this doesn't exist.
+
+29
+00:01:22.03 --> 00:01:25.06
+In the next video, we
+will look at Seaborn.
+
+30
+00:01:25.06 --> 00:01:29.03
+Which provides very rich
+and beautiful plots.
+

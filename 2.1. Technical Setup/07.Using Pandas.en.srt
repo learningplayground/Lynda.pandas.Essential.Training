@@ -1,0 +1,260 @@
+1
+00:00:00.06 --> 00:00:02.09
+- [Instructor] Now, in
+order for us to use pandas,
+
+2
+00:00:02.09 --> 00:00:05.09
+we need to import Python's pandas library.
+
+3
+00:00:05.09 --> 00:00:07.08
+There are two ways of doing this.
+
+4
+00:00:07.08 --> 00:00:09.05
+We can type import pandas
+
+5
+00:00:09.05 --> 00:00:13.00
+and what this is doing is
+importing Python's pandas library.
+
+6
+00:00:13.00 --> 00:00:14.08
+We're then in the position
+to use the functions
+
+7
+00:00:14.08 --> 00:00:16.06
+available in this library.
+
+8
+00:00:16.06 --> 00:00:18.00
+And to use the functions,
+
+9
+00:00:18.00 --> 00:00:22.03
+we will type pandas dot
+and the function name.
+
+10
+00:00:22.03 --> 00:00:26.03
+The other way to do is to
+type import pandas as pd.
+
+11
+00:00:26.03 --> 00:00:30.01
+Here we are also importing
+the Python's pandas library,
+
+12
+00:00:30.01 --> 00:00:32.05
+but we're using the alias pd.
+
+13
+00:00:32.05 --> 00:00:35.02
+This means that if you want
+to access the functions
+
+14
+00:00:35.02 --> 00:00:36.06
+and methods available,
+
+15
+00:00:36.06 --> 00:00:40.07
+you only have to type pd
+and the function name.
+
+16
+00:00:40.07 --> 00:00:43.09
+Pandas documentation is readily available.
+
+17
+00:00:43.09 --> 00:00:46.08
+All you need to do is
+type a pd and the dot
+
+18
+00:00:46.08 --> 00:00:48.03
+and then hit the Tab key
+
+19
+00:00:48.03 --> 00:00:50.05
+and it will give you the options available
+
+20
+00:00:50.05 --> 00:00:52.08
+within that method.
+
+21
+00:00:52.08 --> 00:00:55.04
+PD? provides the doc string
+
+22
+00:00:55.04 --> 00:00:58.00
+or a summary of an
+object and how to use it.
+
+23
+00:00:58.00 --> 00:01:00.02
+So, let's head over to
+the Jupyter Notebook
+
+24
+00:01:00.02 --> 00:01:02.01
+to look at how we import pandas
+
+25
+00:01:02.01 --> 00:01:05.02
+and review the pandas documentation.
+
+26
+00:01:05.02 --> 00:01:09.07
+So, we can import pandas
+by typing import pandas
+
+27
+00:01:09.07 --> 00:01:13.04
+and run that cell by
+typing Shift and Enter.
+
+28
+00:01:13.04 --> 00:01:15.01
+And then if you want to
+access any of the methods
+
+29
+00:01:15.01 --> 00:01:18.03
+so for example if we wanted
+to know the versions of pandas
+
+30
+00:01:18.03 --> 00:01:21.08
+so pandas.show_versions,
+
+31
+00:01:21.08 --> 00:01:24.05
+this shows me not only
+the version of pandas,
+
+32
+00:01:24.05 --> 00:01:29.01
+but it shows me the versions
+of the dependencies for pandas.
+
+33
+00:01:29.01 --> 00:01:30.04
+I might want to shorten that
+
+34
+00:01:30.04 --> 00:01:32.01
+to just get the version for pandas
+
+35
+00:01:32.01 --> 00:01:38.05
+so I'll just type pandas two
+underscores version underscore
+
+36
+00:01:38.05 --> 00:01:43.04
+and you can see that I'm
+using pandas version 0.20.1.
+
+37
+00:01:43.04 --> 00:01:45.07
+Now, the other way to do
+this is to use the alias
+
+38
+00:01:45.07 --> 00:01:51.09
+so I do import pandas as pd, run that,
+
+39
+00:01:51.09 --> 00:01:56.09
+and I can type pd version and run
+
+40
+00:01:56.09 --> 00:02:00.02
+and I get exactly the same output.
+
+41
+00:02:00.02 --> 00:02:02.07
+Now, on to pandas documentation.
+
+42
+00:02:02.07 --> 00:02:05.08
+I can type pd and then
+I just need to hit Tab
+
+43
+00:02:05.08 --> 00:02:07.07
+and this gives me all
+of the methods available
+
+44
+00:02:07.07 --> 00:02:09.04
+within the pandas library.
+
+45
+00:02:09.04 --> 00:02:11.06
+So, for example, when I used pd.show,
+
+46
+00:02:11.06 --> 00:02:13.05
+I can hit Tab here
+
+47
+00:02:13.05 --> 00:02:17.04
+and that will auto complete
+that command for me.
+
+48
+00:02:17.04 --> 00:02:20.01
+If I want to get more
+information about a doc string,
+
+49
+00:02:20.01 --> 00:02:25.06
+I can do a pd.show_versions
+and a question mark
+
+50
+00:02:25.06 --> 00:02:28.00
+and this gives me information
+about that package.
+
+51
+00:02:28.00 --> 00:02:30.03
+In this instance, there
+isn't any doc string
+
+52
+00:02:30.03 --> 00:02:32.05
+for show version.
+
+53
+00:02:32.05 --> 00:02:39.03
+Let's try another method, pd.read_csv,
+
+54
+00:02:39.03 --> 00:02:41.05
+and here you can see I get
+the doc string for read csv
+
+55
+00:02:41.05 --> 00:02:46.00
+which is read csv file into a dataframe.
+
+56
+00:02:46.00 --> 00:02:47.00
+In the next video,
+
+57
+00:02:47.00 --> 00:02:49.04
+we will look at series and dataframes
+
+58
+00:02:49.04 --> 00:02:51.07
+which are the building blocks of pandas.
+

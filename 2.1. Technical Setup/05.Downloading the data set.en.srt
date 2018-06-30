@@ -1,0 +1,128 @@
+1
+00:00:00.06 --> 00:00:03.05
+- [Instructor] In this video,
+we will download our dataset
+
+2
+00:00:03.05 --> 00:00:06.08
+and store it in a folder
+for us to access and use.
+
+3
+00:00:06.08 --> 00:00:10.04
+So let's get started by
+downloading our dataset.
+
+4
+00:00:10.04 --> 00:00:18.01
+Do a search for Summer Olympic medal data.
+
+5
+00:00:18.01 --> 00:00:21.01
+Let's select the first link.
+
+6
+00:00:21.01 --> 00:00:24.02
+Select Get the data.
+
+7
+00:00:24.02 --> 00:00:28.03
+And select this link,
+download the full spreadsheet.
+
+8
+00:00:28.03 --> 00:00:32.01
+We can download the data
+as a Google Document.
+
+9
+00:00:32.01 --> 00:00:34.02
+The first tab, Forms Response 2,
+
+10
+00:00:34.02 --> 00:00:36.04
+doesn't seem to have
+any information for us.
+
+11
+00:00:36.04 --> 00:00:39.09
+Neither does the second
+tab, Form Responses 2.
+
+12
+00:00:39.09 --> 00:00:41.06
+If you go to the third tab,
+
+13
+00:00:41.06 --> 00:00:45.06
+we have a list of the medalists
+at the Olympics per edition,
+
+14
+00:00:45.06 --> 00:00:50.00
+sport, discipline, gender, and event.
+
+15
+00:00:50.00 --> 00:00:51.06
+So the Breakdown shows the distribution
+
+16
+00:00:51.06 --> 00:00:55.08
+of gold, silver, and
+bronze over the years.
+
+17
+00:00:55.08 --> 00:01:00.03
+The IOC Country Code helps
+us to map the country codes
+
+18
+00:01:00.03 --> 00:01:05.02
+that we saw in the medalists'
+names with the Country tab.
+
+19
+00:01:05.02 --> 00:01:06.08
+So the All Medalists tab seems
+
+20
+00:01:06.08 --> 00:01:09.01
+to have the most useful
+information for us,
+
+21
+00:01:09.01 --> 00:01:15.05
+so let's download this as a CSV document.
+
+22
+00:01:15.05 --> 00:01:17.01
+The current name is a little long,
+
+23
+00:01:17.01 --> 00:01:22.03
+so I'm going to rename
+that to just olympics.
+
+24
+00:01:22.03 --> 00:01:28.00
+And I'm going to store it
+in a folder called data.
+
+25
+00:01:28.00 --> 00:01:30.08
+We will be using this dataset
+for the entire course,
+
+26
+00:01:30.08 --> 00:01:32.08
+so make sure that you have it.
+
+27
+00:01:32.08 --> 00:01:35.01
+In the next video, we will
+have a quick introduction
+
+28
+00:01:35.01 --> 00:01:36.08
+to Jupyter Notebooks.
+

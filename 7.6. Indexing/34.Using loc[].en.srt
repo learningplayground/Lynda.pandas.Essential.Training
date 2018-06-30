@@ -1,0 +1,176 @@
+1
+00:00:00.06 --> 00:00:03.01
+- [Announcer] "loc[]" is
+a label-based indexer,
+
+2
+00:00:03.01 --> 00:00:06.00
+that means you are
+selecting by the labels.
+
+3
+00:00:06.00 --> 00:00:08.00
+And notice that "loc[]"
+uses square brackets
+
+4
+00:00:08.00 --> 00:00:10.01
+and not regular brackets.
+
+5
+00:00:10.01 --> 00:00:14.08
+"loc[]" will raise the KeyError
+when items are not found.
+
+6
+00:00:14.08 --> 00:00:17.02
+Let's head over to the jupyter
+Notebook to look at a couple
+
+7
+00:00:17.02 --> 00:00:19.05
+of examples.
+
+8
+00:00:19.05 --> 00:00:22.01
+If I wanted to search the Olympic table
+
+9
+00:00:22.01 --> 00:00:24.05
+by the athlete's names,
+
+10
+00:00:24.05 --> 00:00:27.00
+I could try for example, "oo.",
+
+11
+00:00:27.00 --> 00:00:28.03
+which is the name of my data frame,
+
+12
+00:00:28.03 --> 00:00:35.09
+"loc" and if I look for Usain Bolt,
+
+13
+00:00:35.09 --> 00:00:38.08
+I end up with a KeyError saying
+
+14
+00:00:38.08 --> 00:00:42.00
+"The label [BOLT, USAIN]
+Is not in the {index}".
+
+15
+00:00:42.00 --> 00:00:43.05
+Why might this be the case?
+
+16
+00:00:43.05 --> 00:00:45.07
+If I look at my data frame again,
+
+17
+00:00:45.07 --> 00:00:49.08
+I can see that the index
+is not the athlete's name,
+
+18
+00:00:49.08 --> 00:00:51.09
+but is the integer based index.
+
+19
+00:00:51.09 --> 00:00:53.01
+So what I can do is I can set the index
+
+20
+00:00:53.01 --> 00:00:57.08
+to the athlete's name,
+
+21
+00:00:57.08 --> 00:01:01.03
+set inplace to true
+
+22
+00:01:01.03 --> 00:01:05.03
+and try again.
+
+23
+00:01:05.03 --> 00:01:09.07
+Bolt, Usain.
+
+24
+00:01:09.07 --> 00:01:12.07
+And you can see now that
+I get a list of rows
+
+25
+00:01:12.07 --> 00:01:15.02
+of all of the medals
+that Usain Bolt has won
+
+26
+00:01:15.02 --> 00:01:17.02
+in the Olympics.
+
+27
+00:01:17.02 --> 00:01:20.06
+Now, you might think that
+the only way to access
+
+28
+00:01:20.06 --> 00:01:23.04
+Usain Bolt's entry is if we
+set the index to athlete,
+
+29
+00:01:23.04 --> 00:01:25.06
+but we can actually use a
+more traditional approach
+
+30
+00:01:25.06 --> 00:01:28.04
+that we've seen before.
+
+31
+00:01:28.04 --> 00:01:38.04
+I'm going to first reset the index.
+
+32
+00:01:38.04 --> 00:01:41.03
+And if I wanted to get any
+information on Usain Bolt,
+
+33
+00:01:41.03 --> 00:01:42.02
+so, let's just check that
+
+34
+00:01:42.02 --> 00:01:44.06
+the data frame is in the
+format that we expect
+
+35
+00:01:44.06 --> 00:01:47.07
+traditionally, we would have
+accessed Usain Bolt's entry
+
+36
+00:01:47.07 --> 00:01:49.04
+using his name in this way, so,
+
+37
+00:01:49.04 --> 00:01:56.02
+oo.Athlete == 'BOLT, Usain'
+
+38
+00:01:56.02 --> 00:01:58.04
+I can use loc here, so,
+
+39
+00:01:58.04 --> 00:02:04.03
+dataframe oo.loc to
+give me the same result.
+
+40
+00:02:04.03 --> 00:02:06.09
+In the next video, we will look at ILook.
+

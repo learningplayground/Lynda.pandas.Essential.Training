@@ -1,0 +1,113 @@
+1
+00:00:00.05 --> 00:00:02.00
+- [Jonathan] Right, so
+the spirit of the Olympics
+
+2
+00:00:02.00 --> 00:00:03.08
+is all about finishing the race.
+
+3
+00:00:03.08 --> 00:00:04.06
+So, well done.
+
+4
+00:00:04.06 --> 00:00:06.06
+You've made it to the end of this course.
+
+5
+00:00:06.06 --> 00:00:08.01
+Now one of my favorite quotes
+
+6
+00:00:08.01 --> 00:00:10.00
+is from the Olympian Eric Liddell.
+
+7
+00:00:10.00 --> 00:00:12.01
+He says, "I believe God
+made me for a purpose,
+
+8
+00:00:12.01 --> 00:00:13.09
+"but he also made me fast!
+
+9
+00:00:13.09 --> 00:00:16.05
+"And when I run I feel his pleasure."
+
+10
+00:00:16.05 --> 00:00:18.05
+So if data science is what excites you,
+
+11
+00:00:18.05 --> 00:00:20.09
+then I hope I've helped you get better.
+
+12
+00:00:20.09 --> 00:00:24.03
+You have now got several more
+Pandas tools and resources
+
+13
+00:00:24.03 --> 00:00:27.01
+to turn to when analyzing
+your next data set.
+
+14
+00:00:27.01 --> 00:00:28.02
+So what next?
+
+15
+00:00:28.02 --> 00:00:30.03
+Here are a couple of ideas.
+
+16
+00:00:30.03 --> 00:00:32.06
+So you could use our Olympics data set
+
+17
+00:00:32.06 --> 00:00:34.03
+to answer some of the following trivia
+
+18
+00:00:34.03 --> 00:00:37.01
+Olympics questions listed here.
+
+19
+00:00:37.01 --> 00:00:39.06
+Alternatively, you can add data
+
+20
+00:00:39.06 --> 00:00:43.06
+from the 2012 Olympics
+onwards from other sources
+
+21
+00:00:43.06 --> 00:00:45.06
+to the data set we've used and find out
+
+22
+00:00:45.06 --> 00:00:48.00
+what new insights you can find.
+
+23
+00:00:48.00 --> 00:00:49.07
+I hope you've enjoyed this course
+
+24
+00:00:49.07 --> 00:00:52.00
+as much as I did putting it together.
+
+25
+00:00:52.00 --> 00:00:53.03
+If you'd like to get in touch,
+
+26
+00:00:53.03 --> 00:00:57.07
+write me at theolympicsguy@gmail.com.
+
+27
+00:00:57.07 --> 00:00:59.09
+Enjoy, and Soli Deo Gloria.
+
